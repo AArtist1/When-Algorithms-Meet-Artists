@@ -1,0 +1,48 @@
+{
+  "project": "When-Algorithms-Meet-Artists",
+  "session_count": 17,
+  "total_events": 33,
+  "events_by_type": {
+    "contribution": 11,
+    "annotation": 15,
+    "decision": 5,
+    "state_change": 1,
+    "tool_call": 1
+  },
+  "decisions": {
+    "total": 5,
+    "proposed_by_ai": 4,
+    "proposed_by_human": 1,
+    "accepted": 3,
+    "revised": 0,
+    "rejected": 0,
+    "pending": 2,
+    "acceptance_rate": 1.0,
+    "suggestion_types": {
+      "requested": 2,
+      "proactive": 3
+    }
+  },
+  "contributions": {
+    "human_directed_ai_executed": 5,
+    "collaborative_directed_ai_executed": 2,
+    "collaborative_directed_collaborative_executed": 1,
+    "ai_directed_ai_executed": 3
+  },
+  "annotations_by_category": {
+    "gotcha": 3,
+    "learning": 4,
+    "observation": 7,
+    "correction": 1
+  },
+  "human_interventions": {
+    "total": 1,
+    "corrections": 1,
+    "corrections_with_links": 1,
+    "decision_rejections": 0,
+    "decision_revisions": 0,
+    "retry_chains": 0,
+    "intervention_rate": 0.03
+  },
+  "trace_version": "0.3.0"
+}

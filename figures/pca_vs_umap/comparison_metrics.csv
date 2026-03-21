@@ -1,0 +1,7 @@
+Metric,UMAP 2D,PCA 2D,Winner
+Variance explained (PC1+PC2),N/A,67.4%,PCA (interpretable)
+Trustworthiness (k=15),0.9882,0.9817,UMAP
+k-NN preservation (k=15),0.5616,0.7305,PCA
+Silhouette (22 clusters),0.3010,0.4231,PCA
+Public-Artist centroid distance,2.5534,2.5699,PCA
+Same-source k-NN rate (k=15),0.9789,0.9681,-

@@ -1,0 +1,50 @@
+# === Legacy working directory (untracked, copy files from here as needed) ===
+When-Algorithms-Meet-Artists-EDIT/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# === Jupyter ===
+.ipynb_checkpoints/
+
+# === Embeddings (too large for git; regenerate with src/embeddings.py) ===
+embeddings/
+*.npy
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === IDE ===
+.vscode/
+.idea/
+
+# === Claude Code / MCP local config ===
+.claude/
+.mcp.json
+CLAUDE.md
+
+# === Old project files (superseded by new structure) ===
+mcp_server/
+TRACE_template/
+knowledge_bank_template/
+methods_paper_template/
+TRACE_data_for_talk.md
+
+# === Manuscript working directories (private during review) ===
+jan_2026_manuscript/
+nov_2025_revisions/
+submissions/
+
+# === Old root-level files (moved to data/ or code/) ===
+artist_data.csv
+better_preprocess.ipynb
+Using_Sections_of_Articles.ipynb
+likert_thematic_phrases.csv

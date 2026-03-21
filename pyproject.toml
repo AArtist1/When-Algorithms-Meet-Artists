@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "when-algorithms-meet-artists"
+version = "1.0.0"
+description = "Semantic compression and stakeholder marginalization in public AI-art discourse (2013-2025)"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Anonymous", email = "anonymous@example.com"},
+]
+keywords = [
+    "topic-modeling",
+    "AI-art",
+    "stakeholder-representation",
+    "consensus-UMAP",
+    "computational-social-science",
+    "semantic-compression",
+]
+
+dependencies = [
+    "numpy>=1.26,<3",
+    "pandas>=2.1",
+    "scikit-learn>=1.4",
+    "umap-learn>=0.5.5",
+    "hdbscan>=0.8.33",
+    "sentence-transformers>=2.2",
+    "scipy>=1.12",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "tqdm>=4.66",
+    "pydantic>=2.5",
+    "torch>=2.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.3",
+    "ipykernel>=6.29",
+    "jupyter>=1.0",
+    "nbformat>=5.9",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "data: tests for data file existence and structure",
+    "models: tests for Pydantic model validation",
+    "embedding: tests for embedding generation and shape",
+    "umap: tests for consensus UMAP pipeline",
+    "clustering: tests for HDBSCAN/KMeans clustering",
+    "stats: tests for statistical tests and salience ratios",
+    "e2e: end-to-end pipeline tests",
+    "slow: tests requiring model downloads or large computation (deselect with '-m \"not slow\"')",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning:umap",
+    "ignore::FutureWarning",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP"]

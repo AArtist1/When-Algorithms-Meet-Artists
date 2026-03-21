@@ -1,0 +1,251 @@
+id,theme,likert,style,text
+utility_strongly_disagree_01,utility,strongly_disagree,blog_opinion,"From my perspective, artificial intelligence art models are ruining the field of art rather than improving it."
+utility_strongly_disagree_02,utility,strongly_disagree,news_opinion,This editorial concludes that artificial intelligence art models are a harmful development for artistic practice.
+utility_strongly_disagree_03,utility,strongly_disagree,interview_artist,"As an artist, I strongly reject the notion that artificial intelligence art models are good for art."
+utility_strongly_disagree_04,utility,strongly_disagree,formal_essay,"In our view, artificial intelligence art models undermine, rather than advance, the value of art."
+utility_strongly_disagree_05,utility,strongly_disagree,policy_report,The report finds that artificial intelligence art models pose a serious setback for the art world.
+utility_strongly_disagree_06,utility,strongly_disagree,panel_discussion,"In interviews, many painters say that artificial intelligence art models are an outright negative for their craft."
+utility_strongly_disagree_07,utility,strongly_disagree,first_person,I cannot agree that artificial intelligence art models are beneficial; they are a destructive force in art.
+utility_strongly_disagree_08,utility,strongly_disagree,union_statement,The union's statement declares that artificial intelligence art models are fundamentally bad for art.
+utility_strongly_disagree_09,utility,strongly_disagree,gallery_statement,"For this gallery, artificial intelligence art models represent a step backwards for artistic culture."
+utility_strongly_disagree_10,utility,strongly_disagree,research_summary,The evidence presented suggests that artificial intelligence art models damage the ecosystem of art instead of helping it.
+utility_disagree_11,utility,disagree,first_person,"Overall, I do not think artificial intelligence art models are a positive development for art, even if they may have some uses."
+utility_disagree_12,utility,disagree,panel_discussion,The panel expressed skepticism that artificial intelligence art models truly benefit the field of art.
+utility_disagree_13,utility,disagree,formal_essay,"From a critical standpoint, artificial intelligence art models seem more problematic than promising for artists."
+utility_disagree_14,utility,disagree,interview_artist,"In my practice, artificial intelligence art models have not improved art in any meaningful way."
+utility_disagree_15,utility,disagree,survey_report,The survey respondents tended to view artificial intelligence art models as more troubling than helpful for artists.
+utility_disagree_16,utility,disagree,first_person,I lean toward believing that artificial intelligence art models do more harm than good in the art world.
+utility_disagree_17,utility,disagree,news_opinion,"While some colleagues are enthusiastic, this column stops short of calling artificial intelligence art models a positive change."
+utility_disagree_18,utility,disagree,blog_opinion,"In conversation, I usually argue that artificial intelligence art models are not a welcome development in artistic fields."
+utility_disagree_19,utility,disagree,committee_report,The committee did not endorse the idea that artificial intelligence art models are beneficial for art.
+utility_disagree_20,utility,disagree,curatorial_text,The exhibition text raises doubts that artificial intelligence art models serve art in a genuinely positive way.
+utility_neutral_21,utility,neutral,research_report,The report takes no position on whether artificial intelligence art models are good or bad for art.
+utility_neutral_22,utility,neutral,first_person,I am unsure whether artificial intelligence art models are ultimately positive for the field of art.
+utility_neutral_23,utility,neutral,interview_curator,"In this interview, the curator notes that artificial intelligence art models have both advantages and drawbacks."
+utility_neutral_24,utility,neutral,academic_article,"From a research perspective, it is too early to tell if artificial intelligence art models will benefit art overall."
+utility_neutral_25,utility,neutral,survey_report,"Some artists praise artificial intelligence art models, while others criticize them, leaving the net impact unclear."
+utility_neutral_26,utility,neutral,panel_discussion,"Our panel described artificial intelligence art models as a significant change, but not necessarily a positive or negative one."
+utility_neutral_27,utility,neutral,first_person,"Personally, I can see both promising and worrying aspects of artificial intelligence art models in art."
+utility_neutral_28,utility,neutral,news_report,"The article simply describes how artificial intelligence art models are used, without evaluating them as good or bad."
+utility_neutral_29,utility,neutral,survey_report,"In this survey, respondents were divided on whether artificial intelligence art models improve art."
+utility_neutral_30,utility,neutral,gallery_statement,The gallery statement acknowledges artificial intelligence art models as part of the landscape without labeling them as beneficial.
+utility_agree_31,utility,agree,first_person,I generally agree that artificial intelligence art models are a positive development in the field of art.
+utility_agree_32,utility,agree,news_opinion,The article argues that artificial intelligence art models open exciting new possibilities for artists.
+utility_agree_33,utility,agree,interview_artist,"From my perspective, artificial intelligence art models can enrich the tools available to creative professionals."
+utility_agree_34,utility,agree,panel_discussion,Many designers interviewed describe artificial intelligence art models as a helpful innovation for artistic work.
+utility_agree_35,utility,agree,research_report,The report concludes that artificial intelligence art models contribute positively to artistic experimentation.
+utility_agree_36,utility,agree,first_person,"In practice, I have found artificial intelligence art models to be a useful addition to my studio workflow."
+utility_agree_37,utility,agree,panel_discussion,"Overall, the panel considered artificial intelligence art models to be a beneficial change in the art world."
+utility_agree_38,utility,agree,curatorial_text,"The curator emphasizes that artificial intelligence art models expand, rather than diminish, artistic options."
+utility_agree_39,utility,agree,organization_statement,Our organization views artificial intelligence art models as a constructive development for digital artists.
+utility_agree_40,utility,agree,gallery_statement,"For this exhibition, artificial intelligence art models are presented as a promising tool for creative exploration."
+utility_strongly_agree_41,utility,strongly_agree,first_person,I am convinced that artificial intelligence art models are an extremely positive development for the field of art.
+utility_strongly_agree_42,utility,strongly_agree,manifesto,This manifesto celebrates artificial intelligence art models as a transformative good for creative practice.
+utility_strongly_agree_43,utility,strongly_agree,interview_artist,"As an artist, I enthusiastically embrace artificial intelligence art models as a major benefit to art."
+utility_strongly_agree_44,utility,strongly_agree,blog_opinion,"In my opinion, artificial intelligence art models are one of the best things to happen to art in decades."
+utility_strongly_agree_45,utility,strongly_agree,symposium_report,The symposium concluded that artificial intelligence art models represent a decisive step forward for art.
+utility_strongly_agree_46,utility,strongly_agree,organization_statement,Our statement strongly supports artificial intelligence art models as a vital positive force in the arts.
+utility_strongly_agree_47,utility,strongly_agree,studio_statement,"For my studio, artificial intelligence art models are indispensable and overwhelmingly good for our art."
+utility_strongly_agree_48,utility,strongly_agree,first_person,I wholeheartedly endorse the idea that artificial intelligence art models are beneficial for artists and audiences.
+utility_strongly_agree_49,utility,strongly_agree,academic_essay,The essay praises artificial intelligence art models as a groundbreaking and positive innovation in art.
+utility_strongly_agree_50,utility,strongly_agree,cultural_commentary,"From a cultural standpoint, artificial intelligence art models are an unequivocally positive development for art."
+ownership_strongly_disagree_51,ownership,strongly_disagree,legal_opinion,"In my view, artificial intelligence generated artwork in an artist's style should not be considered the artist's property at all."
+ownership_strongly_disagree_52,ownership,strongly_disagree,policy_report,"The report argues that artificial intelligence generated works belong to the public domain, not to the original artist."
+ownership_strongly_disagree_53,ownership,strongly_disagree,first_person,I strongly reject the idea that artificial intelligence generated images in my style are my property.
+ownership_strongly_disagree_54,ownership,strongly_disagree,blog_opinion,"According to this commentary, artificial intelligence generated artworks should be owned by the user, not the artist whose style was copied."
+ownership_strongly_disagree_55,ownership,strongly_disagree,corporate_policy,"Company policy states that artificial intelligence generated content is the exclusive property of the platform, not the contributing artists."
+ownership_strongly_disagree_56,ownership,strongly_disagree,news_opinion,The editorial contends that artists have no ownership claim over artificial intelligence generated works derived from their style.
+ownership_strongly_disagree_57,ownership,strongly_disagree,legal_brief,The brief maintains that granting artists property rights over artificial intelligence generated imitations would be inappropriate.
+ownership_strongly_disagree_58,ownership,strongly_disagree,panel_discussion,"Several experts insisted that the user, not the artist, should own artificial intelligence generated artworks in a given style."
+ownership_strongly_disagree_59,ownership,strongly_disagree,first_person,"I believe that once my images are used to train a system, I no longer own the artificial intelligence generated outputs."
+ownership_strongly_disagree_60,ownership,strongly_disagree,policy_memo,"The memo recommends that artificial intelligence generated artworks be treated as independent creations, without artist ownership."
+ownership_disagree_61,ownership,disagree,first_person,I am not convinced that artificial intelligence generated artwork in my style should automatically be treated as my property.
+ownership_disagree_62,ownership,disagree,legal_opinion,The opinion suggests that artist ownership over artificial intelligence generated outputs should be limited or narrowly defined.
+ownership_disagree_63,ownership,disagree,blog_opinion,"This blog post argues that users should have primary control over artificial intelligence generated images, rather than the original artists."
+ownership_disagree_64,ownership,disagree,policy_report,The authors question whether artists ought to own derivative works made by artificial intelligence systems.
+ownership_disagree_65,ownership,disagree,interview_lawyer,"In the interview, the attorney doubts that artists can claim full property rights over artificial intelligence generated artworks in their style."
+ownership_disagree_66,ownership,disagree,panel_discussion,Several panelists expressed reservations about giving artists strong ownership over artificial intelligence generated content.
+ownership_disagree_67,ownership,disagree,first_person,I tend to think that artificial intelligence generated images in my style are a shared space rather than solely my property.
+ownership_disagree_68,ownership,disagree,news_report,The article notes that some stakeholders resist proposals to grant artists full ownership of artificial intelligence generated derivatives.
+ownership_disagree_69,ownership,disagree,corporate_policy,"The platform indicates that authorship of artificial intelligence generated images is primarily assigned to end users, not to source artists."
+ownership_disagree_70,ownership,disagree,academic_article,The paper criticizes expansive notions of artist property in the context of artificial intelligence generated works.
+ownership_neutral_71,ownership,neutral,research_report,The report describes several competing models for ownership of artificial intelligence generated artworks without endorsing one.
+ownership_neutral_72,ownership,neutral,first_person,I am unsure whether artificial intelligence generated artwork in my style should count as my property or not.
+ownership_neutral_73,ownership,neutral,panel_discussion,"Our panel laid out arguments for artist ownership, user ownership, and shared rights over artificial intelligence generated content."
+ownership_neutral_74,ownership,neutral,academic_article,The article maps the legal uncertainties around ownership of artificial intelligence generated images in an artist's style.
+ownership_neutral_75,ownership,neutral,news_report,"The news piece presents multiple viewpoints on who should own artificial intelligence generated artworks, leaving the question open."
+ownership_neutral_76,ownership,neutral,interview_artist,"In this interview, the artist says they are conflicted about whether artificial intelligence generated images in their style belong to them."
+ownership_neutral_77,ownership,neutral,policy_brief,"The brief outlines options including artist ownership, user ownership, and collective licenses for artificial intelligence generated works."
+ownership_neutral_78,ownership,neutral,survey_report,Survey responses were mixed on whether artificial intelligence generated artworks in an artist's style should be the artist's property.
+ownership_neutral_79,ownership,neutral,blog_opinion,This post acknowledges that ownership of artificial intelligence generated art is a complex issue with no consensus.
+ownership_neutral_80,ownership,neutral,legal_commentary,The commentary notes that current law does not clearly resolve who owns artificial intelligence generated artworks in an artist's style.
+ownership_agree_81,ownership,agree,first_person,I generally think that artificial intelligence generated artwork in my style should be treated as my property as the original artist.
+ownership_agree_82,ownership,agree,legal_opinion,The opinion leans toward recognizing the original artist as the rights holder for artificial intelligence generated works in their style.
+ownership_agree_83,ownership,agree,blog_opinion,This essay argues that artists deserve ownership over artificial intelligence generated images that imitate their signature style.
+ownership_agree_84,ownership,agree,policy_report,The report recommends giving artists a meaningful ownership stake in artificial intelligence generated derivatives of their work.
+ownership_agree_85,ownership,agree,interview_artist,"In the interview, the painter says that artificial intelligence generated pieces in their style should be licensed as their property."
+ownership_agree_86,ownership,agree,panel_discussion,Several panelists agreed that artists ought to retain property rights over artificial intelligence generated art in their style.
+ownership_agree_87,ownership,agree,academic_article,The paper proposes a framework in which original artists own artificial intelligence generated images based on their creative style.
+ownership_agree_88,ownership,agree,news_opinion,The column supports granting artists ownership claims over artificial intelligence generated outputs modeled on their work.
+ownership_agree_89,ownership,agree,union_statement,The union calls for recognizing artificial intelligence generated artworks in an artist's style as that artist's property.
+ownership_agree_90,ownership,agree,policy_brief,The brief urges lawmakers to protect artist ownership in the context of artificial intelligence generated stylistic imitation.
+ownership_strongly_agree_91,ownership,strongly_agree,first_person,I firmly believe that artificial intelligence generated artwork in my style should unquestionably be my property as the original artist.
+ownership_strongly_agree_92,ownership,strongly_agree,legal_argument,This argument insists that original artists must hold full property rights over artificial intelligence generated reproductions of their style.
+ownership_strongly_agree_93,ownership,strongly_agree,manifesto,The manifesto declares that artificial intelligence generated images in an artist's style belong entirely to that artist.
+ownership_strongly_agree_94,ownership,strongly_agree,union_statement,Our statement strongly asserts that artists own all artificial intelligence generated artworks that borrow their style.
+ownership_strongly_agree_95,ownership,strongly_agree,blog_opinion,"According to this post, denying artists ownership of artificial intelligence generated copies of their style is fundamentally unjust."
+ownership_strongly_agree_96,ownership,strongly_agree,policy_report,The report emphatically recommends that any artificial intelligence generated work in an artist's style be classified as the artist's property.
+ownership_strongly_agree_97,ownership,strongly_agree,interview_artist,"In this conversation, the illustrator says they absolutely consider artificial intelligence generated images in their style to be their property."
+ownership_strongly_agree_98,ownership,strongly_agree,academic_article,The article strongly endorses the principle that original artists own artificial intelligence generated artworks derivative of their style.
+ownership_strongly_agree_99,ownership,strongly_agree,panel_statement,The panel's concluding statement affirms that artist ownership must extend to artificial intelligence generated stylistic imitations.
+ownership_strongly_agree_100,ownership,strongly_agree,legal_brief,The brief forcefully argues for robust artist property rights over artificial intelligence generated works based on their creative style.
+transparency_strongly_disagree_101,transparency,strongly_disagree,legal_opinion,I strongly oppose any rule that would force artificial intelligence model creators to disclose their training images in detail.
+transparency_strongly_disagree_102,transparency,strongly_disagree,policy_memo,The memo argues that requiring full disclosure of training data for artificial intelligence models would be an unacceptable burden.
+transparency_strongly_disagree_103,transparency,strongly_disagree,corporate_statement,Our company rejects proposals to mandate detailed transparency about the art and images used to train our artificial intelligence systems.
+transparency_strongly_disagree_104,transparency,strongly_disagree,blog_opinion,This commentator insists that artificial intelligence developers should not have to reveal their training sets to the public.
+transparency_strongly_disagree_105,transparency,strongly_disagree,legal_brief,The brief contends that compulsory disclosure of training images would violate trade secret protections for artificial intelligence firms.
+transparency_strongly_disagree_106,transparency,strongly_disagree,panel_discussion,Some panelists said they were strongly against forcing artificial intelligence model creators to explain their training data.
+transparency_strongly_disagree_107,transparency,strongly_disagree,first_person,I do not think artificial intelligence model creators should be required to list every artwork used in training.
+transparency_strongly_disagree_108,transparency,strongly_disagree,policy_report,The report concludes that mandatory training data disclosure would severely harm innovation in artificial intelligence.
+transparency_strongly_disagree_109,transparency,strongly_disagree,industry_letter,The industry letter urges regulators not to impose strict transparency rules about art and images used to train artificial intelligence models.
+transparency_strongly_disagree_110,transparency,strongly_disagree,news_opinion,The editorial argues that demanding detailed disclosure of training images from artificial intelligence companies goes too far.
+transparency_disagree_111,transparency,disagree,legal_opinion,The opinion suggests that artificial intelligence model creators should retain some discretion over what they disclose about training data.
+transparency_disagree_112,transparency,disagree,policy_brief,The brief raises concerns about broad requirements to reveal all art and images used to train artificial intelligence systems.
+transparency_disagree_113,transparency,disagree,first_person,I am hesitant about the idea of forcing artificial intelligence model creators to share detailed training image lists.
+transparency_disagree_114,transparency,disagree,panel_discussion,Several panelists questioned whether it is necessary to mandate full transparency about training datasets for artificial intelligence models.
+transparency_disagree_115,transparency,disagree,corporate_statement,The company expresses reservations about regulations that would require extensive disclosure of training images.
+transparency_disagree_116,transparency,disagree,blog_opinion,"This blog post argues that some transparency is desirable, but detailed disclosure of training images may not be feasible."
+transparency_disagree_117,transparency,disagree,policy_report,The report notes that strict disclosure rules could create compliance problems for smaller artificial intelligence developers.
+transparency_disagree_118,transparency,disagree,interview_executive,"In the interview, the executive says they do not fully support mandatory training data disclosure requirements."
+transparency_disagree_119,transparency,disagree,news_report,The article describes industry pushback against proposals for detailed transparency around training datasets.
+transparency_disagree_120,transparency,disagree,academic_article,"The paper criticizes sweeping disclosure mandates, suggesting more limited transparency obligations for artificial intelligence models."
+transparency_neutral_121,transparency,neutral,research_report,The report outlines arguments for and against requiring artificial intelligence model creators to disclose their training data.
+transparency_neutral_122,transparency,neutral,first_person,I am undecided about whether artificial intelligence model creators should be compelled to reveal the art and images they use for training.
+transparency_neutral_123,transparency,neutral,panel_discussion,Our panel discussed transparency in training data without reaching a clear consensus on mandatory disclosure.
+transparency_neutral_124,transparency,neutral,academic_article,The article maps the policy landscape around training data transparency for artificial intelligence systems.
+transparency_neutral_125,transparency,neutral,news_report,The news story presents differing views on whether artificial intelligence companies should disclose their training images.
+transparency_neutral_126,transparency,neutral,policy_brief,The brief notes that some stakeholders call for strong transparency while others prefer voluntary guidelines.
+transparency_neutral_127,transparency,neutral,interview_artist,"In this interview, the artist says they would like more information about training data but is unsure about legal requirements."
+transparency_neutral_128,transparency,neutral,blog_opinion,The blog post raises transparency questions about training images without endorsing a specific regulatory approach.
+transparency_neutral_129,transparency,neutral,survey_report,Survey respondents were split on whether artificial intelligence model creators should be required to disclose training data details.
+transparency_neutral_130,transparency,neutral,legal_commentary,The commentary reviews possible disclosure standards without taking a firm position on their necessity.
+transparency_agree_131,transparency,agree,first_person,I generally support requiring artificial intelligence model creators to disclose what kinds of art and images they use for training.
+transparency_agree_132,transparency,agree,policy_report,The report recommends that artificial intelligence companies provide clear information about their training datasets.
+transparency_agree_133,transparency,agree,blog_opinion,This essay argues that artists deserve to know when their works are included in training data for artificial intelligence models.
+transparency_agree_134,transparency,agree,legal_opinion,The opinion supports moderate disclosure requirements for art and images used in artificial intelligence training.
+transparency_agree_135,transparency,agree,panel_discussion,Several panelists agreed that some form of mandatory transparency about training data is appropriate.
+transparency_agree_136,transparency,agree,news_opinion,"The column endorses policies requiring artificial intelligence firms to explain, at least in general terms, what artworks they train on."
+transparency_agree_137,transparency,agree,interview_artist,"In the interview, the illustrator says that companies should have to tell us which collections they used to train their artificial intelligence models."
+transparency_agree_138,transparency,agree,policy_brief,The brief proposes disclosure rules that would list sources of art and images in anonymized form.
+transparency_agree_139,transparency,agree,academic_article,The article argues that training data transparency is an important safeguard for artists and the public.
+transparency_agree_140,transparency,agree,union_statement,The union calls for regulatory requirements that force artificial intelligence developers to reveal their training image sources.
+transparency_strongly_agree_141,transparency,strongly_agree,first_person,I firmly believe that artificial intelligence model creators should be required to disclose in detail what art and images they use to train their systems.
+transparency_strongly_agree_142,transparency,strongly_agree,manifesto,This manifesto demands full transparency about every artwork and image included in artificial intelligence training datasets.
+transparency_strongly_agree_143,transparency,strongly_agree,union_statement,Our statement insists that artificial intelligence companies must provide detailed lists of all visual works used in training.
+transparency_strongly_agree_144,transparency,strongly_agree,policy_report,The report strongly recommends strict disclosure mandates covering all art and images used to train artificial intelligence models.
+transparency_strongly_agree_145,transparency,strongly_agree,legal_brief,The brief argues that compulsory training data disclosure is essential to protect artists' rights.
+transparency_strongly_agree_146,transparency,strongly_agree,blog_opinion,"According to this piece, anything less than full transparency about training images from artificial intelligence firms is unacceptable."
+transparency_strongly_agree_147,transparency,strongly_agree,panel_statement,The panel's conclusion is that creators of artificial intelligence models must be legally required to detail their training image sources.
+transparency_strongly_agree_148,transparency,strongly_agree,news_opinion,The editorial strongly supports laws forcing artificial intelligence developers to reveal their training datasets to the public.
+transparency_strongly_agree_149,transparency,strongly_agree,academic_article,The article endorses robust disclosure obligations for all art and images used in artificial intelligence training pipelines.
+transparency_strongly_agree_150,transparency,strongly_agree,advocacy_report,The advocacy report urges governments to mandate granular transparency about training images for artificial intelligence models.
+threat_strongly_disagree_151,threat,strongly_disagree,first_person,I do not see artificial intelligence art models as a threat to art workers at all.
+threat_strongly_disagree_152,threat,strongly_disagree,blog_opinion,This commentary insists that artificial intelligence art models pose no real danger to working artists.
+threat_strongly_disagree_153,threat,strongly_disagree,industry_statement,Our organization strongly rejects the claim that artificial intelligence art models threaten creative jobs.
+threat_strongly_disagree_154,threat,strongly_disagree,news_opinion,The editorial argues that fears about artificial intelligence art models destroying art careers are exaggerated and unfounded.
+threat_strongly_disagree_155,threat,strongly_disagree,panel_discussion,"Several panelists said they see artificial intelligence art tools as benign, not as a menace to art workers."
+threat_strongly_disagree_156,threat,strongly_disagree,interview_executive,"In the interview, the executive declares that artificial intelligence art systems will not replace professional artists."
+threat_strongly_disagree_157,threat,strongly_disagree,policy_report,The report concludes that artificial intelligence art models are unlikely to displace significant numbers of art workers.
+threat_strongly_disagree_158,threat,strongly_disagree,academic_article,"The paper contends that artificial intelligence art models complement, rather than threaten, human artistic labor."
+threat_strongly_disagree_159,threat,strongly_disagree,first_person,"As far as I am concerned, artificial intelligence art models are not a danger to my livelihood as an artist."
+threat_strongly_disagree_160,threat,strongly_disagree,industry_brief,The brief states that artificial intelligence assisted tools will create more opportunities than risks for art workers.
+threat_disagree_161,threat,disagree,first_person,"Overall, I do not think artificial intelligence art models are a major threat to art workers, though some concerns exist."
+threat_disagree_162,threat,disagree,panel_discussion,The panel acknowledged limited risks from artificial intelligence art systems but did not view them as a serious threat to jobs.
+threat_disagree_163,threat,disagree,blog_opinion,This essay suggests that artificial intelligence art models may change workflows without necessarily endangering artists' careers.
+threat_disagree_164,threat,disagree,news_report,The article notes that some experts doubt whether artificial intelligence art tools will significantly reduce employment for artists.
+threat_disagree_165,threat,disagree,policy_brief,The brief argues that artificial intelligence art models should be monitored but are not inherently hostile to art workers.
+threat_disagree_166,threat,disagree,interview_artist,"In this interview, the painter says they are not overly worried about artificial intelligence art systems taking their job."
+threat_disagree_167,threat,disagree,academic_article,The paper suggests that artificial intelligence art models create new roles alongside existing artistic occupations.
+threat_disagree_168,threat,disagree,survey_report,Survey respondents expressed moderate concern but did not overwhelmingly label artificial intelligence art models as a threat.
+threat_disagree_169,threat,disagree,news_opinion,The column argues that traditional challenges such as low pay are more pressing than artificial intelligence art models for workers.
+threat_disagree_170,threat,disagree,policy_report,The report recommends precautionary policies while concluding that artificial intelligence art models are not yet a major threat.
+threat_neutral_171,threat,neutral,research_report,The report presents arguments both for and against the claim that artificial intelligence art models endanger art workers.
+threat_neutral_172,threat,neutral,first_person,I am unsure whether artificial intelligence art models represent a real threat to art workers at this point.
+threat_neutral_173,threat,neutral,panel_discussion,"Our panel heard contrasting views on whether artificial intelligence art tools will harm, help, or simply transform art jobs."
+threat_neutral_174,threat,neutral,academic_article,The article analyzes potential risks and opportunities for art workers arising from artificial intelligence art systems.
+threat_neutral_175,threat,neutral,news_report,The news story quotes some artists who fear displacement by artificial intelligence and others who do not.
+threat_neutral_176,threat,neutral,survey_report,"Survey results show a mix of anxiety, curiosity, and indifference toward artificial intelligence art models among workers."
+threat_neutral_177,threat,neutral,blog_opinion,This post notes that the long term impact of artificial intelligence art models on creative labor remains uncertain.
+threat_neutral_178,threat,neutral,policy_brief,The brief outlines possible regulatory responses without labeling artificial intelligence art models as purely a threat or a benefit.
+threat_neutral_179,threat,neutral,interview_curator,"In the interview, the curator says it is hard to predict whether artificial intelligence art will shrink or expand job opportunities."
+threat_neutral_180,threat,neutral,legal_commentary,The commentary discusses labor concerns about artificial intelligence art models without taking a definitive stance.
+threat_agree_181,threat,agree,first_person,I tend to agree that artificial intelligence art models pose a meaningful threat to some art workers.
+threat_agree_182,threat,agree,blog_opinion,This essay argues that artificial intelligence art tools can undercut commissions that would otherwise go to human artists.
+threat_agree_183,threat,agree,policy_report,The report warns that artificial intelligence art models may reduce demand for certain kinds of creative labor.
+threat_agree_184,threat,agree,news_opinion,The column describes artificial intelligence art systems as a growing concern for illustrators and designers.
+threat_agree_185,threat,agree,interview_artist,"In this interview, the freelancer says that artificial intelligence art generators have already taken away potential gigs."
+threat_agree_186,threat,agree,panel_discussion,Several panelists agreed that artificial intelligence art models introduce serious competition for working artists.
+threat_agree_187,threat,agree,survey_report,Survey data show that many art workers view artificial intelligence art tools as a significant career risk.
+threat_agree_188,threat,agree,academic_article,The article concludes that artificial intelligence art models can exert downward pressure on wages for creative professionals.
+threat_agree_189,threat,agree,union_statement,The union statement characterizes artificial intelligence art systems as a threat to stable employment in the arts.
+threat_agree_190,threat,agree,policy_brief,The brief recommends protective measures for art workers in light of emerging artificial intelligence art technologies.
+threat_strongly_agree_191,threat,strongly_agree,first_person,I am convinced that artificial intelligence art models are a serious threat to art workers' livelihoods.
+threat_strongly_agree_192,threat,strongly_agree,manifesto,This manifesto denounces artificial intelligence art systems as an existential danger to creative labor.
+threat_strongly_agree_193,threat,strongly_agree,union_statement,Our statement declares that artificial intelligence art models are a direct attack on working artists and their jobs.
+threat_strongly_agree_194,threat,strongly_agree,news_opinion,The editorial warns that artificial intelligence art tools could wipe out entire categories of creative work.
+threat_strongly_agree_195,threat,strongly_agree,policy_report,The report strongly asserts that artificial intelligence art models will displace many art workers unless regulations intervene.
+threat_strongly_agree_196,threat,strongly_agree,blog_opinion,This piece argues passionately that artificial intelligence art systems are already undermining the economic basis of artistic careers.
+threat_strongly_agree_197,threat,strongly_agree,interview_artist,"In the interview, the illustrator says that artificial intelligence art generators are the biggest threat they have ever faced."
+threat_strongly_agree_198,threat,strongly_agree,academic_article,The article concludes that artificial intelligence art models represent a profound structural threat to creative employment.
+threat_strongly_agree_199,threat,strongly_agree,panel_statement,The panel's closing statement affirms that artificial intelligence art systems are dangerously disruptive to art workers.
+threat_strongly_agree_200,threat,strongly_agree,advocacy_report,The advocacy report urges urgent action against artificial intelligence art models that threaten artists' livelihoods.
+compensation_strongly_disagree_201,compensation,strongly_disagree,first_person,I do not think artists need to be compensated when their work is used to train artificial intelligence art models.
+compensation_strongly_disagree_202,compensation,strongly_disagree,blog_opinion,This commentary argues that companies should be free to profit from training data without paying artists.
+compensation_strongly_disagree_203,compensation,strongly_disagree,corporate_statement,Our company takes the position that no royalties are owed to artists for artificial intelligence training uses.
+compensation_strongly_disagree_204,compensation,strongly_disagree,legal_opinion,The opinion holds that artists have no financial claim on profits generated by artificial intelligence art systems.
+compensation_strongly_disagree_205,compensation,strongly_disagree,policy_report,The report concludes that mandatory artist compensation for artificial intelligence training would be inappropriate.
+compensation_strongly_disagree_206,compensation,strongly_disagree,industry_brief,The brief asserts that paying artists for every artificial intelligence use of their work is neither necessary nor desirable.
+compensation_strongly_disagree_207,compensation,strongly_disagree,news_opinion,The column insists that artists should not expect profit sharing from artificial intelligence art products.
+compensation_strongly_disagree_208,compensation,strongly_disagree,panel_discussion,Some panelists argued strongly against revenue sharing schemes for artists in artificial intelligence markets.
+compensation_strongly_disagree_209,compensation,strongly_disagree,first_person,I see no reason why for profit companies should have to share artificial intelligence art profits with creators.
+compensation_strongly_disagree_210,compensation,strongly_disagree,policy_memo,The memo recommends against any special taxes or funds to support artists from artificial intelligence related revenues.
+compensation_disagree_211,compensation,disagree,first_person,I am not convinced that artists deserve extensive compensation every time their work informs artificial intelligence art models.
+compensation_disagree_212,compensation,disagree,blog_opinion,"This essay suggests that only minimal payments, if any, should be made to artists for artificial intelligence training uses."
+compensation_disagree_213,compensation,disagree,policy_brief,The brief questions broad proposals for profit sharing with artists in artificial intelligence art markets.
+compensation_disagree_214,compensation,disagree,corporate_statement,The company expresses doubts about revenue sharing mandates tied to artificial intelligence art profits.
+compensation_disagree_215,compensation,disagree,news_report,The article notes that some experts argue against creating large compensation schemes for artists affected by artificial intelligence.
+compensation_disagree_216,compensation,disagree,legal_opinion,"The opinion suggests that artist compensation for artificial intelligence uses, if adopted, should be limited and narrowly targeted."
+compensation_disagree_217,compensation,disagree,panel_discussion,Several panelists were skeptical of taxation plans that would redirect artificial intelligence art income to artists.
+compensation_disagree_218,compensation,disagree,first_person,I would not insist on profit sharing for every artificial intelligence artwork that draws on my style.
+compensation_disagree_219,compensation,disagree,policy_report,The report raises concerns about the complexity of administering artist royalties for artificial intelligence art systems.
+compensation_disagree_220,compensation,disagree,academic_article,The paper criticizes expansive compensation frameworks tied to artificial intelligence training datasets.
+compensation_neutral_221,compensation,neutral,research_report,"The report outlines several options for compensating artists when their work is used in artificial intelligence systems, without endorsing one."
+compensation_neutral_222,compensation,neutral,first_person,"I am unsure how much compensation, if any, artists should receive when their art trains artificial intelligence models."
+compensation_neutral_223,compensation,neutral,panel_discussion,"Our panel debated revenue sharing, lump sum payments, and public funds for artists affected by artificial intelligence art."
+compensation_neutral_224,compensation,neutral,academic_article,The article analyzes possible compensation schemes for artists in relation to artificial intelligence generated works.
+compensation_neutral_225,compensation,neutral,news_report,The news story presents contrasting proposals for paying artists when their work appears in artificial intelligence training data.
+compensation_neutral_226,compensation,neutral,policy_brief,The brief describes models ranging from voluntary donations to statutory royalties for artificial intelligence art uses.
+compensation_neutral_227,compensation,neutral,survey_report,Survey responses showed no clear consensus on whether artists should be paid when artificial intelligence uses their images.
+compensation_neutral_228,compensation,neutral,blog_opinion,This post raises questions about fairness and feasibility in compensating artists for artificial intelligence training.
+compensation_neutral_229,compensation,neutral,interview_artist,"In the interview, the artist says they are conflicted about whether to demand payment for artificial intelligence uses of their work."
+compensation_neutral_230,compensation,neutral,legal_commentary,The commentary reviews proposed compensation frameworks for artists without supporting or rejecting them.
+compensation_agree_231,compensation,agree,first_person,I generally believe that artists should receive some compensation when their work is used in artificial intelligence art systems.
+compensation_agree_232,compensation,agree,blog_opinion,This essay argues that for profit companies ought to share a portion of artificial intelligence art revenues with creators.
+compensation_agree_233,compensation,agree,policy_report,The report recommends that artists receive royalties when artificial intelligence products rely heavily on their work.
+compensation_agree_234,compensation,agree,news_opinion,The column supports modest profit sharing schemes between artificial intelligence art platforms and contributing artists.
+compensation_agree_235,compensation,agree,academic_article,The paper proposes a licensing model in which artists are paid when their art appears in artificial intelligence training sets.
+compensation_agree_236,compensation,agree,panel_discussion,Several panelists agreed that it is fair to compensate artists whose work substantially informs artificial intelligence art outputs.
+compensation_agree_237,compensation,agree,interview_artist,"In this interview, the illustrator says they prefer to donate some uses but expect payment when artificial intelligence art generates profit."
+compensation_agree_238,compensation,agree,policy_brief,"The brief suggests a fund, financed by artificial intelligence art taxes, to support museums and human art making."
+compensation_agree_239,compensation,agree,union_statement,The union calls for revenue sharing mechanisms to ensure artists benefit from artificial intelligence art markets.
+compensation_agree_240,compensation,agree,advocacy_report,The advocacy report endorses compensation for artists whose works are systematically used to train artificial intelligence models.
+compensation_strongly_agree_241,compensation,strongly_agree,first_person,I am convinced that artists must be compensated when their art is used in artificial intelligence training or products.
+compensation_strongly_agree_242,compensation,strongly_agree,manifesto,This manifesto demands strong profit sharing and royalty rights for artists in all artificial intelligence art contexts.
+compensation_strongly_agree_243,compensation,strongly_agree,union_statement,Our statement insists that no for profit company should earn from artificial intelligence art built on unpaid creative labor.
+compensation_strongly_agree_244,compensation,strongly_agree,policy_report,The report strongly supports mandatory royalty schemes for artists whose work powers artificial intelligence art systems.
+compensation_strongly_agree_245,compensation,strongly_agree,blog_opinion,This commentary argues that artists should receive a meaningful share of every artificial intelligence art sale derived from their work.
+compensation_strongly_agree_246,compensation,strongly_agree,academic_article,The article advocates robust taxation of artificial intelligence art profits to fund grants for human artists and cultural institutions.
+compensation_strongly_agree_247,compensation,strongly_agree,panel_statement,The panel's final statement calls for binding compensation rules whenever artificial intelligence art relies on existing artworks.
+compensation_strongly_agree_248,compensation,strongly_agree,interview_artist,"In the interview, the painter says they would never consent to artificial intelligence training without clear payment and control."
+compensation_strongly_agree_249,compensation,strongly_agree,policy_brief,The brief urges lawmakers to guarantee artists both royalties and public funding from artificial intelligence related revenues.
+compensation_strongly_agree_250,compensation,strongly_agree,advocacy_report,The advocacy report describes uncompensated use of artists' work in artificial intelligence as exploitation that must be remedied.

@@ -1,0 +1,305 @@
+{
+  "context": "https://trace-protocol.org/v0.2",
+  "trace_version": "0.2.0",
+  "id": "trace_20260216_50ceac",
+  "created": "2026-02-16T02:59:27.773739Z",
+  "ended": "2026-02-16T03:00:40.203633Z",
+  "status": "completed",
+  "metadata": {
+    "project": "When Algorithms Meet Artists",
+    "experiment_id": null,
+    "description": "Testing TRACE v0.2 features: contribution logging, decision suggestion_type, project summaries, and all event types",
+    "participants": [
+      {
+        "type": "human",
+        "id": "echoes",
+        "role": "researcher"
+      },
+      {
+        "type": "ai",
+        "id": "claude-opus-4-6",
+        "role": "assistant"
+      }
+    ],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.2.0",
+      "python_version": "3.12.10",
+      "trace_version": "0.2.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "test",
+      "v0.2",
+      "validation"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": "TRACE v0.2 validation complete. All features tested successfully: (1) trace_propose_decision with suggestion_type field \u2014 works for 'proactive', 'requested', 'collaborative'; (2) trace_log_contribution with direction/execution/artifact/related_decision_ids \u2014 all fields accepted; (3) trace_resolve_decision with revision_note \u2014 works correctly; (4) trace_get_decision_chain \u2014 correctly follows revises_event_id links; (5) trace_project_summary \u2014 returns aggregated metrics across sessions; (6) trace_search \u2014 text search works; (7) trace_export markdown \u2014 clean formatted output; (8) Validation catches invalid inputs (e.g., status='pending' rejected). 7 events logged across all event types. v0.2 is operational.",
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-02-16T02:59:35.272601Z",
+      "session_id": "trace_20260216_50ceac",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude-opus-4-6",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Test decision: Whether to use BERTopic vs LDA for topic modeling validation in the AI-art corpus",
+        "rationale": "BERTopic leverages transformer embeddings and HDBSCAN clustering, which handles the heterogeneous AI-art discourse better than LDA's bag-of-words assumption. However, LDA provides more interpretable per-document topic distributions. For validation purposes, running both and comparing topic coherence scores would be most rigorous.",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude-opus-4-6",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "echoes",
+          "role": null
+        },
+        "revision_note": "Test resolution - accepted for validation purposes",
+        "revises_event_id": null,
+        "suggestion_type": "proactive",
+        "tags": [
+          "topic-modeling",
+          "methodology",
+          "test"
+        ]
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "parent_event_id": null,
+        "reasoning_summary": null,
+        "related_event_ids": []
+      },
+      "verification": null
+    },
+    {
+      "id": "evt_002",
+      "timestamp": "2026-02-16T02:59:43.931594Z",
+      "session_id": "trace_20260216_50ceac",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Test contribution: TRACE v0.2 validation script verifying all event types work correctly",
+        "artifact": "TRACE_v0.2_test_session",
+        "direction": "collaborative",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_001"
+        ],
+        "tags": [
+          "test",
+          "v0.2",
+          "validation"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "parent_event_id": null,
+        "reasoning_summary": null,
+        "related_event_ids": []
+      },
+      "verification": null
+    },
+    {
+      "id": "evt_003",
+      "timestamp": "2026-02-16T02:59:48.810455Z",
+      "session_id": "trace_20260216_50ceac",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "observation",
+        "content": "TRACE v0.2 features verified: (1) suggestion_type field accepted in trace_propose_decision, (2) trace_log_contribution works with direction/execution/artifact/related_decision_ids/tags, (3) trace_resolve_decision accepts revision_note. All three new v0.2 features operational.",
+        "related_event_ids": [],
+        "tags": [
+          "v0.2",
+          "validation",
+          "test"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "parent_event_id": null,
+        "reasoning_summary": null,
+        "related_event_ids": []
+      },
+      "verification": null
+    },
+    {
+      "id": "evt_004",
+      "timestamp": "2026-02-16T02:59:56.276917Z",
+      "session_id": "trace_20260216_50ceac",
+      "type": "state_change",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": {
+        "description": "TRACE protocol version upgrade",
+        "field": "trace_version",
+        "old_value": "0.1.0",
+        "new_value": "0.2.0",
+        "reason": "Upgraded to trace-mcp v0.2.0 for contribution logging, decision suggestion_type, and project summaries"
+      },
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "parent_event_id": null,
+        "reasoning_summary": null,
+        "related_event_ids": []
+      },
+      "verification": null
+    },
+    {
+      "id": "evt_005",
+      "timestamp": "2026-02-16T03:00:06.809684Z",
+      "session_id": "trace_20260216_50ceac",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "gotcha",
+        "content": "trace_log_tool_call status field only accepts 'success', 'error', or 'timeout' \u2014 not 'pending'. Validation correctly rejects invalid values.",
+        "related_event_ids": [],
+        "tags": [
+          "v0.2",
+          "validation",
+          "error-handling"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "parent_event_id": null,
+        "reasoning_summary": null,
+        "related_event_ids": []
+      },
+      "verification": null
+    },
+    {
+      "id": "evt_006",
+      "timestamp": "2026-02-16T03:00:14.653460Z",
+      "session_id": "trace_20260216_50ceac",
+      "type": "tool_call",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": {
+        "server": "trace-mcp",
+        "method": "tools/call",
+        "name": "trace_project_summary",
+        "input": {
+          "project": "When Algorithms Meet Artists"
+        },
+        "output": {
+          "session_count": 3,
+          "total_events": 34,
+          "events_by_type": {
+            "annotation": 23,
+            "decision": 5,
+            "contribution": 5,
+            "state_change": 1
+          }
+        },
+        "output_truncated": null,
+        "output_hash": null,
+        "duration_ms": null,
+        "status": "success",
+        "error_message": null
+      },
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "parent_event_id": null,
+        "reasoning_summary": "Testing the project summary aggregation feature new in v0.2",
+        "related_event_ids": []
+      },
+      "verification": null
+    },
+    {
+      "id": "evt_007",
+      "timestamp": "2026-02-16T03:00:22.161191Z",
+      "session_id": "trace_20260216_50ceac",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "echoes",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Revised: Use BERTopic as primary method with LDA as baseline comparison only (not full parallel analysis)",
+        "rationale": "Full parallel analysis is too time-intensive for the current timeline. BERTopic primary with LDA coherence scores as sanity check is sufficient.",
+        "proposed_by": {
+          "type": "human",
+          "id": "echoes",
+          "role": null
+        },
+        "disposition": "proposed",
+        "resolved_by": null,
+        "revision_note": null,
+        "revises_event_id": "evt_001",
+        "suggestion_type": "requested",
+        "tags": [
+          "topic-modeling",
+          "methodology",
+          "test"
+        ]
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "parent_event_id": null,
+        "reasoning_summary": null,
+        "related_event_ids": []
+      },
+      "verification": null
+    }
+  ]
+}

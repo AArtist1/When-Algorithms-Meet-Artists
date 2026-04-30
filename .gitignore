@@ -54,6 +54,16 @@ scripts/trace_normalize_*
 HANDOFF_NEXT_SESSION.md
 SESSION_CHANGES_*.md
 
+# === Raw / pre-cleaning data splits (kept locally; canonical input is
+#     data/public_discourse_clean_chunks.csv) ===
+data/public_discourse_part1.csv
+data/public_discourse_part2.csv
+
+# === Backup / superseded data files ===
+data/public_probes_embedding.csv
+data/public_probes_keyword_backup.csv
+data/public_probes_old_557.csv
+
 # === Old root-level files (moved to data/ or code/) ===
 artist_data.csv
 better_preprocess.ipynb

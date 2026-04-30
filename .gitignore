@@ -42,6 +42,18 @@ manuscripts_and_presentations/
 nov_2025_revisions/
 submissions/
 
+# === TRACE working files (live store at ~/.trace/, not tracked here) ===
+trace_provenance/sessions/
+trace_provenance/_archive_pre_v03/
+
+# === TRACE one-off normalisation scripts (used 2026-04-30 to clean up
+#     pre-v0.3 sessions; not part of this project's analytical pipeline) ===
+scripts/trace_normalize_*
+
+# === Internal session-handoff and historical change logs (working notes) ===
+HANDOFF_NEXT_SESSION.md
+SESSION_CHANGES_*.md
+
 # === Old root-level files (moved to data/ or code/) ===
 artist_data.csv
 better_preprocess.ipynb

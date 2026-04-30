@@ -1,6 +1,6 @@
 # TRACE Provenance Logs
 
-This directory contains machine-readable provenance documentation for AI-human collaboration in this project, following the [TRACE](https://trace-protocol.org) (Transparent Research AI Collaboration Environment) protocol v0.3.0.
+This directory contains machine-readable provenance documentation for AI-human collaboration in this project, following the TRACE (Transparent Research AI Collaboration Environment) protocol v0.3.0.
 
 ## What Is TRACE?
 
@@ -19,8 +19,8 @@ The original data analysis pipeline (topic modeling, consensus UMAP, etc.) was c
 
 ## Files
 
-- `project_summary.json` — Aggregated metrics across all sessions
-- `sessions/` — Individual session logs (JSON)
+- `project_summary.json`:Aggregated metrics across all sessions
+- `sessions/`:Individual session logs (JSON)
 
 ## Key Statistics
 
@@ -46,5 +46,4 @@ Each session file contains timestamped events. Key fields:
 ## TRACE Protocol
 
 - **Version**: 0.3.0
-- **Documentation**: [trace-protocol.org](https://trace-protocol.org)
 - **Package**: `trace-mcp` on PyPI

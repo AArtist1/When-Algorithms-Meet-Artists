@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pipeline Update Briefing - April 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a2e; line-height: 1.6; }
+  .header { background: linear-gradient(135deg, #2d3436 0%, #636e72 100%); color: white; padding: 3rem 2rem 2rem; text-align: center; }
+  .header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+  .header p { color: #dfe6e9; font-size: 1rem; }
+  .container { max-width: 950px; margin: 0 auto; padding: 0 1.5rem 3rem; }
+  .section { margin-top: 2.5rem; }
+  .section h2 { font-size: 1.4rem; color: #2d3436; border-left: 4px solid #0984e3; padding-left: 0.8rem; margin-bottom: 1rem; }
+  .section h3 { font-size: 1.05rem; color: #636e72; margin: 1.2rem 0 0.5rem; }
+  .card { background: white; border-radius: 10px; padding: 1.5rem; margin: 1rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .card.highlight { border-left: 4px solid #00b894; }
+  .card.warning { border-left: 4px solid #fdcb6e; }
+  .card.important { border-left: 4px solid #e17055; }
+  .card.blue { border-left: 4px solid #0984e3; }
+  .before-after { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; align-items: start; margin: 1rem 0; }
+  .before, .after { background: white; border-radius: 10px; padding: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .before { border-top: 3px solid #e17055; }
+  .after { border-top: 3px solid #00b894; }
+  .arrow-col { display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #b2bec3; padding-top: 1.5rem; }
+  .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; margin-bottom: 0.5rem; }
+  .before .label { color: #e17055; }
+  .after .label { color: #00b894; }
+  .big-number { font-size: 2.2rem; font-weight: 700; line-height: 1.1; }
+  .big-number.green { color: #00b894; }
+  .big-number.red { color: #e17055; }
+  .big-number.blue { color: #0984e3; }
+  .detail { font-size: 0.9rem; color: #636e72; margin-top: 0.3rem; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.88rem; }
+  th, td { padding: 0.55rem 0.7rem; text-align: left; }
+  th { background: #2d3436; color: white; font-weight: 500; font-size: 0.82rem; }
+  td { border-bottom: 1px solid #f1f2f6; }
+  .plain { font-size: 0.93rem; margin: 0.7rem 0; }
+  .tldr { background: #dfe6e9; border-radius: 8px; padding: 1rem 1.2rem; margin: 1rem 0; font-size: 0.93rem; }
+  .tldr strong { display: block; margin-bottom: 0.3rem; }
+  .flow { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; }
+  .flow-step { background: #dfe6e9; border-radius: 6px; padding: 0.5rem 0.8rem; font-size: 0.82rem; text-align: center; }
+  .flow-step.active { background: #00b894; color: white; }
+  .flow-arrow { color: #b2bec3; font-size: 1.2rem; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem; margin: 1rem 0; }
+  .stat-box { background: white; border-radius: 8px; padding: 1rem; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+  .stat-box .big-number { font-size: 1.6rem; }
+  .stat-box .detail { font-size: 0.78rem; }
+  .quote { background: white; border-left: 3px solid #0984e3; padding: 0.8rem 1rem; margin: 0.6rem 0; border-radius: 0 6px 6px 0; font-style: italic; font-size: 0.9rem; }
+  .quote .source { font-style: normal; font-size: 0.78rem; color: #636e72; margin-top: 0.3rem; }
+  .hyp-box { background: white; border-radius: 8px; padding: 1rem 1.2rem; margin: 0.6rem 0; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .hyp-label { font-weight: 700; color: #0984e3; font-size: 0.85rem; }
+  .hyp-text { margin-top: 0.3rem; font-size: 0.92rem; }
+  .hyp-verdict { margin-top: 0.3rem; font-size: 0.82rem; font-weight: 600; }
+  .supported { color: #00b894; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #dfe6e9; font-size: 0.8rem; color: #b2bec3; text-align: center; }
+  @media (max-width: 700px) {
+    .before-after { grid-template-columns: 1fr; }
+    .arrow-col { transform: rotate(90deg); padding: 0; }
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>What Changed Since the Poster</h1>
+  <p>Briefing for Ariya, April 9, 2026</p>
+  <p style="margin-top:0.5rem; font-size:0.85rem; color:#b2bec3">From the AIX poster (March 2026) to the Nature Collection manuscript (April 2026)</p>
+</div>
+
+<div class="container">
+
+<div class="tldr">
+  <strong>The short version:</strong>
+  We completely rebuilt the analysis pipeline. The data got bigger, the methods got stronger, and the core finding got even clearer. The main story is the same as the poster, but the numbers, the statistical backing, and the framing around "which themes are most compressed" all improved significantly.
+</div>
+
+<!-- SECTION: THE THREE HYPOTHESES -->
+<div class="section">
+  <h2>Our Three Hypotheses (Updated)</h2>
+
+  <div class="hyp-box">
+    <div class="hyp-label">H1: Semantic Compression</div>
+    <div class="hyp-text">Artist frames will concentrate in a small subset of public discourse topics.</div>
+    <div class="hyp-verdict supported">SUPPORTED: 99.9% of artist concerns land in just 4 of 20 topics.</div>
+  </div>
+
+  <div class="hyp-box">
+    <div class="hyp-label">H2: Semantic, Not Stylistic</div>
+    <div class="hyp-text">Distributional divergence between artist frames and public discourse will persist after style controls.</div>
+    <div class="hyp-verdict supported">SUPPORTED: Divergence persists. Format differences explain a modest portion of the gap. The rest is about substance.</div>
+  </div>
+
+  <div class="hyp-box">
+    <div class="hyp-label">H3: Multi-Level Compression (reframed)</div>
+    <div class="hyp-text">Compression in public discourse operates at four distinct levels: topical exclusion, frame redirection, binary simplification, and voice collapse.</div>
+    <div class="hyp-verdict supported">SUPPORTED. Each mechanism leaves a distinct geometric signature, and the four compound rather than substitute for each other.</div>
+  </div>
+
+  <div class="card warning">
+    <p class="plain"><strong>What changed about H3:</strong> The poster framed this as "governance concerns are more compressed than emotional concerns." The new data shows something more interesting. Compression does not follow a clean governance-versus-emotional divide. It operates at four levels at once:</p>
+    <ol class="plain" style="margin-left:1.25rem">
+      <li><strong>Topical exclusion:</strong> 15 of 20 clusters contain no artist probes. Six of them carry artist-themed labels (532 chunks total) and still have zero artist voice.</li>
+      <li><strong>Frame redirection:</strong> All 252 ownership probes and all 252 utility probes flow into a single cluster pre-framed as "AI Art Authenticity and Human Creativity," reframing concrete property and labor positions as a debate about aesthetic philosophy.</li>
+      <li><strong>Binary simplification:</strong> The 251 threat probes split into exactly two clusters whose labels invert plain readings: "AI is a threat" lands in "AI as Creative Collaborator," and "AI is not a threat" lands in the authenticity cluster.</li>
+      <li><strong>Voice collapse:</strong> All three utility positions (positive, negative, unsure) end up in the same cluster, grouped by first-person practice register rather than by substantive content.</li>
+    </ol>
+  </div>
+</div>
+
+<!-- SECTION: EXAMPLE ARTIST FRAMES -->
+<div class="section">
+  <h2>What Artists Actually Say (Example Frames)</h2>
+
+  <p class="plain">These are real positions from the 252 artists in our survey. The point of showing them is that artists are not a monolithic group. They hold specific, sometimes contradictory positions that public discourse flattens.</p>
+
+  <h3>The Pragmatic Dual-Holder</h3>
+  <div class="card blue">
+    <p class="plain">Views AI as both a threat AND a useful tool. Supports mandatory disclosure. Believes the original artist should own AI-generated work in their style. Would donate their work freely as training data.</p>
+    <p class="detail">This person views AI as dangerous but also sees its value, wants transparency, and would still contribute. Public discourse would file them under "backlash" and miss the complexity.</p>
+  </div>
+
+  <h3>Artist Quotes from Free-Text Responses</h3>
+
+  <div class="quote">
+    "The artist. Period. This technology is trained using copyrighted material. They have no right to profit from it."
+    <div class="source">Artist respondent, on ownership</div>
+  </div>
+
+  <div class="quote">
+    "I'm not sure yet. I do think that if you are using someone else's work, there should be a financial contribution. I'm still learning about this."
+    <div class="source">Artist respondent, on compensation</div>
+  </div>
+
+  <div class="quote">
+    "Companies and individuals should be subject to a new tax in order to use AI art that was trained with your artwork."
+    <div class="source">Artist respondent, proposing a concrete policy mechanism</div>
+  </div>
+
+  <div class="card">
+    <p class="plain">These are three very different positions on compensation. One demands absolute ownership. One is uncertain but leans toward some payment. One proposes a specific tax mechanism. In public discourse, all three end up in the same cluster. That is the compression.</p>
+  </div>
+
+  <h3>The Numbers on Artist Consensus</h3>
+  <table>
+    <tr><th>Theme</th><th>Most Common Position</th><th>% Who Hold It</th><th>Unique Positions</th></tr>
+    <tr><td><strong>Transparency</strong></td><td>"Companies should be required to disclose training data"</td><td>81.0%</td><td>3</td></tr>
+    <tr><td>Threat</td><td>"AI is a threat to art workers"</td><td>60.6%</td><td>3</td></tr>
+    <tr><td>Utility</td><td>"AI is a positive development"</td><td>46.0%</td><td>3</td></tr>
+    <tr><td>Compensation</td><td>"Would donate freely"</td><td>18.7%</td><td>37</td></tr>
+    <tr><td><strong>Ownership</strong></td><td>"Artist should own it"</td><td>17.9%</td><td>24</td></tr>
+  </table>
+  <p class="detail">Transparency has the strongest consensus (81% agree). Ownership has the weakest (no single position gets even 18%). Yet both get compressed in public discourse. Ownership gets compressed the most (24 positions into 1 topic).</p>
+</div>
+
+<!-- SECTION: DATA CHANGES -->
+<div class="section">
+  <h2>The Data Got Bigger and Cleaner</h2>
+
+  <div class="before-after">
+    <div class="before">
+      <div class="label">Poster (March 2026)</div>
+      <div class="big-number red">891</div>
+      <div class="detail">text chunks from 131 articles</div>
+      <div class="detail" style="margin-top:0.5rem">Text was lemmatized and heavily processed</div>
+    </div>
+    <div class="arrow-col">&rarr;</div>
+    <div class="after">
+      <div class="label">Manuscript (April 2026)</div>
+      <div class="big-number green">1,736</div>
+      <div class="detail">text chunks from 125 articles</div>
+      <div class="detail" style="margin-top:0.5rem">Natural English, minimal cleaning only</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION: MAIN FINDING -->
+<div class="section">
+  <h2>The Main Finding Got Stronger (H1)</h2>
+
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="big-number blue">99.9%</div>
+      <div class="detail">of artist concerns land in just 4 topics</div>
+      <div class="detail" style="color:#e17055">(poster: 95.4%)</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-number blue">15</div>
+      <div class="detail">topics have ZERO artist voice</div>
+      <div class="detail" style="color:#e17055">(poster: 14)</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-number blue">58%</div>
+      <div class="detail">of public discourse has no artist perspective</div>
+      <div class="detail" style="color:#e17055">(poster: ~70%)</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-number blue">20</div>
+      <div class="detail">total discourse topics</div>
+      <div class="detail" style="color:#e17055">(poster: 22)</div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION: STYLE CONTROL -->
+<div class="section">
+  <h2>Style vs Substance (H2)</h2>
+
+  <p class="plain">A key question is whether the gap between artists and public discourse is just about writing style (surveys vs news articles) or about actual content. We tested this by extracting short sentences from public documents that match the format of the survey statements.</p>
+
+  <table>
+    <tr><th>Metric</th><th>Raw (full discourse vs artists)</th><th>Style-Controlled (matched probes vs artists)</th><th>Change</th></tr>
+    <tr><td>Cramer's V (association strength)</td><td>0.740</td><td>0.734</td><td>Barely changes</td></tr>
+    <tr><td>Jensen-Shannon Divergence</td><td>0.364</td><td>0.308</td><td>-15.4%</td></tr>
+    <tr><td>Centroid Distance (geometric separation)</td><td>2.003</td><td>3.754</td><td>Increases</td></tr>
+    <tr><td>kNN Same-Source Rate</td><td>99.9%</td><td>83.4%</td><td>Artists still cluster together</td></tr>
+  </table>
+
+  <div class="card">
+    <p class="plain"><strong>What this means:</strong> Format differences account for a modest portion of the divergence (JSD drops 15%). But the association between where you come from (artist vs public) and which topics you land in stays strong. The divergence is predominantly about substance. Even when public discourse is chopped into short sentences that match the survey format, it does not converge with what artists are saying.</p>
+  </div>
+</div>
+
+<!-- SECTION: DIFFERENTIAL COMPRESSION -->
+<div class="section">
+  <h2>Which Concerns Get Compressed Most (H3)</h2>
+
+  <table>
+    <tr><th>Theme</th><th>Artist Positions</th><th>Public Topics</th><th>Compression Ratio</th><th>Entropy</th><th>Artist Consensus</th></tr>
+    <tr style="background:#fff3e0"><td><strong>Ownership</strong></td><td>24</td><td>1</td><td style="color:#e17055; font-weight:700">24:1</td><td>0.000</td><td>18% (no majority)</td></tr>
+    <tr><td>Utility</td><td>3</td><td>1</td><td>3:1</td><td>0.000</td><td>46% agree</td></tr>
+    <tr><td>Transparency</td><td>3</td><td>2</td><td>1.5:1</td><td>0.137</td><td>81% agree</td></tr>
+    <tr><td>Threat</td><td>3</td><td>2</td><td>1.5:1</td><td>0.148</td><td>61% agree</td></tr>
+    <tr style="background:#e8f5e9"><td>Compensation</td><td>37</td><td>5</td><td>7.4:1</td><td>0.295</td><td>19% (no majority)</td></tr>
+  </table>
+
+  <div class="card important">
+    <p class="plain"><strong>The headline number: 24:1.</strong> Artists hold 24 completely different positions on ownership, from "the artist should own everything" to "nobody should own AI art" to "it depends on the level of human involvement." All 24 collapse into a single public discourse topic. The public conversation registers "artists care about ownership" but erases the fact that artists disagree with each other about it in policy-relevant ways.</p>
+    <p class="plain" style="margin-top:0.75rem"><strong>The destination matters as much as the count.</strong> Both ownership and utility get routed into one cluster labeled "AI Art Authenticity and Human Creativity." The label points to a philosophical debate about whether AI-generated work qualifies as art. The contents include every concrete property claim and every utility position artists make. The frame preserves the words but loses the demand. This is what "frame redirection" means in the H3 reframing.</p>
+  </div>
+</div>
+
+<!-- SECTION: FREE-TEXT VALIDATION -->
+<div class="section">
+  <h2>Free-Text Validation: Do Templates Match Real Speech?</h2>
+
+  <p class="plain">A potential criticism of our approach is that we use survey-template probes ("I agree that...") rather than how artists naturally speak. To test this, we took 38 free-text responses from the same Lovato survey where artists wrote in their own words about compensation.</p>
+
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="big-number green">84%</div>
+      <div class="detail">of free-text responses land in the same cluster region as the template probes</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-number blue">38</div>
+      <div class="detail">organic free-text responses tested</div>
+    </div>
+  </div>
+
+  <div class="card highlight">
+    <p class="plain"><strong>What this means:</strong> When artists write in their own words (not choosing from survey options), their language still lands in the same part of the semantic map as our template probes. The templates capture genuine artist language, not just survey-format artifacts. This is one of the strongest pieces of evidence that our probe construction is valid.</p>
+  </div>
+</div>
+
+<!-- SECTION: LLM VALIDATION -->
+<div class="section">
+  <h2>LLM Theme Validation</h2>
+
+  <p class="plain">We had two independent AI models (GPT-5.4-mini from OpenAI and Claude Sonnet 4.6 from Anthropic) classify each of our 750 public probes by theme. Neither model knew how we had assigned the themes.</p>
+
+  <div class="stat-grid">
+    <div class="stat-box">
+      <div class="big-number blue">42.9%</div>
+      <div class="detail">GPT-5.4-mini accuracy</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-number blue">37.6%</div>
+      <div class="detail">Claude Sonnet accuracy</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-number green">0.639</div>
+      <div class="detail">Inter-LLM kappa (substantial agreement)</div>
+    </div>
+    <div class="stat-box">
+      <div class="big-number blue">70.5%</div>
+      <div class="detail">Both LLMs pick same theme</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <p class="plain"><strong>Why isn't accuracy 90%?</strong> Public discourse sentences are often multi-thematic. A sentence about "requiring companies to catalog training data provenance" touches transparency, ownership, and compensation simultaneously. The LLMs pick whichever theme seems most prominent, while our extraction picks by semantic similarity. The two approaches will disagree on genuinely ambiguous sentences. The kappa of 0.639 (substantial) is the key metric: it means the two LLMs agree with each other more than chance, confirming the probes are genuinely thematic.</p>
+  </div>
+</div>
+
+<!-- SECTION: FULL COMPARISON TABLE -->
+<div class="section">
+  <h2>Complete Before/After Comparison</h2>
+
+  <table>
+    <tr><th>Metric</th><th>Poster (March)</th><th>Manuscript (April)</th><th>Notes</th></tr>
+    <tr><td>Public documents</td><td>131</td><td>125</td><td>3 duplicates removed</td></tr>
+    <tr><td>Text chunks</td><td>891</td><td>1,736</td><td>Natural English processing</td></tr>
+    <tr><td>Discourse topics</td><td>22</td><td>20</td><td>497 configs tested for best k</td></tr>
+    <tr><td>Artist probes</td><td>1,259</td><td>1,259</td><td>Same survey data</td></tr>
+    <tr><td>Public probes</td><td>574 (keyword)</td><td>750 (embedding)</td><td>More principled extraction</td></tr>
+    <tr><td>% in top 4 topics (H1)</td><td>95.4%</td><td>99.9%</td><td>Even more concentrated</td></tr>
+    <tr><td>Zero-artist topics</td><td>14 of 22</td><td>15 of 20</td><td></td></tr>
+    <tr><td>Cramer's V (style control)</td><td>0.606</td><td>0.734</td><td>Different extraction method</td></tr>
+    <tr><td>Ownership compression</td><td>24 frames, ~1 topic</td><td>24 frames, 1 topic (confirmed)</td><td>24:1 ratio</td></tr>
+    <tr><td>Free-text validation</td><td>Not done</td><td>84% overlap</td><td>New validation</td></tr>
+    <tr><td>LLM theme validation</td><td>Not done</td><td>42.9% / 37.6%</td><td>GPT-5.4-mini + Sonnet 4.6</td></tr>
+    <tr><td>Topic labeling</td><td>1 annotator</td><td>4 LLMs + 2 humans</td><td>Much more robust</td></tr>
+    <tr><td>UMAP configs tested</td><td>~10</td><td>497</td><td>4-stage grid search</td></tr>
+    <tr><td>Automated tests</td><td>~114</td><td>191</td><td>E2E coverage</td></tr>
+  </table>
+</div>
+
+<!-- SECTION: WHAT STAYS THE SAME -->
+<div class="section">
+  <h2>What Did NOT Change</h2>
+  <div class="card">
+    <ul style="margin:0.5rem 0 0 1.5rem; font-size:0.93rem">
+      <li>Artists are present in the conversation but compressed into a tiny corner</li>
+      <li>Most of the public AI-art discourse has no artist perspective at all</li>
+      <li>The gap is about substance, not just writing style</li>
+      <li>Ownership is the most dramatically compressed theme</li>
+      <li>252 artists, 5 concern dimensions, same Lovato et al. survey data</li>
+      <li>This matters for governance: policymakers reading the news get a distorted picture</li>
+    </ul>
+    <p class="plain" style="margin-top:0.8rem"><strong>The poster presentation is accurate in its claims.</strong> The manuscript has stronger evidence, more precise numbers, and better methods, but the core story you presented at AIX is the same.</p>
+  </div>
+</div>
+
+<!-- SECTION: TIMELINE -->
+<div class="section">
+  <h2>What Happens Next</h2>
+  <div class="flow">
+    <div class="flow-step active">AIX Poster (Apr 17)</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step active">Nature Collection (Apr 30)</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step">Review</div>
+    <span class="flow-arrow">&rarr;</span>
+    <div class="flow-step">C&C 2026 poster (Jul)</div>
+  </div>
+</div>
+
+</div>
+<footer>When Algorithms Meet Artists | Pipeline Update Briefing | April 9, 2026</footer>
+</body>
+</html>

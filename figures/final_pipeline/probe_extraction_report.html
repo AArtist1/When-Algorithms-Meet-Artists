@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Public Probe Extraction: Before vs After</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #1a1a2e; padding: 2rem; max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+  h2 { font-size: 1.3rem; color: #2d3436; margin: 2rem 0 1rem; border-bottom: 2px solid #dfe6e9; padding-bottom: 0.4rem; }
+  h3 { font-size: 1rem; color: #636e72; margin: 1.2rem 0 0.6rem; }
+  .subtitle { color: #636e72; margin-bottom: 2rem; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+  .card { background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  .card.old { border-left: 4px solid #e17055; }
+  .card.new { border-left: 4px solid #00b894; }
+  .card-title { font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.8rem; }
+  .card.old .card-title { color: #e17055; }
+  .card.new .card-title { color: #00b894; }
+  .stat { display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #f1f2f6; }
+  .stat:last-child { border-bottom: none; }
+  .stat-label { color: #636e72; }
+  .stat-value { font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+  th, td { padding: 0.7rem 1rem; text-align: left; }
+  th { background: #2d3436; color: white; font-weight: 500; font-size: 0.85rem; }
+  td { border-bottom: 1px solid #f1f2f6; }
+  tr:last-child td { border-bottom: none; }
+  .change-pos { color: #00b894; font-weight: 600; }
+  .change-neg { color: #e17055; font-weight: 600; }
+  .pipeline-diagram { background: white; border-radius: 8px; padding: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+  .pipeline-steps { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+  .step { background: #dfe6e9; border-radius: 6px; padding: 0.6rem 1rem; font-size: 0.82rem; text-align: center; flex: 1; min-width: 100px; }
+  .step.active { background: #00b894; color: white; }
+  .arrow { font-size: 1.2rem; color: #b2bec3; flex-shrink: 0; }
+  .bar { display: flex; align-items: center; gap: 0.5rem; margin: 0.3rem 0; }
+  .bar-fill { height: 20px; border-radius: 4px; display: flex; align-items: center; padding: 0 8px; font-size: 0.75rem; color: white; font-weight: 500; }
+  .bar-old { background: #e17055; }
+  .bar-new { background: #00b894; }
+  .bar-label { font-size: 0.82rem; width: 110px; text-align: right; flex-shrink: 0; }
+  .note { background: #ffeaa7; border-radius: 6px; padding: 1rem; margin: 1rem 0; font-size: 0.9rem; }
+  .note strong { display: block; margin-bottom: 0.3rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #dfe6e9; font-size: 0.8rem; color: #b2bec3; }
+</style>
+</head>
+<body>
+
+<h1>Public Probe Extraction: Before vs After</h1>
+<p class="subtitle">Keyword-based extraction on old (891 chunks) vs new (1,736 chunks) corpus &mdash; April 2026</p>
+
+<h2>Pipeline Overview</h2>
+<div class="pipeline-diagram">
+  <div class="pipeline-steps">
+    <div class="step active">1,736 Clean Chunks</div>
+    <span class="arrow">&rarr;</span>
+    <div class="step">250 Likert Anchors</div>
+    <span class="arrow">&rarr;</span>
+    <div class="step">Keyword Matching</div>
+    <span class="arrow">&rarr;</span>
+    <div class="step">1,114 Candidates</div>
+    <span class="arrow">&rarr;</span>
+    <div class="step">Embed + Rank</div>
+    <span class="arrow">&rarr;</span>
+    <div class="step">Dedup</div>
+    <span class="arrow">&rarr;</span>
+    <div class="step active">906 Probes</div>
+  </div>
+</div>
+
+<h2>Summary Comparison</h2>
+<div class="cards">
+  <div class="card old">
+    <div class="card-title">Old Pipeline (pre-April 2026)</div>
+    <div class="stat"><span class="stat-label">Corpus chunks</span><span class="stat-value">891</span></div>
+    <div class="stat"><span class="stat-label">Source articles</span><span class="stat-value">131</span></div>
+    <div class="stat"><span class="stat-label">Total probes</span><span class="stat-value">557</span></div>
+    <div class="stat"><span class="stat-label">Text column</span><span class="stat-value">text_phrase_norm</span></div>
+    <div class="stat"><span class="stat-label">Embeddings</span><span class="stat-value">No prefix</span></div>
+    <div class="stat"><span class="stat-label">H2 style effect</span><span class="stat-value">None (V=0.741)</span></div>
+  </div>
+  <div class="card new">
+    <div class="card-title">New Pipeline (April 2026)</div>
+    <div class="stat"><span class="stat-label">Corpus chunks</span><span class="stat-value">1,736</span></div>
+    <div class="stat"><span class="stat-label">Source articles</span><span class="stat-value">125</span></div>
+    <div class="stat"><span class="stat-label">Total probes</span><span class="stat-value">906</span></div>
+    <div class="stat"><span class="stat-label">Text column</span><span class="stat-value">chunk_text (natural)</span></div>
+    <div class="stat"><span class="stat-label">Embeddings</span><span class="stat-value">e5-large-v2 + "query: "</span></div>
+    <div class="stat"><span class="stat-label">H2 style effect</span><span class="stat-value">TBD (re-run needed)</span></div>
+  </div>
+</div>
+
+<h2>Theme Distribution</h2>
+<table>
+  <thead>
+    <tr><th>Theme</th><th>Old Count</th><th>New Count</th><th>Change</th><th>% of New Total</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>compensation</td><td>144</td><td>297</td><td class="change-pos">+153 (+106%)</td><td>32.8%</td></tr>
+    <tr><td>threat</td><td>106</td><td>190</td><td class="change-pos">+84 (+79%)</td><td>21.0%</td></tr>
+    <tr><td>utility</td><td>146</td><td>189</td><td class="change-pos">+43 (+29%)</td><td>20.9%</td></tr>
+    <tr><td>transparency</td><td>91</td><td>131</td><td class="change-pos">+40 (+44%)</td><td>14.5%</td></tr>
+    <tr><td>ownership</td><td>70</td><td>99</td><td class="change-pos">+29 (+41%)</td><td>10.9%</td></tr>
+    <tr style="font-weight:600; background:#f8f9fa"><td>TOTAL</td><td>557</td><td>906</td><td class="change-pos">+349 (+63%)</td><td>100%</td></tr>
+  </tbody>
+</table>
+
+<h3>Visual Comparison</h3>
+<div style="background:white; border-radius:8px; padding:1.5rem; box-shadow:0 1px 3px rgba(0,0,0,0.1); margin-bottom:1.5rem">
+  <div class="bar">
+    <span class="bar-label">compensation</span>
+    <div class="bar-fill bar-old" style="width:144px">144</div>
+    <div class="bar-fill bar-new" style="width:297px">297</div>
+  </div>
+  <div class="bar">
+    <span class="bar-label">threat</span>
+    <div class="bar-fill bar-old" style="width:106px">106</div>
+    <div class="bar-fill bar-new" style="width:190px">190</div>
+  </div>
+  <div class="bar">
+    <span class="bar-label">utility</span>
+    <div class="bar-fill bar-old" style="width:146px">146</div>
+    <div class="bar-fill bar-new" style="width:189px">189</div>
+  </div>
+  <div class="bar">
+    <span class="bar-label">transparency</span>
+    <div class="bar-fill bar-old" style="width:91px">91</div>
+    <div class="bar-fill bar-new" style="width:131px">131</div>
+  </div>
+  <div class="bar">
+    <span class="bar-label">ownership</span>
+    <div class="bar-fill bar-old" style="width:70px">70</div>
+    <div class="bar-fill bar-new" style="width:99px">99</div>
+  </div>
+  <div style="margin-top:0.8rem; font-size:0.8rem; color:#636e72">
+    <span style="display:inline-block; width:12px; height:12px; background:#e17055; border-radius:2px; vertical-align:middle"></span> Old (557)
+    &nbsp;&nbsp;
+    <span style="display:inline-block; width:12px; height:12px; background:#00b894; border-radius:2px; vertical-align:middle"></span> New (906)
+  </div>
+</div>
+
+<div class="note">
+  <strong>Key improvements in the new extraction:</strong>
+  All themes gained probes. Ownership (the most compressed theme for H3) gained 41%, improving from 70 to 99 probes. The larger corpus provides nearly double the extraction surface. Compensation saw the largest absolute gain (+153), reflecting the richer text in the new natural-language chunks compared to the old lemmatized text.
+</div>
+
+<h2>What Changed in the Pipeline</h2>
+<table>
+  <thead>
+    <tr><th>Component</th><th>Old</th><th>New</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Source data</td><td>public_discourse_part1.csv + part2.csv (891 rows)</td><td>public_discourse_clean_chunks.csv (1,736 rows)</td></tr>
+    <tr><td>Text column</td><td>text_phrase_norm (lemmatized full articles)</td><td>chunk_text (natural English, minimal cleaning)</td></tr>
+    <tr><td>Embedding prefix</td><td>None</td><td>"query: " (per e5-large-v2 model card)</td></tr>
+    <tr><td>Parent embeddings</td><td>Misaligned (891 vs 1,736)</td><td>Correctly matched (1,736 x 1,024)</td></tr>
+    <tr><td>Preprocessing</td><td>Lemmatization, stopword removal, phrase normalization</td><td>URL/HTML/boilerplate removal only</td></tr>
+    <tr><td>Articles</td><td>131 (includes 3 duplicates)</td><td>125 (duplicates removed)</td></tr>
+  </tbody>
+</table>
+
+<h2>Next Steps</h2>
+<ol style="margin:1rem 0; padding-left:1.5rem; line-height:1.8">
+  <li>Run embedding-based extraction for comparison (in progress)</li>
+  <li>Compare both methods (theme overlap, H2 metrics)</li>
+  <li>LLM theme validation on all probes</li>
+  <li>Re-run final pipeline with new probes to verify H2 style control</li>
+  <li>Update manuscript with new numbers</li>
+</ol>
+
+<footer>
+  Generated April 9, 2026 | When Algorithms Meet Artists | Probe extraction rebuild
+</footer>
+
+</body>
+</html>

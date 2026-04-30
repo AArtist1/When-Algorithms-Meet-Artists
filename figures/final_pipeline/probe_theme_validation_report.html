@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><title>Probe Theme Validation (GPT-5.4-mini + Claude Sonnet 4.6)</title>
+<style>
+body { font-family: -apple-system, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #1a1a2e; }
+h1 { font-size: 1.6rem; } h2 { margin-top: 2rem; border-bottom: 2px solid #ddd; padding-bottom: 0.3rem; }
+h3 { margin-top: 1.5rem; color: #2d3436; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+th, td { padding: 0.5rem 0.8rem; text-align: left; border-bottom: 1px solid #eee; font-size: 0.9rem; }
+th { background: #2d3436; color: white; }
+.card { background: #f8f9fa; border-radius: 8px; padding: 1rem 1.2rem; margin: 0.8rem 0; font-size: 0.93rem; line-height: 1.6; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.5rem 0; }
+.stat { background: white; border-radius: 8px; padding: 1rem; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.big { font-size: 1.8rem; font-weight: 700; }
+.label { font-size: 0.78rem; color: #636e72; margin-top: 0.2rem; }
+.good { color: #00b894; } .ok { color: #f39c12; } .bad { color: #e17055; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+.compare-box { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
+.compare-box h4 { margin: 0 0 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.old { border-top: 3px solid #e17055; }
+.old h4 { color: #e17055; }
+.new { border-top: 3px solid #00b894; }
+.new h4 { color: #00b894; }
+footer { margin-top: 2rem; padding-top: 0.8rem; border-top: 1px solid #dfe6e9; font-size: 0.78rem; color: #b2bec3; text-align: center; }
+</style></head><body>
+
+<h1>Probe Theme Validation: Dual-LLM Classification</h1>
+<p>750 embedding-based public probes classified independently by GPT-5.4-mini (OpenAI) and Claude Sonnet 4.6 (Anthropic)</p>
+
+<div class="cards">
+<div class="stat"><div class="big ok">42.9%</div><div class="label">GPT-5.4-mini Accuracy</div></div>
+<div class="stat"><div class="big ok">37.6%</div><div class="label">Claude Sonnet 4.6 Accuracy</div></div>
+<div class="stat"><div class="big ok">32.8%</div><div class="label">Consensus (both agree)</div></div>
+<div class="stat"><div class="big good">0.639</div><div class="label">Inter-LLM Kappa (substantial)</div></div>
+</div>
+
+<h2>Model Comparison: GPT-5-mini vs GPT-5.4-mini</h2>
+
+<div class="compare">
+<div class="compare-box old">
+<h4>Previous: GPT-5-mini on 906 keyword probes</h4>
+<table>
+<tr><td>OpenAI accuracy</td><td><strong>10.9%</strong></td></tr>
+<tr><td>Anthropic accuracy</td><td>13.7%</td></tr>
+<tr><td>Inter-LLM kappa</td><td>0.457 (moderate)</td></tr>
+<tr><td>"None" rate (GPT)</td><td>57.6%</td></tr>
+<tr><td>Errors</td><td>17 token-limit errors</td></tr>
+</table>
+</div>
+<div class="compare-box new">
+<h4>Current: GPT-5.4-mini on 750 embedding probes</h4>
+<table>
+<tr><td>OpenAI accuracy</td><td><strong>42.9%</strong> (4x better)</td></tr>
+<tr><td>Anthropic accuracy</td><td>37.6%</td></tr>
+<tr><td>Inter-LLM kappa</td><td>0.639 (substantial)</td></tr>
+<tr><td>"None" rate (GPT)</td><td>~20%</td></tr>
+<tr><td>Errors</td><td>0 errors</td></tr>
+</table>
+</div>
+</div>
+
+<div class="card">
+The improvement comes from two changes. First, the embedding probes are genuinely more on-theme than keyword probes (keyword extraction matched surface vocabulary, not semantic content). Second, GPT-5.4-mini processes the classification directly without the reasoning-token overhead that caused GPT-5-mini to hit token limits on 17 probes.
+</div>
+
+<h2>Overall Metrics</h2>
+<table>
+<tr><th>Metric</th><th>Value</th><th>Interpretation</th></tr>
+<tr><td>Total probes</td><td>750</td><td>150 per theme, balanced by design</td></tr>
+<tr><td>GPT-5.4-mini accuracy</td><td>42.9%</td><td>Reasonable for multi-thematic sentences</td></tr>
+<tr><td>Claude Sonnet 4.6 accuracy</td><td>37.6%</td><td>Consistent with GPT direction</td></tr>
+<tr><td>Inter-LLM kappa</td><td>0.639</td><td>Substantial agreement (>0.6 threshold)</td></tr>
+<tr><td>Inter-LLM raw agreement</td><td>70.5%</td><td>Both LLMs pick the same theme 70% of the time</td></tr>
+<tr><td>Consensus accuracy</td><td>32.8%</td><td>Both LLMs agree AND match extraction</td></tr>
+</table>
+
+<h2>Per-Theme Results</h2>
+
+<h3>GPT-5.4-mini</h3>
+<table>
+<tr><th>Theme</th><th>Assigned</th><th>Classified</th><th>Precision</th><th>Recall</th><th>F1</th></tr>
+<tr><td>threat</td><td>150</td><td>108</td><td>0.639</td><td>0.460</td><td><strong>0.535</strong></td></tr>
+<tr><td>ownership</td><td>150</td><td>120</td><td>0.608</td><td>0.487</td><td><strong>0.541</strong></td></tr>
+<tr><td>transparency</td><td>150</td><td>151</td><td>0.497</td><td>0.500</td><td><strong>0.498</strong></td></tr>
+<tr><td>utility</td><td>150</td><td>188</td><td>0.431</td><td>0.540</td><td><strong>0.479</strong></td></tr>
+<tr><td>compensation</td><td>150</td><td>28</td><td>0.857</td><td>0.160</td><td>0.270</td></tr>
+</table>
+
+<h3>Claude Sonnet 4.6</h3>
+<table>
+<tr><th>Theme</th><th>Assigned</th><th>Classified</th><th>Precision</th><th>Recall</th><th>F1</th></tr>
+<tr><td>threat</td><td>150</td><td>169</td><td>0.556</td><td>0.627</td><td><strong>0.589</strong></td></tr>
+<tr><td>ownership</td><td>150</td><td>109</td><td>0.633</td><td>0.460</td><td><strong>0.533</strong></td></tr>
+<tr><td>transparency</td><td>150</td><td>117</td><td>0.496</td><td>0.387</td><td>0.434</td></tr>
+<tr><td>utility</td><td>150</td><td>70</td><td>0.571</td><td>0.267</td><td>0.364</td></tr>
+<tr><td>compensation</td><td>150</td><td>24</td><td>0.875</td><td>0.140</td><td>0.241</td></tr>
+</table>
+
+<h2>Why Isn't Accuracy Higher?</h2>
+<div class="card">
+<strong>Public discourse sentences are inherently multi-thematic.</strong> A sentence like "Companies should catalog the provenance of all training data and compensate artists whose work was used" is simultaneously about transparency, ownership, and compensation. Our extraction assigns it to one theme based on centroid similarity, while an LLM may pick a different (equally valid) primary theme. The 42.9% accuracy reflects genuine ambiguity in the data, not poor extraction quality.
+<br><br>
+<strong>Compensation is the hardest theme</strong> (F1 = 0.27 for GPT, 0.24 for Claude) because compensation demands almost always invoke ownership or transparency as preconditions. Both LLMs show high precision for compensation (0.86-0.88) but very low recall (0.14-0.16), meaning: when they DO classify something as compensation, they are usually right, but they classify most compensation sentences as belonging to the related theme that triggered the concern.
+<br><br>
+<strong>The kappa of 0.639 is the most important number.</strong> It means the two independent LLMs from different companies, given the same sentences with no shared context, agree with each other at a substantial level. This rules out the possibility that the probes are random noise.
+</div>
+
+<footer>
+Generated April 9, 2026 | When Algorithms Meet Artists | GPT-5.4-mini + Claude Sonnet 4.6
+</footer>
+</body></html>

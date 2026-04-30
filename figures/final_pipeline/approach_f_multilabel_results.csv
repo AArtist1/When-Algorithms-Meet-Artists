@@ -1,0 +1,3 @@
+sample,model,mean_recall,mean_n_labels,threat_recall,threat_n,utility_recall,utility_n,ownership_recall,ownership_n,transparency_recall,transparency_n,compensation_recall,compensation_n
+full_750,openai,0.632,1.404,0.68,150,0.8267,150,0.7933,150,0.6667,150,0.1933,150
+full_750,anthropic,0.6427,1.403,0.7133,150,0.7467,150,0.78,150,0.6933,150,0.28,150

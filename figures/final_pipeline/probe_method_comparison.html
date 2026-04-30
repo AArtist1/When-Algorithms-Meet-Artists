@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Probe Method Comparison</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #f8f9fa; color: #1a1a2e; padding: 2rem; max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.3rem; }
+  h2 { font-size: 1.2rem; margin: 1.5rem 0 0.8rem; border-bottom: 2px solid #dfe6e9; padding-bottom: 0.3rem; }
+  .subtitle { color: #636e72; margin-bottom: 1.5rem; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 1.5rem; }
+  th, td { padding: 0.6rem 1rem; text-align: left; }
+  th { background: #2d3436; color: white; font-size: 0.85rem; }
+  td { border-bottom: 1px solid #f1f2f6; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+  .card { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); text-align: center; }
+  .card .big { font-size: 2rem; font-weight: 700; }
+  .card .label { font-size: 0.8rem; color: #636e72; }
+  .kw { color: #e17055; }
+  .emb { color: #0984e3; }
+  .note { background: #dfe6e9; border-radius: 6px; padding: 1rem; margin: 1rem 0; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<h1>Probe Method Comparison: Keyword vs Embedding</h1>
+<p class="subtitle">Both methods run on the clean 1,736-chunk corpus with prefix embeddings</p>
+
+<div class="cards">
+  <div class="card"><div class="big kw">906</div><div class="label">Keyword Probes</div></div>
+  <div class="card"><div class="big emb">750</div><div class="label">Embedding Probes</div></div>
+  <div class="card"><div class="big">101</div><div class="label">Overlapping Texts</div></div>
+</div>
+
+<h2>Per-Theme Comparison</h2>
+<table>
+  <thead><tr><th>Theme</th><th>Keyword</th><th>Embedding</th><th>Overlap</th><th>Overlap % (of KW)</th></tr></thead>
+  <tbody>
+        <tr>
+            <td>compensation</td>
+            <td>297</td>
+            <td>150</td>
+            <td>18</td>
+            <td>6.1%</td>
+        </tr>
+        <tr>
+            <td>ownership</td>
+            <td>99</td>
+            <td>150</td>
+            <td>8</td>
+            <td>8.1%</td>
+        </tr>
+        <tr>
+            <td>threat</td>
+            <td>190</td>
+            <td>150</td>
+            <td>12</td>
+            <td>6.3%</td>
+        </tr>
+        <tr>
+            <td>transparency</td>
+            <td>131</td>
+            <td>150</td>
+            <td>10</td>
+            <td>7.6%</td>
+        </tr>
+        <tr>
+            <td>utility</td>
+            <td>189</td>
+            <td>150</td>
+            <td>3</td>
+            <td>1.6%</td>
+        </tr>
+  <tr style="font-weight:600; background:#f8f9fa">
+    <td>TOTAL</td><td>906</td><td>750</td>
+    <td>101</td><td>14.0%</td>
+  </tr></tbody>
+</table>
+
+<div class="note">
+  <strong>Interpretation:</strong> Low overlap between methods is expected and healthy. Keyword matching
+  finds sentences with explicit theme vocabulary. Embedding retrieval finds sentences that are
+  semantically similar to theme centroids even without keyword matches. The two methods complement
+  each other. High overlap on a theme (>30%) suggests the theme has strong lexical markers.
+  Low overlap (<10%) suggests the theme is expressed through indirect language that keywords miss.
+</div>
+
+<h2>Article Coverage</h2>
+<table>
+  <thead><tr><th>Method</th><th>Unique Articles</th><th>% of Corpus (125)</th></tr></thead>
+  <tbody>
+    <tr><td>Keyword</td><td>100</td><td>80.0%</td></tr>
+    <tr><td>Embedding</td><td>87</td><td>69.6%</td></tr>
+  </tbody>
+</table>
+
+<img src="probe_method_comparison.png" style="width:100%; max-width:700px; margin:1rem 0" alt="Comparison chart">
+
+<footer style="margin-top:2rem; font-size:0.8rem; color:#b2bec3; border-top:1px solid #dfe6e9; padding-top:0.5rem">
+  Generated April 2026 | When Algorithms Meet Artists
+</footer>
+</body>
+</html>

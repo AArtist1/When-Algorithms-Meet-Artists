@@ -1,0 +1,4022 @@
+[
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.01,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9183462470170293,
+    "trustworthiness_mean_seeds": 0.9361201881287317,
+    "trustworthiness_std_seeds": 0.0008120124808486592,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5661075711250305,
+        "mean_ari_seed_consensus": 0.5633352133498252,
+        "std_ari_seed_consensus": 0.032966109467976366,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6005223989486694,
+        "mean_ari_seed_consensus": 0.561646097859006,
+        "std_ari_seed_consensus": 0.035404954374152094,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6686053276062012,
+        "mean_ari_seed_consensus": 0.5792915212816948,
+        "std_ari_seed_consensus": 0.03244320085590732,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6614055633544922,
+        "mean_ari_seed_consensus": 0.5942653709551268,
+        "std_ari_seed_consensus": 0.03848395399548045,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6474286913871765,
+        "mean_ari_seed_consensus": 0.5709726398635535,
+        "std_ari_seed_consensus": 0.019940041477054523,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6722924113273621,
+        "mean_ari_seed_consensus": 0.6200292600753551,
+        "std_ari_seed_consensus": 0.01985139119651583,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.7073519229888916,
+        "mean_ari_seed_consensus": 0.638737144677029,
+        "std_ari_seed_consensus": 0.020040100435142094,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.7164279222488403,
+        "mean_ari_seed_consensus": 0.667338570351859,
+        "std_ari_seed_consensus": 0.02525512706459363,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.01,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.916236310727207,
+    "trustworthiness_mean_seeds": 0.9383451917483333,
+    "trustworthiness_std_seeds": 0.0008828760006798566,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5489129424095154,
+        "mean_ari_seed_consensus": 0.5613745259668138,
+        "std_ari_seed_consensus": 0.04619023165912701,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.5569512248039246,
+        "mean_ari_seed_consensus": 0.5435146710667909,
+        "std_ari_seed_consensus": 0.0315485428665998,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6170095801353455,
+        "mean_ari_seed_consensus": 0.6095348620467912,
+        "std_ari_seed_consensus": 0.0402193855379245,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6739383935928345,
+        "mean_ari_seed_consensus": 0.592642316522759,
+        "std_ari_seed_consensus": 0.03218468919512725,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6707380414009094,
+        "mean_ari_seed_consensus": 0.5870827637702065,
+        "std_ari_seed_consensus": 0.022910841799349404,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6666083931922913,
+        "mean_ari_seed_consensus": 0.5996708959550292,
+        "std_ari_seed_consensus": 0.021091643543452457,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6904100775718689,
+        "mean_ari_seed_consensus": 0.6203330256385706,
+        "std_ari_seed_consensus": 0.02779574042776155,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6909689903259277,
+        "mean_ari_seed_consensus": 0.6337687494953018,
+        "std_ari_seed_consensus": 0.02508436771246097,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.01,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9160927363005975,
+    "trustworthiness_mean_seeds": 0.9388765796470726,
+    "trustworthiness_std_seeds": 0.0006615915997213752,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6239445805549622,
+        "mean_ari_seed_consensus": 0.5402510538683504,
+        "std_ari_seed_consensus": 0.03075283896160016,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6247583627700806,
+        "mean_ari_seed_consensus": 0.5601262262143964,
+        "std_ari_seed_consensus": 0.030166572968944632,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6078048944473267,
+        "mean_ari_seed_consensus": 0.5647709876921722,
+        "std_ari_seed_consensus": 0.03439170736144542,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6652426719665527,
+        "mean_ari_seed_consensus": 0.615638059692556,
+        "std_ari_seed_consensus": 0.034952529641035214,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6501531600952148,
+        "mean_ari_seed_consensus": 0.6016570984393818,
+        "std_ari_seed_consensus": 0.027645945364740587,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6658585071563721,
+        "mean_ari_seed_consensus": 0.6373596324877706,
+        "std_ari_seed_consensus": 0.025706248872848815,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6842886805534363,
+        "mean_ari_seed_consensus": 0.6399482826077939,
+        "std_ari_seed_consensus": 0.025088802189062606,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.7196136116981506,
+        "mean_ari_seed_consensus": 0.6874973319829665,
+        "std_ari_seed_consensus": 0.0258027413761789,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.01,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9187742542044331,
+    "trustworthiness_mean_seeds": 0.9392544266926284,
+    "trustworthiness_std_seeds": 0.0007874909047898311,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6023241281509399,
+        "mean_ari_seed_consensus": 0.5395387904068885,
+        "std_ari_seed_consensus": 0.028436053889720897,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.5355347394943237,
+        "mean_ari_seed_consensus": 0.5704154373050638,
+        "std_ari_seed_consensus": 0.03276231292182278,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6306164860725403,
+        "mean_ari_seed_consensus": 0.5650562616566854,
+        "std_ari_seed_consensus": 0.03505585695116827,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6694288849830627,
+        "mean_ari_seed_consensus": 0.5443459581265696,
+        "std_ari_seed_consensus": 0.04205167117832386,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6819617748260498,
+        "mean_ari_seed_consensus": 0.6162639380371748,
+        "std_ari_seed_consensus": 0.04384316577185168,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6970471143722534,
+        "mean_ari_seed_consensus": 0.6207592292616269,
+        "std_ari_seed_consensus": 0.02752457475493377,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6874485015869141,
+        "mean_ari_seed_consensus": 0.6190641442040672,
+        "std_ari_seed_consensus": 0.025976388460515597,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.7293052077293396,
+        "mean_ari_seed_consensus": 0.6495741372246486,
+        "std_ari_seed_consensus": 0.03178270317269883,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.03,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9195782843512781,
+    "trustworthiness_mean_seeds": 0.9364506898243973,
+    "trustworthiness_std_seeds": 0.0009176572965020903,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5684258341789246,
+        "mean_ari_seed_consensus": 0.5539036434626031,
+        "std_ari_seed_consensus": 0.04125001925988676,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6159021854400635,
+        "mean_ari_seed_consensus": 0.6130546987969596,
+        "std_ari_seed_consensus": 0.03730770831095106,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6213521361351013,
+        "mean_ari_seed_consensus": 0.6121674449523469,
+        "std_ari_seed_consensus": 0.037871936225360545,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6594688892364502,
+        "mean_ari_seed_consensus": 0.6012979059470533,
+        "std_ari_seed_consensus": 0.042093693946949014,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6521691679954529,
+        "mean_ari_seed_consensus": 0.5940336563315094,
+        "std_ari_seed_consensus": 0.024094993855374863,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6634842157363892,
+        "mean_ari_seed_consensus": 0.5967215112422778,
+        "std_ari_seed_consensus": 0.027058273611734976,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6995077133178711,
+        "mean_ari_seed_consensus": 0.6316224995241339,
+        "std_ari_seed_consensus": 0.022276285934097983,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.7279654145240784,
+        "mean_ari_seed_consensus": 0.6729560092302482,
+        "std_ari_seed_consensus": 0.028101266016199902,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.03,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9181083440362959,
+    "trustworthiness_mean_seeds": 0.9389920966905155,
+    "trustworthiness_std_seeds": 0.0009832204902069052,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.601992666721344,
+        "mean_ari_seed_consensus": 0.5315588862835787,
+        "std_ari_seed_consensus": 0.03286481916351227,
+        "min_cluster_size": 19
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.5941076874732971,
+        "mean_ari_seed_consensus": 0.5205472848782734,
+        "std_ari_seed_consensus": 0.030683115283969574,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.5526040196418762,
+        "mean_ari_seed_consensus": 0.5617351211602996,
+        "std_ari_seed_consensus": 0.032162880249451874,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6227604150772095,
+        "mean_ari_seed_consensus": 0.5448763639247858,
+        "std_ari_seed_consensus": 0.028553213654868962,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.642862856388092,
+        "mean_ari_seed_consensus": 0.5751865190515759,
+        "std_ari_seed_consensus": 0.029690691220242073,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6716256737709045,
+        "mean_ari_seed_consensus": 0.5944766046945503,
+        "std_ari_seed_consensus": 0.023198273531634783,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6765938401222229,
+        "mean_ari_seed_consensus": 0.6281828835786413,
+        "std_ari_seed_consensus": 0.022522077172312586,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6780103445053101,
+        "mean_ari_seed_consensus": 0.6224381374936985,
+        "std_ari_seed_consensus": 0.02093707845194073,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.03,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.918723004657208,
+    "trustworthiness_mean_seeds": 0.9400263876542172,
+    "trustworthiness_std_seeds": 0.0007547349285267828,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5638707876205444,
+        "mean_ari_seed_consensus": 0.5685323558013019,
+        "std_ari_seed_consensus": 0.03397505428221082,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.5701307058334351,
+        "mean_ari_seed_consensus": 0.5628913507232053,
+        "std_ari_seed_consensus": 0.028066983026295806,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6135110855102539,
+        "mean_ari_seed_consensus": 0.6375541988562626,
+        "std_ari_seed_consensus": 0.038794385285545345,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6320137977600098,
+        "mean_ari_seed_consensus": 0.5648058665588703,
+        "std_ari_seed_consensus": 0.023341771604821215,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6484280824661255,
+        "mean_ari_seed_consensus": 0.6132118527328896,
+        "std_ari_seed_consensus": 0.02551520609158635,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6694504022598267,
+        "mean_ari_seed_consensus": 0.6328401491487596,
+        "std_ari_seed_consensus": 0.028090138813832415,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6839308738708496,
+        "mean_ari_seed_consensus": 0.6465038134196173,
+        "std_ari_seed_consensus": 0.020082609798903927,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6923965215682983,
+        "mean_ari_seed_consensus": 0.6777071258745491,
+        "std_ari_seed_consensus": 0.02603651158887088,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.03,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9175163472029926,
+    "trustworthiness_mean_seeds": 0.9396401311115697,
+    "trustworthiness_std_seeds": 0.0006047677827387529,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5385303497314453,
+        "mean_ari_seed_consensus": 0.531589540057001,
+        "std_ari_seed_consensus": 0.03020160848800765,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.5892544388771057,
+        "mean_ari_seed_consensus": 0.540202042921027,
+        "std_ari_seed_consensus": 0.03683274573763105,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6069240570068359,
+        "mean_ari_seed_consensus": 0.5552295679619096,
+        "std_ari_seed_consensus": 0.029046118523527474,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6275524497032166,
+        "mean_ari_seed_consensus": 0.6086822693511579,
+        "std_ari_seed_consensus": 0.03333127008615962,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6667872667312622,
+        "mean_ari_seed_consensus": 0.6432430964680341,
+        "std_ari_seed_consensus": 0.03806305951972922,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6536562442779541,
+        "mean_ari_seed_consensus": 0.5940088878925157,
+        "std_ari_seed_consensus": 0.023772248754746237,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6770392060279846,
+        "mean_ari_seed_consensus": 0.6296524853375733,
+        "std_ari_seed_consensus": 0.0213220170944617,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.695773720741272,
+        "mean_ari_seed_consensus": 0.6525939642523879,
+        "std_ari_seed_consensus": 0.028548804360457192,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.05,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9195618987445197,
+    "trustworthiness_mean_seeds": 0.9367031899466586,
+    "trustworthiness_std_seeds": 0.0007535781993619953,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5629470944404602,
+        "mean_ari_seed_consensus": 0.5218071474235589,
+        "std_ari_seed_consensus": 0.04219352996163081,
+        "min_cluster_size": 24
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.593533456325531,
+        "mean_ari_seed_consensus": 0.46798957942144515,
+        "std_ari_seed_consensus": 0.020167805005486605,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6359252333641052,
+        "mean_ari_seed_consensus": 0.5170189980139717,
+        "std_ari_seed_consensus": 0.0312330041409985,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6257444620132446,
+        "mean_ari_seed_consensus": 0.5738335337228923,
+        "std_ari_seed_consensus": 0.031760035222204726,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6351466774940491,
+        "mean_ari_seed_consensus": 0.5940403160859721,
+        "std_ari_seed_consensus": 0.02768027048049439,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6532878875732422,
+        "mean_ari_seed_consensus": 0.6296432380299806,
+        "std_ari_seed_consensus": 0.023293079507467496,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6789098381996155,
+        "mean_ari_seed_consensus": 0.6356931267876632,
+        "std_ari_seed_consensus": 0.029199872545503297,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6891509890556335,
+        "mean_ari_seed_consensus": 0.6700553271253941,
+        "std_ari_seed_consensus": 0.02601732578814765,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.05,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9185857306745014,
+    "trustworthiness_mean_seeds": 0.9396840004568381,
+    "trustworthiness_std_seeds": 0.0008111434458465687,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5225895047187805,
+        "mean_ari_seed_consensus": 0.48713869122607595,
+        "std_ari_seed_consensus": 0.03556914200322191,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.5641777515411377,
+        "mean_ari_seed_consensus": 0.5562907653372616,
+        "std_ari_seed_consensus": 0.0441581119594073,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.5970055460929871,
+        "mean_ari_seed_consensus": 0.5754854280042612,
+        "std_ari_seed_consensus": 0.03795502243572578,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6377907395362854,
+        "mean_ari_seed_consensus": 0.5741751282434365,
+        "std_ari_seed_consensus": 0.0389147778496829,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6490075588226318,
+        "mean_ari_seed_consensus": 0.551990966002479,
+        "std_ari_seed_consensus": 0.022247111733174205,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6542632579803467,
+        "mean_ari_seed_consensus": 0.6181981474674793,
+        "std_ari_seed_consensus": 0.022242798825193682,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6837520003318787,
+        "mean_ari_seed_consensus": 0.6358709967247975,
+        "std_ari_seed_consensus": 0.023860448572582196,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.7003451585769653,
+        "mean_ari_seed_consensus": 0.6356916367783845,
+        "std_ari_seed_consensus": 0.02492585319173994,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.05,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9182502042078505,
+    "trustworthiness_mean_seeds": 0.9406006994605887,
+    "trustworthiness_std_seeds": 0.0007781993488259207,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5751031041145325,
+        "mean_ari_seed_consensus": 0.5321258840511723,
+        "std_ari_seed_consensus": 0.02938056290295867,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.5691548585891724,
+        "mean_ari_seed_consensus": 0.5219816881291839,
+        "std_ari_seed_consensus": 0.03406979664978165,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6490214467048645,
+        "mean_ari_seed_consensus": 0.5699350981205454,
+        "std_ari_seed_consensus": 0.037931857544308833,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6376521587371826,
+        "mean_ari_seed_consensus": 0.6411541979362615,
+        "std_ari_seed_consensus": 0.030123299227359103,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6550354361534119,
+        "mean_ari_seed_consensus": 0.6273345069419972,
+        "std_ari_seed_consensus": 0.02270918190206022,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6387798190116882,
+        "mean_ari_seed_consensus": 0.6237397216703177,
+        "std_ari_seed_consensus": 0.027232682090251113,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6560620665550232,
+        "mean_ari_seed_consensus": 0.6362324209295156,
+        "std_ari_seed_consensus": 0.02638441880231302,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6715717315673828,
+        "mean_ari_seed_consensus": 0.649507860045782,
+        "std_ari_seed_consensus": 0.027660210318731702,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 20,
+    "min_dist": 0.05,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9189908514437701,
+    "trustworthiness_mean_seeds": 0.9403199816611812,
+    "trustworthiness_std_seeds": 0.000654937187476773,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5302197337150574,
+        "mean_ari_seed_consensus": 0.5930915767885161,
+        "std_ari_seed_consensus": 0.04267345902335505,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.5745241641998291,
+        "mean_ari_seed_consensus": 0.6128605684823492,
+        "std_ari_seed_consensus": 0.03422728054882914,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.5821254253387451,
+        "mean_ari_seed_consensus": 0.5528808941752075,
+        "std_ari_seed_consensus": 0.024065830100385623,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6216453313827515,
+        "mean_ari_seed_consensus": 0.5889208842187047,
+        "std_ari_seed_consensus": 0.02578075773228442,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6110146045684814,
+        "mean_ari_seed_consensus": 0.5946661224502328,
+        "std_ari_seed_consensus": 0.024272466843258622,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6574401259422302,
+        "mean_ari_seed_consensus": 0.6247756358817373,
+        "std_ari_seed_consensus": 0.022692303307397684,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.668452262878418,
+        "mean_ari_seed_consensus": 0.6306133013304762,
+        "std_ari_seed_consensus": 0.02674220602485181,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6862520575523376,
+        "mean_ari_seed_consensus": 0.6820067513784882,
+        "std_ari_seed_consensus": 0.025188514269106323,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.01,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9182336404966709,
+    "trustworthiness_mean_seeds": 0.9368531316063288,
+    "trustworthiness_std_seeds": 0.0006602148360124558,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6334295272827148,
+        "mean_ari_seed_consensus": 0.6216273978255192,
+        "std_ari_seed_consensus": 0.03363907701515866,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6386324167251587,
+        "mean_ari_seed_consensus": 0.6891544978682528,
+        "std_ari_seed_consensus": 0.047702384603593384,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6499010920524597,
+        "mean_ari_seed_consensus": 0.6699058382468034,
+        "std_ari_seed_consensus": 0.03323610425976181,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6487493515014648,
+        "mean_ari_seed_consensus": 0.6925187137094345,
+        "std_ari_seed_consensus": 0.029698454072041892,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6293047070503235,
+        "mean_ari_seed_consensus": 0.7171203914450628,
+        "std_ari_seed_consensus": 0.027948693382089506,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6372230052947998,
+        "mean_ari_seed_consensus": 0.6679791968664279,
+        "std_ari_seed_consensus": 0.024988815796624413,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6310791969299316,
+        "mean_ari_seed_consensus": 0.656198286884052,
+        "std_ari_seed_consensus": 0.026485904916011903,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6357817649841309,
+        "mean_ari_seed_consensus": 0.6532366450060975,
+        "std_ari_seed_consensus": 0.027153076501252864,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.01,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9196113895105846,
+    "trustworthiness_mean_seeds": 0.9404012388349864,
+    "trustworthiness_std_seeds": 0.0007801480392837263,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6354441046714783,
+        "mean_ari_seed_consensus": 0.6165975213806603,
+        "std_ari_seed_consensus": 0.03196176477016982,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.7043492197990417,
+        "mean_ari_seed_consensus": 0.6575176779552658,
+        "std_ari_seed_consensus": 0.03777846224411817,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6764916777610779,
+        "mean_ari_seed_consensus": 0.651855400431934,
+        "std_ari_seed_consensus": 0.039372374058261495,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6459426879882812,
+        "mean_ari_seed_consensus": 0.6845819406929597,
+        "std_ari_seed_consensus": 0.039451577074380136,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6432278156280518,
+        "mean_ari_seed_consensus": 0.7096399778116474,
+        "std_ari_seed_consensus": 0.037668568996778874,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.643848180770874,
+        "mean_ari_seed_consensus": 0.7081651378056858,
+        "std_ari_seed_consensus": 0.027125794003033214,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6432284712791443,
+        "mean_ari_seed_consensus": 0.6745583222840338,
+        "std_ari_seed_consensus": 0.027890388416135226,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6377983689308167,
+        "mean_ari_seed_consensus": 0.6500071228186143,
+        "std_ari_seed_consensus": 0.025176173598114544,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.01,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9200472332925251,
+    "trustworthiness_mean_seeds": 0.941257029095064,
+    "trustworthiness_std_seeds": 0.0008067283938049077,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6338303089141846,
+        "mean_ari_seed_consensus": 0.561742909620152,
+        "std_ari_seed_consensus": 0.02734004190617724,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6933665871620178,
+        "mean_ari_seed_consensus": 0.6392831076254101,
+        "std_ari_seed_consensus": 0.031074790649106614,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6009661555290222,
+        "mean_ari_seed_consensus": 0.6518175502974015,
+        "std_ari_seed_consensus": 0.03749736779469462,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.619839608669281,
+        "mean_ari_seed_consensus": 0.6488752440188865,
+        "std_ari_seed_consensus": 0.03272381812011653,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6458956003189087,
+        "mean_ari_seed_consensus": 0.6699472898123305,
+        "std_ari_seed_consensus": 0.028085359450009853,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6387185454368591,
+        "mean_ari_seed_consensus": 0.6887765980046211,
+        "std_ari_seed_consensus": 0.026167699225633723,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.643913745880127,
+        "mean_ari_seed_consensus": 0.6899312374101304,
+        "std_ari_seed_consensus": 0.028079431105267824,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6439586877822876,
+        "mean_ari_seed_consensus": 0.6872121872391284,
+        "std_ari_seed_consensus": 0.03191182297138746,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.01,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9205677657267873,
+    "trustworthiness_mean_seeds": 0.94113783345322,
+    "trustworthiness_std_seeds": 0.0007292989267230101,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6659849882125854,
+        "mean_ari_seed_consensus": 0.5608414855121716,
+        "std_ari_seed_consensus": 0.03636355825187501,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6614468693733215,
+        "mean_ari_seed_consensus": 0.6597341045248226,
+        "std_ari_seed_consensus": 0.03337062132945547,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6289077997207642,
+        "mean_ari_seed_consensus": 0.680164656129136,
+        "std_ari_seed_consensus": 0.03172729354620872,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6441420316696167,
+        "mean_ari_seed_consensus": 0.6837117153975506,
+        "std_ari_seed_consensus": 0.032139415728268554,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6196427941322327,
+        "mean_ari_seed_consensus": 0.7071818806966516,
+        "std_ari_seed_consensus": 0.026768295653772808,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6313595771789551,
+        "mean_ari_seed_consensus": 0.7130152420532347,
+        "std_ari_seed_consensus": 0.027277620596423156,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6200801730155945,
+        "mean_ari_seed_consensus": 0.6764766643916146,
+        "std_ari_seed_consensus": 0.034490238678413075,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6299895644187927,
+        "mean_ari_seed_consensus": 0.6661815854629806,
+        "std_ari_seed_consensus": 0.027348846056085976,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.03,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9184891980781642,
+    "trustworthiness_mean_seeds": 0.9370225037162601,
+    "trustworthiness_std_seeds": 0.0006453019412705132,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6125974655151367,
+        "mean_ari_seed_consensus": 0.5134478898566649,
+        "std_ari_seed_consensus": 0.02661501059385616,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6459888815879822,
+        "mean_ari_seed_consensus": 0.6610177347958968,
+        "std_ari_seed_consensus": 0.04388395653671227,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6200113892555237,
+        "mean_ari_seed_consensus": 0.7043458524819736,
+        "std_ari_seed_consensus": 0.03746074483411923,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6132867336273193,
+        "mean_ari_seed_consensus": 0.7116633639964214,
+        "std_ari_seed_consensus": 0.034491823749508974,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.5978233218193054,
+        "mean_ari_seed_consensus": 0.6811204542932824,
+        "std_ari_seed_consensus": 0.019376446460867964,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6343380212783813,
+        "mean_ari_seed_consensus": 0.7014894032806444,
+        "std_ari_seed_consensus": 0.03335572427196711,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6215988397598267,
+        "mean_ari_seed_consensus": 0.6988653101849551,
+        "std_ari_seed_consensus": 0.029756212222706652,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6353518962860107,
+        "mean_ari_seed_consensus": 0.6835688597775854,
+        "std_ari_seed_consensus": 0.026513072678979874,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.03,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9194226210870737,
+    "trustworthiness_mean_seeds": 0.9410909437538074,
+    "trustworthiness_std_seeds": 0.0006743664040980518,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6247841715812683,
+        "mean_ari_seed_consensus": 0.5443138234706405,
+        "std_ari_seed_consensus": 0.02866145814965951,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6656402349472046,
+        "mean_ari_seed_consensus": 0.6923194061596856,
+        "std_ari_seed_consensus": 0.03615825081113615,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6436835527420044,
+        "mean_ari_seed_consensus": 0.6284417233732497,
+        "std_ari_seed_consensus": 0.030547704372943303,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6271546483039856,
+        "mean_ari_seed_consensus": 0.6417767226019302,
+        "std_ari_seed_consensus": 0.025191877113542396,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6157750487327576,
+        "mean_ari_seed_consensus": 0.6707125873372978,
+        "std_ari_seed_consensus": 0.028566665865415737,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6256993412971497,
+        "mean_ari_seed_consensus": 0.6829505257438965,
+        "std_ari_seed_consensus": 0.026468943186998214,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6329864859580994,
+        "mean_ari_seed_consensus": 0.6736317246707413,
+        "std_ari_seed_consensus": 0.022105980431984498,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6350969672203064,
+        "mean_ari_seed_consensus": 0.6360476979772031,
+        "std_ari_seed_consensus": 0.023625230308166857,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.03,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9216259286197553,
+    "trustworthiness_mean_seeds": 0.9419994596015017,
+    "trustworthiness_std_seeds": 0.0007340701861633697,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6266427040100098,
+        "mean_ari_seed_consensus": 0.6431164505792979,
+        "std_ari_seed_consensus": 0.03529328354034466,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6810594797134399,
+        "mean_ari_seed_consensus": 0.6631565885916981,
+        "std_ari_seed_consensus": 0.04074114699762819,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6468781232833862,
+        "mean_ari_seed_consensus": 0.6749680103206516,
+        "std_ari_seed_consensus": 0.03036578002515552,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6433767080307007,
+        "mean_ari_seed_consensus": 0.6935103499200763,
+        "std_ari_seed_consensus": 0.0337412580505297,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6167212128639221,
+        "mean_ari_seed_consensus": 0.7081205521704189,
+        "std_ari_seed_consensus": 0.029294401377199415,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6173733472824097,
+        "mean_ari_seed_consensus": 0.6819433612137067,
+        "std_ari_seed_consensus": 0.031350094563931605,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6149274706840515,
+        "mean_ari_seed_consensus": 0.6613067928289854,
+        "std_ari_seed_consensus": 0.026755277501284674,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6018966436386108,
+        "mean_ari_seed_consensus": 0.6450878015473016,
+        "std_ari_seed_consensus": 0.02711766710387712,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.03,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9196260385992354,
+    "trustworthiness_mean_seeds": 0.9418307256990803,
+    "trustworthiness_std_seeds": 0.00075719779893015,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6141883730888367,
+        "mean_ari_seed_consensus": 0.6069173786516016,
+        "std_ari_seed_consensus": 0.0307775928068093,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6535065770149231,
+        "mean_ari_seed_consensus": 0.6637669254121099,
+        "std_ari_seed_consensus": 0.030475244223957487,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6519994139671326,
+        "mean_ari_seed_consensus": 0.673275221735256,
+        "std_ari_seed_consensus": 0.046745383015080626,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6516426801681519,
+        "mean_ari_seed_consensus": 0.6816217027668257,
+        "std_ari_seed_consensus": 0.042715193422914056,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6300890445709229,
+        "mean_ari_seed_consensus": 0.7209485779709054,
+        "std_ari_seed_consensus": 0.02646796433722444,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6342714428901672,
+        "mean_ari_seed_consensus": 0.6963002349081285,
+        "std_ari_seed_consensus": 0.022193666881049685,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6230689287185669,
+        "mean_ari_seed_consensus": 0.6817072255715103,
+        "std_ari_seed_consensus": 0.028686250006134922,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6182449460029602,
+        "mean_ari_seed_consensus": 0.6497189375515385,
+        "std_ari_seed_consensus": 0.028796564795080363,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.05,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9196930058616392,
+    "trustworthiness_mean_seeds": 0.9370735269224499,
+    "trustworthiness_std_seeds": 0.0006726206790146975,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.617072343826294,
+        "mean_ari_seed_consensus": 0.5329206605202298,
+        "std_ari_seed_consensus": 0.026777807159541006,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.632439374923706,
+        "mean_ari_seed_consensus": 0.6954192191003561,
+        "std_ari_seed_consensus": 0.02666946685278939,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6283162832260132,
+        "mean_ari_seed_consensus": 0.666089391730634,
+        "std_ari_seed_consensus": 0.037868928221505775,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6410461664199829,
+        "mean_ari_seed_consensus": 0.6689658129047943,
+        "std_ari_seed_consensus": 0.037284702026892096,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6091196537017822,
+        "mean_ari_seed_consensus": 0.7004862403971497,
+        "std_ari_seed_consensus": 0.02866576008995539,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6290127635002136,
+        "mean_ari_seed_consensus": 0.6816030493357642,
+        "std_ari_seed_consensus": 0.016498595671370738,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6229463815689087,
+        "mean_ari_seed_consensus": 0.6679279604820748,
+        "std_ari_seed_consensus": 0.02466391228056472,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6136542558670044,
+        "mean_ari_seed_consensus": 0.651983361571556,
+        "std_ari_seed_consensus": 0.025393762200240786,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.05,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9221473070500186,
+    "trustworthiness_mean_seeds": 0.9416474451180503,
+    "trustworthiness_std_seeds": 0.0007538507629860456,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.601199746131897,
+        "mean_ari_seed_consensus": 0.6232611586036989,
+        "std_ari_seed_consensus": 0.04083202698434808,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6574320197105408,
+        "mean_ari_seed_consensus": 0.6883662772624187,
+        "std_ari_seed_consensus": 0.03722282568283833,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6258394718170166,
+        "mean_ari_seed_consensus": 0.6656514509384537,
+        "std_ari_seed_consensus": 0.03635860452840178,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6022632718086243,
+        "mean_ari_seed_consensus": 0.6673055534705444,
+        "std_ari_seed_consensus": 0.024445892080050095,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6245834231376648,
+        "mean_ari_seed_consensus": 0.6661776114614998,
+        "std_ari_seed_consensus": 0.0275726536828141,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6015905737876892,
+        "mean_ari_seed_consensus": 0.6863071881440708,
+        "std_ari_seed_consensus": 0.023929490952662547,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6012401580810547,
+        "mean_ari_seed_consensus": 0.6706403174731385,
+        "std_ari_seed_consensus": 0.024584093238697008,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6218222379684448,
+        "mean_ari_seed_consensus": 0.6483512944005787,
+        "std_ari_seed_consensus": 0.025368956312789633,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.05,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9206369592944572,
+    "trustworthiness_mean_seeds": 0.9425489955986687,
+    "trustworthiness_std_seeds": 0.0007167509416909648,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.583381712436676,
+        "mean_ari_seed_consensus": 0.5075111703421451,
+        "std_ari_seed_consensus": 0.03478043819255926,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6616454720497131,
+        "mean_ari_seed_consensus": 0.7016968195254574,
+        "std_ari_seed_consensus": 0.030235548438816977,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6253937482833862,
+        "mean_ari_seed_consensus": 0.6535084372531774,
+        "std_ari_seed_consensus": 0.035250084130574844,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6127914190292358,
+        "mean_ari_seed_consensus": 0.7097266092590317,
+        "std_ari_seed_consensus": 0.02908627349633411,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6020954847335815,
+        "mean_ari_seed_consensus": 0.7230314794427513,
+        "std_ari_seed_consensus": 0.026208608794700085,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6015506386756897,
+        "mean_ari_seed_consensus": 0.6951535915681647,
+        "std_ari_seed_consensus": 0.021724477788491674,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6125990748405457,
+        "mean_ari_seed_consensus": 0.6668336763346416,
+        "std_ari_seed_consensus": 0.022365171127397197,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6023388504981995,
+        "mean_ari_seed_consensus": 0.6638312366022973,
+        "std_ari_seed_consensus": 0.02042578047450782,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 36,
+    "min_dist": 0.05,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.919992176763295,
+    "trustworthiness_mean_seeds": 0.9424166914714179,
+    "trustworthiness_std_seeds": 0.0007520368731768252,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6048843264579773,
+        "mean_ari_seed_consensus": 0.6393881695957547,
+        "std_ari_seed_consensus": 0.030291127380704393,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6648567318916321,
+        "mean_ari_seed_consensus": 0.7148814370071237,
+        "std_ari_seed_consensus": 0.03771961938777523,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6144601702690125,
+        "mean_ari_seed_consensus": 0.6453290090461462,
+        "std_ari_seed_consensus": 0.03416199569889624,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6108596324920654,
+        "mean_ari_seed_consensus": 0.711475504156607,
+        "std_ari_seed_consensus": 0.03446659345736184,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6219661831855774,
+        "mean_ari_seed_consensus": 0.6968578690925024,
+        "std_ari_seed_consensus": 0.034795153479772155,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6255159378051758,
+        "mean_ari_seed_consensus": 0.6704826241481858,
+        "std_ari_seed_consensus": 0.024503419902077085,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6292985081672668,
+        "mean_ari_seed_consensus": 0.6837142819478491,
+        "std_ari_seed_consensus": 0.022253196060215964,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6202496290206909,
+        "mean_ari_seed_consensus": 0.6745617256652459,
+        "std_ari_seed_consensus": 0.028728251239657214,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.01,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9176832978348959,
+    "trustworthiness_mean_seeds": 0.9363632724639213,
+    "trustworthiness_std_seeds": 0.0007356730931993417,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6131472587585449,
+        "mean_ari_seed_consensus": 0.5656374750186406,
+        "std_ari_seed_consensus": 0.024680644823549834,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6580834984779358,
+        "mean_ari_seed_consensus": 0.6103257435228298,
+        "std_ari_seed_consensus": 0.038158333314231366,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6600266098976135,
+        "mean_ari_seed_consensus": 0.6493565710025664,
+        "std_ari_seed_consensus": 0.04454993411915987,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6432821154594421,
+        "mean_ari_seed_consensus": 0.6925525774342609,
+        "std_ari_seed_consensus": 0.030229696614738916,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6285625100135803,
+        "mean_ari_seed_consensus": 0.6738457260649923,
+        "std_ari_seed_consensus": 0.03297189909645881,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.629649817943573,
+        "mean_ari_seed_consensus": 0.6729342397512993,
+        "std_ari_seed_consensus": 0.034913172781122256,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6380253434181213,
+        "mean_ari_seed_consensus": 0.6652010915658731,
+        "std_ari_seed_consensus": 0.026991511580834102,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6429736018180847,
+        "mean_ari_seed_consensus": 0.6530805507859675,
+        "std_ari_seed_consensus": 0.02693934592598582,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.01,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9214073944948369,
+    "trustworthiness_mean_seeds": 0.9410441735327776,
+    "trustworthiness_std_seeds": 0.0007983154247729475,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6127150654792786,
+        "mean_ari_seed_consensus": 0.5697664603315279,
+        "std_ari_seed_consensus": 0.02361933548312872,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6589614152908325,
+        "mean_ari_seed_consensus": 0.6221064828005214,
+        "std_ari_seed_consensus": 0.030859525212777388,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6220665574073792,
+        "mean_ari_seed_consensus": 0.6809556030085248,
+        "std_ari_seed_consensus": 0.03769887221626618,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6452475786209106,
+        "mean_ari_seed_consensus": 0.6919516832924484,
+        "std_ari_seed_consensus": 0.03431853355720218,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6282933354377747,
+        "mean_ari_seed_consensus": 0.6848664529434128,
+        "std_ari_seed_consensus": 0.024416410521070676,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6302323341369629,
+        "mean_ari_seed_consensus": 0.7143068877424178,
+        "std_ari_seed_consensus": 0.025996081446423187,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6280283331871033,
+        "mean_ari_seed_consensus": 0.6780305794937093,
+        "std_ari_seed_consensus": 0.022279395083057204,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.625979483127594,
+        "mean_ari_seed_consensus": 0.6670448808359485,
+        "std_ari_seed_consensus": 0.024206292256109877,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.01,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.920242502527413,
+    "trustworthiness_mean_seeds": 0.9414819809159629,
+    "trustworthiness_std_seeds": 0.0006923093913285901,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6023543477058411,
+        "mean_ari_seed_consensus": 0.620700021080409,
+        "std_ari_seed_consensus": 0.025460397472380682,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6490276455879211,
+        "mean_ari_seed_consensus": 0.6578748428936223,
+        "std_ari_seed_consensus": 0.03522923100310858,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6547483205795288,
+        "mean_ari_seed_consensus": 0.6308058848843463,
+        "std_ari_seed_consensus": 0.03453856713808435,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6620379090309143,
+        "mean_ari_seed_consensus": 0.6673442006286354,
+        "std_ari_seed_consensus": 0.03594338236347515,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6430435180664062,
+        "mean_ari_seed_consensus": 0.6607181197931246,
+        "std_ari_seed_consensus": 0.029424477417560383,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6383259892463684,
+        "mean_ari_seed_consensus": 0.6572954368984932,
+        "std_ari_seed_consensus": 0.024848063510084707,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.637500524520874,
+        "mean_ari_seed_consensus": 0.6678372788475695,
+        "std_ari_seed_consensus": 0.02932846549525909,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6271858215332031,
+        "mean_ari_seed_consensus": 0.6396652722263957,
+        "std_ari_seed_consensus": 0.020808200602382025,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.01,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9194095081490565,
+    "trustworthiness_mean_seeds": 0.9415552508485748,
+    "trustworthiness_std_seeds": 0.0007232523022273502,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6261348128318787,
+        "mean_ari_seed_consensus": 0.6203426980023508,
+        "std_ari_seed_consensus": 0.029061147312263245,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6599336862564087,
+        "mean_ari_seed_consensus": 0.7000360067789917,
+        "std_ari_seed_consensus": 0.04161048774175944,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.639701783657074,
+        "mean_ari_seed_consensus": 0.6683918105778623,
+        "std_ari_seed_consensus": 0.02689732167369756,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6290919184684753,
+        "mean_ari_seed_consensus": 0.6457567234542806,
+        "std_ari_seed_consensus": 0.03520719397698884,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6234546899795532,
+        "mean_ari_seed_consensus": 0.674676904995183,
+        "std_ari_seed_consensus": 0.032147627701642756,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6270161867141724,
+        "mean_ari_seed_consensus": 0.6685896911545797,
+        "std_ari_seed_consensus": 0.02824515998449579,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6360388398170471,
+        "mean_ari_seed_consensus": 0.671926571652552,
+        "std_ari_seed_consensus": 0.02744250411181949,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6304398775100708,
+        "mean_ari_seed_consensus": 0.6598499399051145,
+        "std_ari_seed_consensus": 0.02722845385795524,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.03,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.915221605313033,
+    "trustworthiness_mean_seeds": 0.9363376209746453,
+    "trustworthiness_std_seeds": 0.0007879954462016245,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.618583083152771,
+        "mean_ari_seed_consensus": 0.5798709341968529,
+        "std_ari_seed_consensus": 0.0354580743229118,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6231546998023987,
+        "mean_ari_seed_consensus": 0.703971741338245,
+        "std_ari_seed_consensus": 0.04843145645792439,
+        "min_cluster_size": 18
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6367047429084778,
+        "mean_ari_seed_consensus": 0.6835811511479448,
+        "std_ari_seed_consensus": 0.03306036981975676,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6356130838394165,
+        "mean_ari_seed_consensus": 0.6663686984753875,
+        "std_ari_seed_consensus": 0.026657957242550618,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6214898824691772,
+        "mean_ari_seed_consensus": 0.6718490336724823,
+        "std_ari_seed_consensus": 0.02587147618803136,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6196615695953369,
+        "mean_ari_seed_consensus": 0.6542375253472829,
+        "std_ari_seed_consensus": 0.019023628036402774,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6148201823234558,
+        "mean_ari_seed_consensus": 0.665332484804219,
+        "std_ari_seed_consensus": 0.02396624015105935,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6270401477813721,
+        "mean_ari_seed_consensus": 0.6634748795517583,
+        "std_ari_seed_consensus": 0.026916606117059753,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.03,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9210691519357613,
+    "trustworthiness_mean_seeds": 0.9415582571027857,
+    "trustworthiness_std_seeds": 0.000845783860205922,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.635310173034668,
+        "mean_ari_seed_consensus": 0.6218058937654524,
+        "std_ari_seed_consensus": 0.03312921796082357,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6461269855499268,
+        "mean_ari_seed_consensus": 0.6280034194009892,
+        "std_ari_seed_consensus": 0.032822519510601326,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.628081738948822,
+        "mean_ari_seed_consensus": 0.7124977677871213,
+        "std_ari_seed_consensus": 0.03049915008363535,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6188322901725769,
+        "mean_ari_seed_consensus": 0.7016835653782177,
+        "std_ari_seed_consensus": 0.028661779771910614,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6047843098640442,
+        "mean_ari_seed_consensus": 0.6641101361510188,
+        "std_ari_seed_consensus": 0.027354194093412183,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.5919429659843445,
+        "mean_ari_seed_consensus": 0.6437430567298007,
+        "std_ari_seed_consensus": 0.027272734877959302,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5875226855278015,
+        "mean_ari_seed_consensus": 0.6432742765508542,
+        "std_ari_seed_consensus": 0.028613279109069047,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5981583595275879,
+        "mean_ari_seed_consensus": 0.6497217139717282,
+        "std_ari_seed_consensus": 0.028280906452643244,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.03,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9213016004685928,
+    "trustworthiness_mean_seeds": 0.9422001424686949,
+    "trustworthiness_std_seeds": 0.0006107745416499533,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6040762066841125,
+        "mean_ari_seed_consensus": 0.5959395836785252,
+        "std_ari_seed_consensus": 0.02795594907259474,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6582876443862915,
+        "mean_ari_seed_consensus": 0.6996858026461819,
+        "std_ari_seed_consensus": 0.040483826801064736,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6345939636230469,
+        "mean_ari_seed_consensus": 0.6691917425925491,
+        "std_ari_seed_consensus": 0.04371141176895037,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6249467134475708,
+        "mean_ari_seed_consensus": 0.6911497449660851,
+        "std_ari_seed_consensus": 0.025534445899377745,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6106765866279602,
+        "mean_ari_seed_consensus": 0.6693935765334103,
+        "std_ari_seed_consensus": 0.026857808084499092,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6152054071426392,
+        "mean_ari_seed_consensus": 0.6917659517445522,
+        "std_ari_seed_consensus": 0.03250485684112268,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6056632995605469,
+        "mean_ari_seed_consensus": 0.6685630274232718,
+        "std_ari_seed_consensus": 0.028706671552598036,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6148970127105713,
+        "mean_ari_seed_consensus": 0.6506885877559031,
+        "std_ari_seed_consensus": 0.025879891686878,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.03,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9195700247587408,
+    "trustworthiness_mean_seeds": 0.9421220340326381,
+    "trustworthiness_std_seeds": 0.0006936334500810904,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.604129433631897,
+        "mean_ari_seed_consensus": 0.6016036719894919,
+        "std_ari_seed_consensus": 0.02602878004759095,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6229661703109741,
+        "mean_ari_seed_consensus": 0.6258375793894241,
+        "std_ari_seed_consensus": 0.0346641328761117,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6489385962486267,
+        "mean_ari_seed_consensus": 0.6577514874871869,
+        "std_ari_seed_consensus": 0.03213132595997322,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6051790714263916,
+        "mean_ari_seed_consensus": 0.6943771733118378,
+        "std_ari_seed_consensus": 0.0365371967937126,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6192362904548645,
+        "mean_ari_seed_consensus": 0.7132035597076104,
+        "std_ari_seed_consensus": 0.029460743249792636,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6157508492469788,
+        "mean_ari_seed_consensus": 0.6849371951153123,
+        "std_ari_seed_consensus": 0.025742268778154553,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6123732328414917,
+        "mean_ari_seed_consensus": 0.6535340332193044,
+        "std_ari_seed_consensus": 0.02624458548153791,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6204686760902405,
+        "mean_ari_seed_consensus": 0.6707585567046235,
+        "std_ari_seed_consensus": 0.026559112884547372,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.05,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9185669183950032,
+    "trustworthiness_mean_seeds": 0.9364365379439226,
+    "trustworthiness_std_seeds": 0.0006386584336092803,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5680919885635376,
+        "mean_ari_seed_consensus": 0.6241757755245064,
+        "std_ari_seed_consensus": 0.031186283659966122,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.5889118909835815,
+        "mean_ari_seed_consensus": 0.6525972116924621,
+        "std_ari_seed_consensus": 0.0375408469352122,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6340512037277222,
+        "mean_ari_seed_consensus": 0.6579421784790636,
+        "std_ari_seed_consensus": 0.04131929928040373,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6065598726272583,
+        "mean_ari_seed_consensus": 0.6813428033793663,
+        "std_ari_seed_consensus": 0.02842958679376879,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6168070435523987,
+        "mean_ari_seed_consensus": 0.6502662057946388,
+        "std_ari_seed_consensus": 0.027966815559239213,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6128281354904175,
+        "mean_ari_seed_consensus": 0.6608096842588943,
+        "std_ari_seed_consensus": 0.022899111730408993,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5976924896240234,
+        "mean_ari_seed_consensus": 0.6611229944646656,
+        "std_ari_seed_consensus": 0.029064290153872727,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6055054068565369,
+        "mean_ari_seed_consensus": 0.673263011462332,
+        "std_ari_seed_consensus": 0.028396445742542496,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.05,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.922852266612523,
+    "trustworthiness_mean_seeds": 0.9421009546322772,
+    "trustworthiness_std_seeds": 0.0007079751719673073,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.600040078163147,
+        "mean_ari_seed_consensus": 0.5403678773787918,
+        "std_ari_seed_consensus": 0.020465867176625303,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6489071846008301,
+        "mean_ari_seed_consensus": 0.6853461656030115,
+        "std_ari_seed_consensus": 0.03030572954813754,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6276599168777466,
+        "mean_ari_seed_consensus": 0.665500655157976,
+        "std_ari_seed_consensus": 0.03898801735938324,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.5933290719985962,
+        "mean_ari_seed_consensus": 0.6949143722282021,
+        "std_ari_seed_consensus": 0.026529440983314227,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.625313401222229,
+        "mean_ari_seed_consensus": 0.7000438030912747,
+        "std_ari_seed_consensus": 0.02553902037135457,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6072235107421875,
+        "mean_ari_seed_consensus": 0.6780011291727129,
+        "std_ari_seed_consensus": 0.023469952653019606,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5980586409568787,
+        "mean_ari_seed_consensus": 0.6324669259649931,
+        "std_ari_seed_consensus": 0.01861521287552224,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5920027494430542,
+        "mean_ari_seed_consensus": 0.6144822461399417,
+        "std_ari_seed_consensus": 0.024075857816512065,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.05,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9223337155899475,
+    "trustworthiness_mean_seeds": 0.9428711048655828,
+    "trustworthiness_std_seeds": 0.0007249420673684756,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6136103272438049,
+        "mean_ari_seed_consensus": 0.6091708137692279,
+        "std_ari_seed_consensus": 0.033706324980007855,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6474799513816833,
+        "mean_ari_seed_consensus": 0.672444966132631,
+        "std_ari_seed_consensus": 0.03801847163021905,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6229305267333984,
+        "mean_ari_seed_consensus": 0.6494130635012668,
+        "std_ari_seed_consensus": 0.022381987492503645,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.5927336812019348,
+        "mean_ari_seed_consensus": 0.6169798131462082,
+        "std_ari_seed_consensus": 0.028391407304821967,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6008942127227783,
+        "mean_ari_seed_consensus": 0.6554825916242989,
+        "std_ari_seed_consensus": 0.03132395931004641,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.591551661491394,
+        "mean_ari_seed_consensus": 0.6702462065573135,
+        "std_ari_seed_consensus": 0.03416937903432399,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5778061747550964,
+        "mean_ari_seed_consensus": 0.6617289148455553,
+        "std_ari_seed_consensus": 0.023533770650011394,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5874831676483154,
+        "mean_ari_seed_consensus": 0.6569693106217415,
+        "std_ari_seed_consensus": 0.025265838886329998,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 42,
+    "min_dist": 0.05,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9209919659321864,
+    "trustworthiness_mean_seeds": 0.9428666040184364,
+    "trustworthiness_std_seeds": 0.0007063953756655427,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6339784264564514,
+        "mean_ari_seed_consensus": 0.5341917205589436,
+        "std_ari_seed_consensus": 0.02746345702956429,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6383634805679321,
+        "mean_ari_seed_consensus": 0.6848875870686921,
+        "std_ari_seed_consensus": 0.03604104909855215,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6373035907745361,
+        "mean_ari_seed_consensus": 0.6824547387170905,
+        "std_ari_seed_consensus": 0.03758232281128186,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6135833859443665,
+        "mean_ari_seed_consensus": 0.6943000417606953,
+        "std_ari_seed_consensus": 0.03193496136875626,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6206521391868591,
+        "mean_ari_seed_consensus": 0.7155027508370828,
+        "std_ari_seed_consensus": 0.030251643864214865,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6002066731452942,
+        "mean_ari_seed_consensus": 0.6672511326461987,
+        "std_ari_seed_consensus": 0.02169241422377629,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.609887957572937,
+        "mean_ari_seed_consensus": 0.6663304094607871,
+        "std_ari_seed_consensus": 0.024226508257094333,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6010745763778687,
+        "mean_ari_seed_consensus": 0.656148841082945,
+        "std_ari_seed_consensus": 0.02661871810711215,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.01,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9169996217507352,
+    "trustworthiness_mean_seeds": 0.9360464892613053,
+    "trustworthiness_std_seeds": 0.0008731441771086991,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6013882160186768,
+        "mean_ari_seed_consensus": 0.5840405802363965,
+        "std_ari_seed_consensus": 0.023751731516291223,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6281136870384216,
+        "mean_ari_seed_consensus": 0.6972541291705442,
+        "std_ari_seed_consensus": 0.03204305923905674,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6367431282997131,
+        "mean_ari_seed_consensus": 0.6422954205622545,
+        "std_ari_seed_consensus": 0.031920763229456375,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6307234764099121,
+        "mean_ari_seed_consensus": 0.693056419392834,
+        "std_ari_seed_consensus": 0.030116040367714793,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6279497146606445,
+        "mean_ari_seed_consensus": 0.7195013511010356,
+        "std_ari_seed_consensus": 0.029013036802595368,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6334410905838013,
+        "mean_ari_seed_consensus": 0.6726575855480663,
+        "std_ari_seed_consensus": 0.024201877947830446,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6346142888069153,
+        "mean_ari_seed_consensus": 0.6807384795253067,
+        "std_ari_seed_consensus": 0.02715826652520921,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.63386070728302,
+        "mean_ari_seed_consensus": 0.6672129596354522,
+        "std_ari_seed_consensus": 0.030666523785684786,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.01,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9184924484838527,
+    "trustworthiness_mean_seeds": 0.9404588474521531,
+    "trustworthiness_std_seeds": 0.0007553814732661118,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.615279495716095,
+        "mean_ari_seed_consensus": 0.6528494753681997,
+        "std_ari_seed_consensus": 0.035775059825304815,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6585086584091187,
+        "mean_ari_seed_consensus": 0.697961316912136,
+        "std_ari_seed_consensus": 0.03810426612454979,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.633840024471283,
+        "mean_ari_seed_consensus": 0.6721394398425313,
+        "std_ari_seed_consensus": 0.041412957264066075,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6309533715248108,
+        "mean_ari_seed_consensus": 0.6881400713356403,
+        "std_ari_seed_consensus": 0.03228899574423262,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6373934149742126,
+        "mean_ari_seed_consensus": 0.6711484358669673,
+        "std_ari_seed_consensus": 0.02571512911679597,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6174208521842957,
+        "mean_ari_seed_consensus": 0.6741002056094234,
+        "std_ari_seed_consensus": 0.02896209359547603,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6138445734977722,
+        "mean_ari_seed_consensus": 0.6583171849919783,
+        "std_ari_seed_consensus": 0.0282061745019108,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6156412959098816,
+        "mean_ari_seed_consensus": 0.6519224310417889,
+        "std_ari_seed_consensus": 0.025904144992598,
+        "min_cluster_size": 8
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.01,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9200080280567895,
+    "trustworthiness_mean_seeds": 0.9407412468541378,
+    "trustworthiness_std_seeds": 0.0007899952305027187,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.640138566493988,
+        "mean_ari_seed_consensus": 0.6213552900736123,
+        "std_ari_seed_consensus": 0.028629755774363937,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6585224270820618,
+        "mean_ari_seed_consensus": 0.6779229086247189,
+        "std_ari_seed_consensus": 0.033296428225450606,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6454430222511292,
+        "mean_ari_seed_consensus": 0.6967830390826353,
+        "std_ari_seed_consensus": 0.03725332208036944,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6265981197357178,
+        "mean_ari_seed_consensus": 0.7015170588307614,
+        "std_ari_seed_consensus": 0.034658143145109364,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6208118796348572,
+        "mean_ari_seed_consensus": 0.6844362185605893,
+        "std_ari_seed_consensus": 0.032572696565999586,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6227996349334717,
+        "mean_ari_seed_consensus": 0.6806678559113896,
+        "std_ari_seed_consensus": 0.028936278606175047,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6247473955154419,
+        "mean_ari_seed_consensus": 0.6713703529828031,
+        "std_ari_seed_consensus": 0.023386289785117104,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6232426762580872,
+        "mean_ari_seed_consensus": 0.65338134741302,
+        "std_ari_seed_consensus": 0.02551757295964921,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.01,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9220148196236342,
+    "trustworthiness_mean_seeds": 0.9411096907283514,
+    "trustworthiness_std_seeds": 0.0006790475802816148,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.673088014125824,
+        "mean_ari_seed_consensus": 0.5630849487144155,
+        "std_ari_seed_consensus": 0.02467970962028079,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6760151386260986,
+        "mean_ari_seed_consensus": 0.6195836531976935,
+        "std_ari_seed_consensus": 0.03951659992081927,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6280492544174194,
+        "mean_ari_seed_consensus": 0.6959544303690007,
+        "std_ari_seed_consensus": 0.03494274621993303,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6123095750808716,
+        "mean_ari_seed_consensus": 0.722584570185622,
+        "std_ari_seed_consensus": 0.04123107556067547,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.5883029699325562,
+        "mean_ari_seed_consensus": 0.7058699957875195,
+        "std_ari_seed_consensus": 0.031107063318417522,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6295705437660217,
+        "mean_ari_seed_consensus": 0.6690546731536942,
+        "std_ari_seed_consensus": 0.023061222498431167,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6356132626533508,
+        "mean_ari_seed_consensus": 0.671956945968604,
+        "std_ari_seed_consensus": 0.03195694307863213,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6248980164527893,
+        "mean_ari_seed_consensus": 0.6484879541167545,
+        "std_ari_seed_consensus": 0.027248456090186737,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.03,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9186001793956784,
+    "trustworthiness_mean_seeds": 0.936365210833706,
+    "trustworthiness_std_seeds": 0.0007361314280904175,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6158733367919922,
+        "mean_ari_seed_consensus": 0.5411828493744186,
+        "std_ari_seed_consensus": 0.03138129230850419,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6390340924263,
+        "mean_ari_seed_consensus": 0.6682296112919617,
+        "std_ari_seed_consensus": 0.044797931420512214,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6535168290138245,
+        "mean_ari_seed_consensus": 0.6648085065075607,
+        "std_ari_seed_consensus": 0.044595276753243256,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6374395489692688,
+        "mean_ari_seed_consensus": 0.6924402242623652,
+        "std_ari_seed_consensus": 0.03823514529342598,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6213119626045227,
+        "mean_ari_seed_consensus": 0.692608670593994,
+        "std_ari_seed_consensus": 0.02264608193285647,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6200548410415649,
+        "mean_ari_seed_consensus": 0.6932924089740583,
+        "std_ari_seed_consensus": 0.02621832788878345,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6148951649665833,
+        "mean_ari_seed_consensus": 0.652341617579535,
+        "std_ari_seed_consensus": 0.03322148272410565,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6162304282188416,
+        "mean_ari_seed_consensus": 0.651478024004739,
+        "std_ari_seed_consensus": 0.027620368582397272,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.03,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9224146640494222,
+    "trustworthiness_mean_seeds": 0.9410247853823173,
+    "trustworthiness_std_seeds": 0.0006678880506925417,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6143420338630676,
+        "mean_ari_seed_consensus": 0.47776032108541655,
+        "std_ari_seed_consensus": 0.027229941692316177,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6409595608711243,
+        "mean_ari_seed_consensus": 0.7116436891921254,
+        "std_ari_seed_consensus": 0.04051041567206259,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.5956984162330627,
+        "mean_ari_seed_consensus": 0.6416540566716897,
+        "std_ari_seed_consensus": 0.039255800838443156,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6012876033782959,
+        "mean_ari_seed_consensus": 0.6832805503136311,
+        "std_ari_seed_consensus": 0.03252470791579635,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6052761673927307,
+        "mean_ari_seed_consensus": 0.7041612942518516,
+        "std_ari_seed_consensus": 0.025987856021585702,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6210317611694336,
+        "mean_ari_seed_consensus": 0.6943001572383074,
+        "std_ari_seed_consensus": 0.026236597519755187,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6235350370407104,
+        "mean_ari_seed_consensus": 0.6843473669734551,
+        "std_ari_seed_consensus": 0.030460644145550265,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6237604022026062,
+        "mean_ari_seed_consensus": 0.6864857472614194,
+        "std_ari_seed_consensus": 0.032131761172851915,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.03,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9219654401728326,
+    "trustworthiness_mean_seeds": 0.9418108440509523,
+    "trustworthiness_std_seeds": 0.0005977584726300184,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6061893701553345,
+        "mean_ari_seed_consensus": 0.5994596894316425,
+        "std_ari_seed_consensus": 0.02637157837134633,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6722891330718994,
+        "mean_ari_seed_consensus": 0.7072067900606489,
+        "std_ari_seed_consensus": 0.036041011129418155,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6373592615127563,
+        "mean_ari_seed_consensus": 0.6693670204651823,
+        "std_ari_seed_consensus": 0.040690035170541164,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6190654635429382,
+        "mean_ari_seed_consensus": 0.7087709599916566,
+        "std_ari_seed_consensus": 0.03847500785160507,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6143653988838196,
+        "mean_ari_seed_consensus": 0.7030778075050212,
+        "std_ari_seed_consensus": 0.03372797396050595,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.5964453816413879,
+        "mean_ari_seed_consensus": 0.6797739691935778,
+        "std_ari_seed_consensus": 0.0287152914082901,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5920290946960449,
+        "mean_ari_seed_consensus": 0.651202684486963,
+        "std_ari_seed_consensus": 0.027400028563573518,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5834412574768066,
+        "mean_ari_seed_consensus": 0.6496284557877767,
+        "std_ari_seed_consensus": 0.022983119214270223,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.03,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9213821927192248,
+    "trustworthiness_mean_seeds": 0.9414976169999482,
+    "trustworthiness_std_seeds": 0.0006882583066592061,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6187505722045898,
+        "mean_ari_seed_consensus": 0.5315372307391343,
+        "std_ari_seed_consensus": 0.03749749657750032,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6594215631484985,
+        "mean_ari_seed_consensus": 0.6422052738063401,
+        "std_ari_seed_consensus": 0.04172982480896373,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.5947884917259216,
+        "mean_ari_seed_consensus": 0.6518062907914666,
+        "std_ari_seed_consensus": 0.03267176259806822,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6149119138717651,
+        "mean_ari_seed_consensus": 0.6661083464443105,
+        "std_ari_seed_consensus": 0.02753289449827042,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6154246926307678,
+        "mean_ari_seed_consensus": 0.6337832700976611,
+        "std_ari_seed_consensus": 0.02489634335729387,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6141645312309265,
+        "mean_ari_seed_consensus": 0.6990869470637986,
+        "std_ari_seed_consensus": 0.023570481299681686,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6215581297874451,
+        "mean_ari_seed_consensus": 0.6788720646034607,
+        "std_ari_seed_consensus": 0.025955407378454313,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6157787442207336,
+        "mean_ari_seed_consensus": 0.6439380369164844,
+        "std_ari_seed_consensus": 0.022818865002193184,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.05,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9179246293257389,
+    "trustworthiness_mean_seeds": 0.9363138952394248,
+    "trustworthiness_std_seeds": 0.0007781126091916726,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6065462231636047,
+        "mean_ari_seed_consensus": 0.5891863271452477,
+        "std_ari_seed_consensus": 0.03488940299518496,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6325931549072266,
+        "mean_ari_seed_consensus": 0.6729476577679842,
+        "std_ari_seed_consensus": 0.03016873998789757,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6221025586128235,
+        "mean_ari_seed_consensus": 0.6808961195888231,
+        "std_ari_seed_consensus": 0.038492048400727376,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.5977770686149597,
+        "mean_ari_seed_consensus": 0.6515006862411815,
+        "std_ari_seed_consensus": 0.02661908475638889,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6240293383598328,
+        "mean_ari_seed_consensus": 0.6887178945468695,
+        "std_ari_seed_consensus": 0.027528300228570255,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.626581072807312,
+        "mean_ari_seed_consensus": 0.713763753724527,
+        "std_ari_seed_consensus": 0.02733959629152268,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6191696524620056,
+        "mean_ari_seed_consensus": 0.6954660950411804,
+        "std_ari_seed_consensus": 0.02201309856056707,
+        "min_cluster_size": 6
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6049941182136536,
+        "mean_ari_seed_consensus": 0.6694607718872672,
+        "std_ari_seed_consensus": 0.018373912951835807,
+        "min_cluster_size": 6
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.05,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9204768434197207,
+    "trustworthiness_mean_seeds": 0.9417022456221747,
+    "trustworthiness_std_seeds": 0.000677896102580324,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6023098230361938,
+        "mean_ari_seed_consensus": 0.6287916668328377,
+        "std_ari_seed_consensus": 0.03922728534222388,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6404732465744019,
+        "mean_ari_seed_consensus": 0.6860552447531733,
+        "std_ari_seed_consensus": 0.03684226783477172,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6036397814750671,
+        "mean_ari_seed_consensus": 0.721527317541025,
+        "std_ari_seed_consensus": 0.03193997177261706,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6142883896827698,
+        "mean_ari_seed_consensus": 0.659529237597925,
+        "std_ari_seed_consensus": 0.028125737134195375,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6085872054100037,
+        "mean_ari_seed_consensus": 0.6973809349806445,
+        "std_ari_seed_consensus": 0.026990708533033616,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6120301485061646,
+        "mean_ari_seed_consensus": 0.68711293223631,
+        "std_ari_seed_consensus": 0.026648046477886458,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6014611124992371,
+        "mean_ari_seed_consensus": 0.651422911134532,
+        "std_ari_seed_consensus": 0.025665686953177728,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5915622711181641,
+        "mean_ari_seed_consensus": 0.6375270315396784,
+        "std_ari_seed_consensus": 0.029576151604864924,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.05,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9203724742288468,
+    "trustworthiness_mean_seeds": 0.9420369268349265,
+    "trustworthiness_std_seeds": 0.0007477753096037307,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6116217970848083,
+        "mean_ari_seed_consensus": 0.5494411239822435,
+        "std_ari_seed_consensus": 0.026046858756520824,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6238775253295898,
+        "mean_ari_seed_consensus": 0.678640853291295,
+        "std_ari_seed_consensus": 0.0332160328700026,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6130453944206238,
+        "mean_ari_seed_consensus": 0.6758572827102941,
+        "std_ari_seed_consensus": 0.03308122378207079,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6098282337188721,
+        "mean_ari_seed_consensus": 0.6962284363061961,
+        "std_ari_seed_consensus": 0.03833689290385647,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.5959712862968445,
+        "mean_ari_seed_consensus": 0.7207262800256646,
+        "std_ari_seed_consensus": 0.03171420874690193,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.5876806378364563,
+        "mean_ari_seed_consensus": 0.6913045438785458,
+        "std_ari_seed_consensus": 0.02649743156751298,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5928608775138855,
+        "mean_ari_seed_consensus": 0.6608352397297996,
+        "std_ari_seed_consensus": 0.019935764682948366,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5996162295341492,
+        "mean_ari_seed_consensus": 0.6565744324834115,
+        "std_ari_seed_consensus": 0.025267541729091656,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 45,
+    "min_dist": 0.05,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9228902251173096,
+    "trustworthiness_mean_seeds": 0.9426039742072145,
+    "trustworthiness_std_seeds": 0.00067011556114721,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5960490107536316,
+        "mean_ari_seed_consensus": 0.6057299502492869,
+        "std_ari_seed_consensus": 0.022316128866473526,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6480569839477539,
+        "mean_ari_seed_consensus": 0.704830516575145,
+        "std_ari_seed_consensus": 0.05618323410552549,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.62168949842453,
+        "mean_ari_seed_consensus": 0.6924098925288609,
+        "std_ari_seed_consensus": 0.03240556164009432,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6018860936164856,
+        "mean_ari_seed_consensus": 0.6851815257742194,
+        "std_ari_seed_consensus": 0.041889492275841746,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.5850937366485596,
+        "mean_ari_seed_consensus": 0.6956386915046451,
+        "std_ari_seed_consensus": 0.0334792864660913,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.5933027863502502,
+        "mean_ari_seed_consensus": 0.669673485989031,
+        "std_ari_seed_consensus": 0.030398111789629142,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.590703547000885,
+        "mean_ari_seed_consensus": 0.6554720173742573,
+        "std_ari_seed_consensus": 0.025426958439621897,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5865412354469299,
+        "mean_ari_seed_consensus": 0.6545376690064557,
+        "std_ari_seed_consensus": 0.0250007896214849,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.01,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9144259460739886,
+    "trustworthiness_mean_seeds": 0.9356417477060338,
+    "trustworthiness_std_seeds": 0.0007673814037382324,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.602954626083374,
+        "mean_ari_seed_consensus": 0.5989109083785551,
+        "std_ari_seed_consensus": 0.031989098918034684,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6308098435401917,
+        "mean_ari_seed_consensus": 0.6869928186900276,
+        "std_ari_seed_consensus": 0.04840907782126078,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6630820035934448,
+        "mean_ari_seed_consensus": 0.6513388852406639,
+        "std_ari_seed_consensus": 0.03514345433922944,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6494911313056946,
+        "mean_ari_seed_consensus": 0.6747567401263722,
+        "std_ari_seed_consensus": 0.03527426044237035,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6433555483818054,
+        "mean_ari_seed_consensus": 0.6677485117192243,
+        "std_ari_seed_consensus": 0.028860443155495744,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6258796453475952,
+        "mean_ari_seed_consensus": 0.6884228898956477,
+        "std_ari_seed_consensus": 0.03417648541864109,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6204803586006165,
+        "mean_ari_seed_consensus": 0.658785573266273,
+        "std_ari_seed_consensus": 0.033220544887038045,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6351231336593628,
+        "mean_ari_seed_consensus": 0.6498228774513385,
+        "std_ari_seed_consensus": 0.027028749227730808,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.01,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9216894451089965,
+    "trustworthiness_mean_seeds": 0.9405793128301009,
+    "trustworthiness_std_seeds": 0.000685358810011364,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6371423602104187,
+        "mean_ari_seed_consensus": 0.6190079405036253,
+        "std_ari_seed_consensus": 0.028804662096334255,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.684928297996521,
+        "mean_ari_seed_consensus": 0.699432327232286,
+        "std_ari_seed_consensus": 0.03891254468503067,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6610909104347229,
+        "mean_ari_seed_consensus": 0.6724316046320494,
+        "std_ari_seed_consensus": 0.036420849732809235,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.632821261882782,
+        "mean_ari_seed_consensus": 0.6975058259108685,
+        "std_ari_seed_consensus": 0.03589654274937796,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6433418989181519,
+        "mean_ari_seed_consensus": 0.694443224908707,
+        "std_ari_seed_consensus": 0.026436805786615072,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6316600441932678,
+        "mean_ari_seed_consensus": 0.7020207320247727,
+        "std_ari_seed_consensus": 0.0330424747431199,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6166151165962219,
+        "mean_ari_seed_consensus": 0.6706668468494604,
+        "std_ari_seed_consensus": 0.029634657719516004,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6229564547538757,
+        "mean_ari_seed_consensus": 0.668818215605057,
+        "std_ari_seed_consensus": 0.024899264198363847,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.01,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9198984047854877,
+    "trustworthiness_mean_seeds": 0.9413022423866111,
+    "trustworthiness_std_seeds": 0.0008128482090036609,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6004400253295898,
+        "mean_ari_seed_consensus": 0.5712511286961638,
+        "std_ari_seed_consensus": 0.034676759728565515,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.663227915763855,
+        "mean_ari_seed_consensus": 0.6556593436531118,
+        "std_ari_seed_consensus": 0.03657792506430457,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6406569480895996,
+        "mean_ari_seed_consensus": 0.6914537554240676,
+        "std_ari_seed_consensus": 0.03173749471114949,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6312911510467529,
+        "mean_ari_seed_consensus": 0.7212932496510046,
+        "std_ari_seed_consensus": 0.02460977060687986,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6107936501502991,
+        "mean_ari_seed_consensus": 0.7075392803465123,
+        "std_ari_seed_consensus": 0.023915486645732013,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6304054856300354,
+        "mean_ari_seed_consensus": 0.7087323310693862,
+        "std_ari_seed_consensus": 0.0269436160850848,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6305285692214966,
+        "mean_ari_seed_consensus": 0.6807597563115791,
+        "std_ari_seed_consensus": 0.026123698861198138,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6213687062263489,
+        "mean_ari_seed_consensus": 0.657941913553456,
+        "std_ari_seed_consensus": 0.022630120269415643,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.01,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9191280586373186,
+    "trustworthiness_mean_seeds": 0.9410641939539336,
+    "trustworthiness_std_seeds": 0.0007403891189036687,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6312219500541687,
+        "mean_ari_seed_consensus": 0.607066213465034,
+        "std_ari_seed_consensus": 0.029936330841652745,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6611878871917725,
+        "mean_ari_seed_consensus": 0.7148331770324579,
+        "std_ari_seed_consensus": 0.032326813294280145,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6534284353256226,
+        "mean_ari_seed_consensus": 0.6647182662950449,
+        "std_ari_seed_consensus": 0.029939554164926357,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6313205361366272,
+        "mean_ari_seed_consensus": 0.6493843806396418,
+        "std_ari_seed_consensus": 0.032912452342170814,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.5929405689239502,
+        "mean_ari_seed_consensus": 0.6599254625494324,
+        "std_ari_seed_consensus": 0.02984945669408651,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6100906729698181,
+        "mean_ari_seed_consensus": 0.6937207017010398,
+        "std_ari_seed_consensus": 0.03479939247904206,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6220995783805847,
+        "mean_ari_seed_consensus": 0.682402684496564,
+        "std_ari_seed_consensus": 0.027794352851357153,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.617053747177124,
+        "mean_ari_seed_consensus": 0.6526966327032189,
+        "std_ari_seed_consensus": 0.024337424534324713,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.03,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9166687259990378,
+    "trustworthiness_mean_seeds": 0.9357389459676455,
+    "trustworthiness_std_seeds": 0.0006738249975124182,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6014851927757263,
+        "mean_ari_seed_consensus": 0.6058832482387432,
+        "std_ari_seed_consensus": 0.030311242665646644,
+        "min_cluster_size": 11
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6397730112075806,
+        "mean_ari_seed_consensus": 0.702240134858081,
+        "std_ari_seed_consensus": 0.03762585368169958,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6247426271438599,
+        "mean_ari_seed_consensus": 0.6452446837607995,
+        "std_ari_seed_consensus": 0.03239563817016943,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6141209006309509,
+        "mean_ari_seed_consensus": 0.6766099462636586,
+        "std_ari_seed_consensus": 0.023398216129820966,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6230109333992004,
+        "mean_ari_seed_consensus": 0.6644650804178011,
+        "std_ari_seed_consensus": 0.03224585713715328,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6115478873252869,
+        "mean_ari_seed_consensus": 0.6511942747823284,
+        "std_ari_seed_consensus": 0.02577252089697141,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6119170784950256,
+        "mean_ari_seed_consensus": 0.6416143984704722,
+        "std_ari_seed_consensus": 0.024002028694239824,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.60594242811203,
+        "mean_ari_seed_consensus": 0.650023548312736,
+        "std_ari_seed_consensus": 0.0208064499429997,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.03,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9217884934302845,
+    "trustworthiness_mean_seeds": 0.9411402059525317,
+    "trustworthiness_std_seeds": 0.0007598553336944177,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.627874493598938,
+        "mean_ari_seed_consensus": 0.6147529697975708,
+        "std_ari_seed_consensus": 0.025611436468672148,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6437491178512573,
+        "mean_ari_seed_consensus": 0.717160881251417,
+        "std_ari_seed_consensus": 0.041507123681595814,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6398729681968689,
+        "mean_ari_seed_consensus": 0.6962955603860455,
+        "std_ari_seed_consensus": 0.04067195009118261,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6140016317367554,
+        "mean_ari_seed_consensus": 0.6703087474014428,
+        "std_ari_seed_consensus": 0.036601995112641,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6053912043571472,
+        "mean_ari_seed_consensus": 0.6488654385086647,
+        "std_ari_seed_consensus": 0.030081423264227535,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6059566140174866,
+        "mean_ari_seed_consensus": 0.6782174985652779,
+        "std_ari_seed_consensus": 0.023220929365935054,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6154318451881409,
+        "mean_ari_seed_consensus": 0.6819739508031389,
+        "std_ari_seed_consensus": 0.03196762550774748,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6069549918174744,
+        "mean_ari_seed_consensus": 0.6739045657061759,
+        "std_ari_seed_consensus": 0.02742055443754176,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.03,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.920264097688494,
+    "trustworthiness_mean_seeds": 0.9419871718806365,
+    "trustworthiness_std_seeds": 0.000666413007108104,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5681995749473572,
+        "mean_ari_seed_consensus": 0.5997550249227885,
+        "std_ari_seed_consensus": 0.02912435629104791,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.644331693649292,
+        "mean_ari_seed_consensus": 0.6978853498690563,
+        "std_ari_seed_consensus": 0.04947172424074384,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6380100846290588,
+        "mean_ari_seed_consensus": 0.692533736418962,
+        "std_ari_seed_consensus": 0.03078029267181016,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.621108889579773,
+        "mean_ari_seed_consensus": 0.6638279159518435,
+        "std_ari_seed_consensus": 0.027550313726199815,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6006867289543152,
+        "mean_ari_seed_consensus": 0.6534558444228941,
+        "std_ari_seed_consensus": 0.022894916958495815,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.5959060192108154,
+        "mean_ari_seed_consensus": 0.6597404658367826,
+        "std_ari_seed_consensus": 0.025215036695767183,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5913795232772827,
+        "mean_ari_seed_consensus": 0.6547184409210874,
+        "std_ari_seed_consensus": 0.030800078253805162,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5984128713607788,
+        "mean_ari_seed_consensus": 0.6583383824385937,
+        "std_ari_seed_consensus": 0.025068616847226353,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.03,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.91999079645403,
+    "trustworthiness_mean_seeds": 0.9416553588911695,
+    "trustworthiness_std_seeds": 0.0006802539621272867,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6070573329925537,
+        "mean_ari_seed_consensus": 0.6097577335887611,
+        "std_ari_seed_consensus": 0.02446962933529334,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6482054591178894,
+        "mean_ari_seed_consensus": 0.6836335326200046,
+        "std_ari_seed_consensus": 0.0409269158095393,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6301620006561279,
+        "mean_ari_seed_consensus": 0.6778571516414887,
+        "std_ari_seed_consensus": 0.04096365056697958,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6271514296531677,
+        "mean_ari_seed_consensus": 0.6960407156258784,
+        "std_ari_seed_consensus": 0.03928237662596606,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6037334203720093,
+        "mean_ari_seed_consensus": 0.6995877971083864,
+        "std_ari_seed_consensus": 0.03041675542288217,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6140931248664856,
+        "mean_ari_seed_consensus": 0.6941532300281439,
+        "std_ari_seed_consensus": 0.02472119367064375,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.6052020192146301,
+        "mean_ari_seed_consensus": 0.6756489526932561,
+        "std_ari_seed_consensus": 0.019251808614347114,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.6027697324752808,
+        "mean_ari_seed_consensus": 0.6853741678691502,
+        "std_ari_seed_consensus": 0.024907871996844962,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.05,
+    "n_components": 4,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9151652352636959,
+    "trustworthiness_mean_seeds": 0.9358952741550224,
+    "trustworthiness_std_seeds": 0.0007850034517622952,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.5910406708717346,
+        "mean_ari_seed_consensus": 0.5421575184944406,
+        "std_ari_seed_consensus": 0.026646419100509793,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6113399267196655,
+        "mean_ari_seed_consensus": 0.5973534678229034,
+        "std_ari_seed_consensus": 0.03596721636151097,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.5976241827011108,
+        "mean_ari_seed_consensus": 0.6384692819893929,
+        "std_ari_seed_consensus": 0.034609877355148595,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6219873428344727,
+        "mean_ari_seed_consensus": 0.6800134833446164,
+        "std_ari_seed_consensus": 0.02668108778396604,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6244940757751465,
+        "mean_ari_seed_consensus": 0.7018738786865083,
+        "std_ari_seed_consensus": 0.023139452898515905,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6007362008094788,
+        "mean_ari_seed_consensus": 0.6858775291014995,
+        "std_ari_seed_consensus": 0.02694797788150925,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5955608487129211,
+        "mean_ari_seed_consensus": 0.6616024534602267,
+        "std_ari_seed_consensus": 0.024933127731894423,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5971123576164246,
+        "mean_ari_seed_consensus": 0.6645468049386335,
+        "std_ari_seed_consensus": 0.03164786300876695,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.05,
+    "n_components": 5,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9215204240131958,
+    "trustworthiness_mean_seeds": 0.9416356842894312,
+    "trustworthiness_std_seeds": 0.0007217372914295046,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6100683212280273,
+        "mean_ari_seed_consensus": 0.6126271560677453,
+        "std_ari_seed_consensus": 0.03363526307718931,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6466251611709595,
+        "mean_ari_seed_consensus": 0.6750588258169391,
+        "std_ari_seed_consensus": 0.04972698983169679,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.612351655960083,
+        "mean_ari_seed_consensus": 0.6855405728373594,
+        "std_ari_seed_consensus": 0.034954739315809495,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6190648674964905,
+        "mean_ari_seed_consensus": 0.7059499091920091,
+        "std_ari_seed_consensus": 0.03240604412857583,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.591924786567688,
+        "mean_ari_seed_consensus": 0.7072427249415009,
+        "std_ari_seed_consensus": 0.029723185759521792,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.6004328727722168,
+        "mean_ari_seed_consensus": 0.6704538340199664,
+        "std_ari_seed_consensus": 0.034048831383698665,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5871216654777527,
+        "mean_ari_seed_consensus": 0.6764140832364995,
+        "std_ari_seed_consensus": 0.027269901808030905,
+        "min_cluster_size": 9
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5950437784194946,
+        "mean_ari_seed_consensus": 0.6700333598853078,
+        "std_ari_seed_consensus": 0.021706423468013963,
+        "min_cluster_size": 9
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.05,
+    "n_components": 8,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9205326346296886,
+    "trustworthiness_mean_seeds": 0.9426506791232899,
+    "trustworthiness_std_seeds": 0.0007743781990866489,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6005531549453735,
+        "mean_ari_seed_consensus": 0.6003822483720668,
+        "std_ari_seed_consensus": 0.025725387865616234,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.629579484462738,
+        "mean_ari_seed_consensus": 0.7048723104517135,
+        "std_ari_seed_consensus": 0.043086976968120146,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6162540912628174,
+        "mean_ari_seed_consensus": 0.6922140266809936,
+        "std_ari_seed_consensus": 0.03725823703675577,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.6094720959663391,
+        "mean_ari_seed_consensus": 0.7005185677647264,
+        "std_ari_seed_consensus": 0.03995264168049169,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.6077014803886414,
+        "mean_ari_seed_consensus": 0.697586595278125,
+        "std_ari_seed_consensus": 0.024575840424122336,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.5896400213241577,
+        "mean_ari_seed_consensus": 0.6640935862329836,
+        "std_ari_seed_consensus": 0.01817398924329062,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.579888641834259,
+        "mean_ari_seed_consensus": 0.6629597511305333,
+        "std_ari_seed_consensus": 0.02526235270456603,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5827463865280151,
+        "mean_ari_seed_consensus": 0.6555840328425228,
+        "std_ari_seed_consensus": 0.027284265367387258,
+        "min_cluster_size": 10
+      }
+    ]
+  },
+  {
+    "n_neighbors": 53,
+    "min_dist": 0.05,
+    "n_components": 6,
+    "n_seeds": 30,
+    "trustworthiness_consensus": 0.9204637972708615,
+    "trustworthiness_mean_seeds": 0.9421926509514746,
+    "trustworthiness_std_seeds": 0.0006092804286887328,
+    "per_k": [
+      {
+        "k": 15,
+        "silhouette_consensus": 0.6057735085487366,
+        "mean_ari_seed_consensus": 0.5197331911893941,
+        "std_ari_seed_consensus": 0.025417261484999377,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 20,
+        "silhouette_consensus": 0.6316223740577698,
+        "mean_ari_seed_consensus": 0.691245988187152,
+        "std_ari_seed_consensus": 0.03297509096688002,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 25,
+        "silhouette_consensus": 0.6258975267410278,
+        "mean_ari_seed_consensus": 0.6784195071527114,
+        "std_ari_seed_consensus": 0.03598045941081209,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 30,
+        "silhouette_consensus": 0.5880980491638184,
+        "mean_ari_seed_consensus": 0.6682338320584188,
+        "std_ari_seed_consensus": 0.030731124310949695,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 35,
+        "silhouette_consensus": 0.5964167714118958,
+        "mean_ari_seed_consensus": 0.6653072723236264,
+        "std_ari_seed_consensus": 0.023163064177091398,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 40,
+        "silhouette_consensus": 0.5967898368835449,
+        "mean_ari_seed_consensus": 0.6500562590846145,
+        "std_ari_seed_consensus": 0.028945335553612183,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 45,
+        "silhouette_consensus": 0.5977396965026855,
+        "mean_ari_seed_consensus": 0.6692684301821413,
+        "std_ari_seed_consensus": 0.03088482567780234,
+        "min_cluster_size": 10
+      },
+      {
+        "k": 50,
+        "silhouette_consensus": 0.5883374214172363,
+        "mean_ari_seed_consensus": 0.6542223771030787,
+        "std_ari_seed_consensus": 0.029411978464473326,
+        "min_cluster_size": 10
+      }
+    ]
+  }
+]

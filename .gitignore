@@ -18,6 +18,12 @@ build/
 embeddings/
 *.npy
 
+# Exception: canonical .npy files required by final_pipeline.py and
+# referenced in CLAUDE.md as "DO NOT TOUCH" — needed for reproducibility
+!figures/final_pipeline/*.npy
+!figures/prefix_grid_search/*.npy
+!figures/prefix_comparison/*.npy
+
 # === OS files ===
 .DS_Store
 Thumbs.db

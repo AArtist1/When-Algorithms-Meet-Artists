@@ -1,0 +1,41 @@
+
+Metric                                      No Prefix  With Prefix      Delta   % Change
+----------------------------------------------------------------------------------------
+H1: Top-4 concentration                       91.025%      95.949%    +4.925      +5.4%
+H1: Zero-artist topics                        22.000      19.000    -3.000     -13.6%
+H1: Zero-topic public mass                    73.850%      60.494%   -13.356     -18.1%
+H2: Cramer's V (raw)                           0.798       0.839    +0.041      +5.1%
+H2: Cramer's V (style)                         0.631       0.753    +0.122     +19.3%
+H2: JSD (raw)                                  0.386       0.452    +0.065     +16.9%
+H2: JSD (style)                                0.219       0.343    +0.124     +56.7%
+H2: Centroid dist (raw)                        1.545       5.288    +3.743    +242.2%
+H2: Centroid dist (style)                      1.146       3.659    +2.513    +219.4%
+H2: kNN artist                                 0.995       1.000    +0.005      +0.5%
+H2: kNN probes                                 0.797       0.857    +0.060      +7.5%
+Projection R2                                  0.742       0.988    +0.246     +33.2%
+PCA PC1                                       41.343%      24.334%   -17.010     -41.1%
+PCA PC2                                       26.096%      19.761%    -6.335     -24.3%
+Public entropy                                 0.966       0.971    +0.005      +0.5%
+
+
+======================================================================
+H3: PER-THEME COMPRESSION COMPARISON
+======================================================================
+
+Theme             NP ent   PF ent   NP top   PF top   NP art   PF art
+-----------------------------------------------------------------
+transparency      -0.000   -0.000      1/28      1/28       18        4
+ownership         -0.000    0.143      1/28      2/28       18       12
+threat             0.201   -0.000      2/28      1/28       43        4
+compensation       0.336    0.512      4/28      9/28       39       31
+utility            0.319    0.174      3/28      2/28       47       12
+
+
+======================================================================
+EMBEDDING-LEVEL COMPARISON
+======================================================================
+
+  Mean cosine sim between no-prefix and prefix embeddings:
+    Public chunks (first 100): 0.7997
+    Artist probes (first 100): 0.9439
+    Interpretation: 1.0 = identical, <0.9 = substantially different

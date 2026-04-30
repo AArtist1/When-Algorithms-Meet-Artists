@@ -1,0 +1,9 @@
+{
+  "n_neighbors": 53,
+  "min_dist": 0.01,
+  "n_components": 5,
+  "trustworthiness_consensus": 0.9216894451089965,
+  "best_k_coarse": 20,
+  "best_silhouette_coarse": 0.684928297996521,
+  "best_ari_coarse": 0.699432327232286
+}

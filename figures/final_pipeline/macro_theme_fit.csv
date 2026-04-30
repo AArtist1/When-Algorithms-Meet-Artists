@@ -1,0 +1,10 @@
+macro_theme,consensus_count,claude_opus,claude_sonnet,gpt5_mini,gpt5_nano
+Institutions & Markets,3,3,3,1,2
+Governance & Rights,3,2,3,4,6
+Technical Genealogy,4,4,4,1,1
+Practice & Pedagogy,4,5,4,5,1
+Philosophy of Creativity,5,5,5,7,10
+"Institutions & Markets — industry economics, platform dynamics, market impact",0,0,0,1,0
+Other: Media Discourse & Public Perception,1,1,0,0,0
+"Other: Media discourse and risk narratives (focus on framing, sensationalism, and public perception rather than technical or legal specifics)",0,0,0,1,0
+Other: Public Discourse & Media Framing,0,0,1,0,0

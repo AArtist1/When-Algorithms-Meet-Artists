@@ -1,0 +1,26 @@
+{
+  "old_pipeline": {
+    "corpus_chunks": 891,
+    "corpus_articles": 131,
+    "total_probes": 557,
+    "themes": {
+      "compensation": 144,
+      "ownership": 70,
+      "threat": 106,
+      "transparency": 91,
+      "utility": 146
+    }
+  },
+  "new_pipeline": {
+    "corpus_chunks": 1736,
+    "corpus_articles": 125,
+    "total_probes": 906,
+    "themes": {
+      "compensation": 297,
+      "ownership": 99,
+      "threat": 190,
+      "transparency": 131,
+      "utility": 189
+    }
+  }
+}

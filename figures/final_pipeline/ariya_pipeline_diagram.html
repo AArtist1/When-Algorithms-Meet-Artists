@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pipeline Diagram - How the Analysis Works</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #f8f9fa; color: #1a1a2e; }
+  .header { background: #2d3436; color: white; padding: 2rem; text-align: center; }
+  .header h1 { font-size: 1.5rem; }
+  .header p { color: #b2bec3; margin-top: 0.3rem; }
+  .container { max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; }
+  .pipeline { position: relative; }
+  .step { background: white; border-radius: 12px; padding: 1.2rem 1.5rem; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer; transition: all 0.2s; position: relative; padding-left: 4.5rem; }
+  .step:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.15); transform: translateY(-1px); }
+  .step-num { position: absolute; left: 1.2rem; top: 50%; transform: translateY(-50%); width: 2.5rem; height: 2.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; color: white; }
+  .step h3 { font-size: 1rem; margin-bottom: 0.2rem; }
+  .step p { font-size: 0.85rem; color: #636e72; }
+  .step .detail { display: none; margin-top: 0.8rem; padding-top: 0.8rem; border-top: 1px solid #f1f2f6; font-size: 0.85rem; line-height: 1.6; }
+  .step.open .detail { display: block; }
+  .step .toggle { position: absolute; right: 1rem; top: 1.2rem; color: #b2bec3; font-size: 1.2rem; }
+  .step.open .toggle::after { content: "−"; }
+  .step:not(.open) .toggle::after { content: "+"; }
+  .connector { height: 2rem; display: flex; align-items: center; justify-content: center; color: #b2bec3; font-size: 1.5rem; }
+  .data { background: #e8f5e9; }
+  .data .step-num { background: #00b894; }
+  .process { background: #e3f2fd; }
+  .process .step-num { background: #0984e3; }
+  .result { background: #fff3e0; }
+  .result .step-num { background: #f39c12; }
+  .finding { background: #fce4ec; }
+  .finding .step-num { background: #e17055; }
+  .legend { display: flex; gap: 1rem; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 0.3rem; font-size: 0.8rem; }
+  .legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+  .numbers { background: white; border-radius: 12px; padding: 1.5rem; margin: 2rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .numbers h2 { font-size: 1.2rem; margin-bottom: 1rem; text-align: center; }
+  .num-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; }
+  .num-box { text-align: center; padding: 0.8rem; border-radius: 8px; background: #f8f9fa; }
+  .num-box .val { font-size: 1.5rem; font-weight: 700; color: #0984e3; }
+  .num-box .lbl { font-size: 0.7rem; color: #636e72; margin-top: 0.2rem; }
+  footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #b2bec3; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>How the Analysis Works</h1>
+  <p>Click any step to see more details</p>
+</div>
+
+<div class="container">
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#00b894"></div> Data</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#0984e3"></div> Processing</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f39c12"></div> Result</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#e17055"></div> Finding</div>
+</div>
+
+<div class="pipeline">
+
+<div class="step data" onclick="this.classList.toggle('open')">
+  <div class="step-num">1</div><span class="toggle"></span>
+  <h3>Collect Public Discourse</h3>
+  <p>125 articles about AI and art (2013-2025)</p>
+  <div class="detail">
+    We searched Google for articles about AI art, artists' responses to AI, copyright challenges, etc. We collected news articles, blog posts, podcasts (transcribed), legal filings, and research papers. After removing duplicates, we had 125 unique documents spanning 13 years (2013 through 2025).
+  </div>
+</div>
+
+<div class="connector">&#8595;</div>
+
+<div class="step process" onclick="this.classList.toggle('open')">
+  <div class="step-num">2</div><span class="toggle"></span>
+  <h3>Break into Chunks</h3>
+  <p>1,736 text segments of ~250 words each</p>
+  <div class="detail">
+    Each article is split into overlapping chunks of about 250 words. This lets us analyze at the paragraph level rather than the whole-article level. An article about both copyright AND AI tools would have chunks about each topic separately. We use natural English with minimal cleaning (just removing URLs and HTML formatting).
+  </div>
+</div>
+
+<div class="connector">&#8595;</div>
+
+<div class="step process" onclick="this.classList.toggle('open')">
+  <div class="step-num">3</div><span class="toggle"></span>
+  <h3>Convert to Numbers</h3>
+  <p>Each chunk becomes a 1,024-dimensional vector (embedding)</p>
+  <div class="detail">
+    We use a language model called e5-large-v2 to convert each text chunk into a vector of 1,024 numbers. Similar texts get similar vectors. This lets us measure how close or far apart different pieces of text are, like coordinates on a map. The model understands that "AI" and "artificial intelligence" mean the same thing, so we don't need to do any text normalization.
+  </div>
+</div>
+
+<div class="connector">&#8595;</div>
+
+<div class="step process" onclick="this.classList.toggle('open')">
+  <div class="step-num">4</div><span class="toggle"></span>
+  <h3>Build the Semantic Map</h3>
+  <p>Consensus UMAP: 30 maps averaged for stability</p>
+  <div class="detail">
+    UMAP is a technique that reduces 1,024 dimensions down to 5, preserving which chunks are near each other. Because UMAP has some randomness, we run it 30 times and average the results. This is like asking 30 cartographers to draw the same city and combining their maps. The result is a stable "semantic map" where similar discourse topics are near each other.
+  </div>
+</div>
+
+<div class="connector">&#8595;</div>
+
+<div class="step result" onclick="this.classList.toggle('open')">
+  <div class="step-num">5</div><span class="toggle"></span>
+  <h3>Find 20 Discourse Topics</h3>
+  <p>KMeans clustering identifies distinct conversation groups</p>
+  <div class="detail">
+    We use KMeans to group the 1,736 chunks into 20 clusters. Each cluster represents a distinct topic in the public conversation: things like "AI Copyright and Legal Protection," "Deep Dream and Neural Network Visualization," or "Artist Defense Tools Against AI." We tested 497 different parameter combinations to find the best number of topics. Each topic was labeled by 4 AI models and 2 human reviewers independently.
+  </div>
+</div>
+
+<div class="connector">&#8595;</div>
+
+<div class="step data" onclick="this.classList.toggle('open')">
+  <div class="step-num">6</div><span class="toggle"></span>
+  <h3>Project Artist Voices In</h3>
+  <p>1,259 artist survey statements placed on the same map</p>
+  <div class="detail">
+    We take the survey responses from 252 US-based practicing artists (from Lovato et al.'s published study) and convert them into the same kind of vectors. Then we use a neural network to place them onto our discourse map. This lets us see exactly where artist concerns land relative to the 20 public discourse topics. We validated this by checking that organic free-text artist responses (not templates) land in the same region. 84% of them do.
+  </div>
+</div>
+
+<div class="connector">&#8595;</div>
+
+<div class="step finding" onclick="this.classList.toggle('open')">
+  <div class="step-num">7</div><span class="toggle"></span>
+  <h3>Measure the Gap</h3>
+  <p>99.9% of artist concerns land in just 4 of 20 topics</p>
+  <div class="detail">
+    <strong>H1 (Compression):</strong> Almost all artist concerns collapse into 4 topics. 15 topics have zero artist voice. These empty topics include conversations about museum exhibitions, AI history, philosophical speculation, and media coverage.<br><br>
+    <strong>H2 (Not just style):</strong> We extracted 750 short sentences from public documents using embedding-based retrieval (finding sentences semantically similar to each theme). Even comparing these format-matched sentences, the gap persists. Format differences account for a modest portion of the divergence (JSD drops 15%), but the association between source and cluster remains strong. The gap is predominantly about substance. We validated the probes with GPT-5.4-mini and Claude Sonnet 4.6, which agreed with each other at a substantial level (kappa = 0.639).<br><br>
+    <strong>H3 (Four mechanisms of compression):</strong> Compression is not a single process but four operating together. (1) <em>Topical exclusion</em>: 15 of 20 clusters have zero artist probes, including 6 clusters with artist-themed labels that still contain 532 chunks about artists with no artist voice. (2) <em>Frame redirection</em>: all 252 ownership probes and all 252 utility probes route into one cluster labeled "AI Art Authenticity and Human Creativity," turning property and labor claims into aesthetic philosophy. (3) <em>Binary simplification</em>: the 251 threat probes split into two clusters whose labels invert plain readings. (4) <em>Voice collapse</em>: opposite positions on the same question group together by first-person practice register rather than by content. The headline 24:1 ownership compression ratio is a symptom of frame redirection, not a standalone finding.
+  </div>
+</div>
+
+</div>
+
+<div class="numbers">
+  <h2>Key Numbers</h2>
+  <div class="num-grid">
+    <div class="num-box"><div class="val">1,736</div><div class="lbl">Text chunks analyzed</div></div>
+    <div class="num-box"><div class="val">125</div><div class="lbl">Public documents</div></div>
+    <div class="num-box"><div class="val">252</div><div class="lbl">Artists surveyed</div></div>
+    <div class="num-box"><div class="val">20</div><div class="lbl">Discourse topics</div></div>
+    <div class="num-box"><div class="val">99.9%</div><div class="lbl">Artists in 4 topics</div></div>
+    <div class="num-box"><div class="val">15</div><div class="lbl">Topics with 0 artists</div></div>
+    <div class="num-box"><div class="val">24:1</div><div class="lbl">Ownership compression</div></div>
+    <div class="num-box"><div class="val">84%</div><div class="lbl">Free-text validation</div></div>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  When Algorithms Meet Artists | Pipeline Diagram | April 2026
+</footer>
+
+</body>
+</html>

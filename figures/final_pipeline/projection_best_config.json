@@ -1,0 +1,14 @@
+{
+  "hidden_layer_sizes": "(128,)",
+  "alpha": 1e-06,
+  "learning_rate_init": 0.002,
+  "r2_val": 0.48896,
+  "cv_r2_mean": 0.44343,
+  "cv_r2_std": 0.16735,
+  "knn_preservation_k15": 0.1811,
+  "cluster_agreement": 0.36398,
+  "cluster_ari": 0.14738,
+  "min_cluster_r2": -164481472.0,
+  "n_params": 131845,
+  "composite": NaN
+}

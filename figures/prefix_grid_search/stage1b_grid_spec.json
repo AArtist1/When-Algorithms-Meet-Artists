@@ -1,0 +1,32 @@
+{
+  "n_neighbors": [
+    17,
+    20,
+    23,
+    27,
+    31,
+    36
+  ],
+  "min_dist": [
+    0.0425,
+    0.05,
+    0.1,
+    0.115
+  ],
+  "n_components": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "n_configs": 240,
+  "seeds_used": 5,
+  "derived_from": "stage1_top_configs.csv",
+  "top_n_for_region": 5
+}

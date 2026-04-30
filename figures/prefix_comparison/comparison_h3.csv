@@ -1,0 +1,6 @@
+theme,no_prefix_entropy,prefix_entropy,no_prefix_topics,prefix_topics,no_prefix_articles,prefix_articles
+transparency,-0.0,-0.0,1,1,18,4
+ownership,-0.0,0.14261512360927678,1,2,18,12
+threat,0.20127371856718848,-0.0,2,1,43,4
+compensation,0.33599129062994104,0.5123635517681788,4,9,39,31
+utility,0.3193127933124177,0.1737920647643571,3,2,47,12

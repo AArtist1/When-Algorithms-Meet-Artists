@@ -16,6 +16,13 @@ EXPECTED_PUBLIC_COLUMNS = [
     "chunk_word_count_clean", "chunk_text_lexical", "chunk_word_count_lexical",
 ]
 
+EXPECTED_CLEAN_COLUMNS = [
+    "line_number", "year", "article_name", "media_type", "specific_type",
+    "lexical_diversity", "section_id", "chunk_text", "chunk_word_count",
+]
+
+EXPECTED_CLEAN_ROWS = 1736
+
 EXPECTED_ARTIST_COLUMNS = [
     "respondent_id", "Artist", "Art_practice", "Purchase_art", "Professional_artist",
     "AI_models_familiarity", "Used_AI_art_models", "compensation", "Age", "POC",
@@ -68,6 +75,48 @@ def load_public_discourse(data_dir: str | Path = "data") -> pd.DataFrame:
     return df
 
 
+def load_clean_public_discourse(data_dir: str | Path = "data") -> pd.DataFrame:
+    """Load the cleaned public discourse corpus (1,736 chunks, natural English).
+
+    This is the authoritative data source for the current pipeline (April 2026+).
+    Uses minimal preprocessing (URLs, HTML, boilerplate removed; no lemmatization).
+
+    Args:
+        data_dir: Directory containing public_discourse_clean_chunks.csv.
+
+    Returns:
+        DataFrame with 1,736 rows and 9 columns including chunk_text.
+
+    Raises:
+        FileNotFoundError: If the clean chunks file is missing.
+        ValueError: If row count or columns don't match expected.
+
+    Side effects:
+        Reads from disk.
+    """
+    path = Path(data_dir) / "public_discourse_clean_chunks.csv"
+    if not path.exists():
+        raise FileNotFoundError(
+            f"FAILED: Clean public discourse not found at {path}. "
+            f"Run src/text_processing.py to generate it."
+        )
+
+    df = pd.read_csv(path)
+
+    if len(df) != EXPECTED_CLEAN_ROWS:
+        raise ValueError(
+            f"FAILED: Expected {EXPECTED_CLEAN_ROWS} clean chunk rows, got {len(df)}"
+        )
+
+    missing = set(EXPECTED_CLEAN_COLUMNS) - set(df.columns)
+    if missing:
+        raise ValueError(
+            f"FAILED: Missing columns in clean chunks: {sorted(missing)}"
+        )
+
+    return df
+
+
 def load_artist_perspectives(data_dir: str | Path = "data") -> pd.DataFrame:
     """Load the filtered artist perspectives CSV.
 
@@ -113,6 +162,34 @@ def load_likert_anchors(data_dir: str | Path = "data") -> pd.DataFrame:
     if missing:
         raise ValueError(f"FAILED: Missing columns in Likert anchors: {sorted(missing)}")
 
+    return df
+
+
+def load_public_probes(data_dir: str | Path = "data") -> pd.DataFrame:
+    """Load the extracted public probes CSV.
+
+    Public probes are real sentences from the public discourse corpus,
+    extracted using Likert anchor phrases as keyword-based retrieval queries.
+    See scripts/extract_public_probes.py for the full extraction pipeline.
+
+    Args:
+        data_dir: Path to the data directory containing public_probes.csv.
+
+    Returns:
+        DataFrame with columns including theme, text, probe_text.
+
+    Side effects:
+        Reads from disk only.
+    """
+    path = Path(data_dir) / "public_probes.csv"
+    if not path.exists():
+        raise FileNotFoundError(
+            f"FAILED: Public probes not found at {path}. "
+            f"Run scripts/extract_public_probes.py first."
+        )
+    df = pd.read_csv(path)
+    if len(df) == 0:
+        raise ValueError("FAILED: Public probes file is empty.")
     return df
 
 

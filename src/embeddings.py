@@ -38,6 +38,7 @@ def embed_chunks(
     text_col: str = "chunk_text_clean",
     model_name: str = "intfloat/e5-large-v2",
     batch_size: int = 32,
+    prefix: str | None = None,
 ) -> np.ndarray:
     """Encode text using a SentenceTransformer model.
 
@@ -46,6 +47,8 @@ def embed_chunks(
         text_col: Column name with text to embed.
         model_name: SentenceTransformer model identifier.
         batch_size: Encoding batch size.
+        prefix: Optional prefix to prepend to each text before encoding.
+            For e5-large-v2, use "query: " for clustering/classification tasks.
 
     Returns:
         numpy array of shape (n_rows, embedding_dim).
@@ -57,6 +60,9 @@ def embed_chunks(
     print("Model loaded.")
 
     texts = df[text_col].astype(str).tolist()
+    if prefix is not None:
+        texts = [prefix + t for t in texts]
+        print(f"Prefix '{prefix}' applied to all texts.")
     print(f"Number of texts to encode: {len(texts)}")
 
     embeddings = model.encode(texts, batch_size=batch_size, show_progress_bar=True)
@@ -69,6 +75,7 @@ def load_or_embed(
     model_name: str,
     precomputed_npy: str | None = None,
     batch_size: int = 32,
+    prefix: str | None = None,
 ) -> np.ndarray:
     """Load precomputed embeddings or generate them.
 
@@ -78,6 +85,7 @@ def load_or_embed(
         model_name: SentenceTransformer model name.
         precomputed_npy: Path to precomputed .npy file (if available).
         batch_size: Batch size for encoding.
+        prefix: Optional prefix to prepend to each text before encoding.
 
     Returns:
         Embedding array of shape (n_rows, embedding_dim).
@@ -94,4 +102,5 @@ def load_or_embed(
             )
         return embeddings
 
-    return embed_chunks(df, text_col=text_col, model_name=model_name, batch_size=batch_size)
+    return embed_chunks(df, text_col=text_col, model_name=model_name,
+                        batch_size=batch_size, prefix=prefix)

@@ -35,8 +35,8 @@ from src.data_loading import load_public_discourse, load_artist_perspectives
 # ============================================================
 SEEDS = [  # Full 31 seeds — identical to manuscript pipeline (src/models.py UMAPConfig)
     137, 85, 127, 59, 195, 243, 170, 77, 186, 79,
-    69, 42, 240, 105, 199, 91, 151, 195, 77, 82,
-    177, 234, 46, 101, 34, 175, 108, 81, 176, 241, 20,
+    69, 42, 240, 105, 199, 91, 151, 82, 177, 234,
+    46, 101, 34, 175, 108, 81, 176, 241, 20, 53,
 ]
 N_COMPONENTS = 8
 N_NEIGHBORS = 27
@@ -90,7 +90,7 @@ consensus_8d, _ = umap_from_precomputed_distances(
 )
 
 print("Clustering...")
-labels_km, _ = run_kmeans(consensus_8d, n_clusters=22, metric="euclidean")
+labels_km, _ = run_kmeans(consensus_8d, n_clusters=28, metric="euclidean")
 
 print("Training projection head...")
 proj = train_projection_head(X_public, consensus_8d, random_state=42)

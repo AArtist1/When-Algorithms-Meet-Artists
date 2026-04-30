@@ -1,0 +1,10 @@
+{
+  "include": ["src", "tests"],
+  "exclude": ["**/__pycache__", "mcp_server"],
+  "pythonVersion": "3.10",
+  "typeCheckingMode": "basic",
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "reportUnusedImport": "warning",
+  "reportUnusedVariable": "warning"
+}

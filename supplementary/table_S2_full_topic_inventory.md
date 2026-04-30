@@ -1,40 +1,47 @@
 # Table S2: Full Topic Inventory
 
-22 topics identified via HDBSCAN clustering of the consensus UMAP embedding. Labels assigned by multi-annotator consensus (2 human coders + 3 LLMs). Confidence scores reflect inter-annotator agreement (1-10 scale).
+20 topics identified via KMeans clustering (k=20, selected by 4-stage hyperparameter validation with cluster quality prioritization) of the consensus UMAP embedding. Labels assigned by multi-annotator consensus (2 human coders + 4 LLMs: Claude Opus, Claude Sonnet, GPT-5-mini, GPT-5-nano). Combined confidence scores reflect inter-annotator agreement.
 
 ## Macro-Thematic Groupings
 
 | Macro-theme | Share of Corpus | Topics |
 |---|---|---|
-| Institutions & Markets | 35.6% | 1, 2, 4, 11, 13, 19 |
-| Governance & Rights | 26.0% | 8, 9, 10, 17, 18, 20 |
-| Technical Genealogy | 18.5% | 0, 3, 7, 12, 14 |
-| Practice & Pedagogy | 12.4% | 15, 16, 21 |
-| Philosophy of Creativity | 7.5% | 5, 6 |
+| Philosophy of Creativity | 38.1% | 1, 4, 11, 13, 17 |
+| Practice and Pedagogy | 34.8% | 3, 7, 14, 16 |
+| Technical Genealogy | 14.7% | 2, 5, 15, 19 |
+| Governance and Rights | 7.5% | 8, 10, 18 |
+| Institutions and Markets | 4.9% | 0, 6, 9, 12 |
 
 ## Full Topic Inventory
 
-| Topic | Label | Keywords | Confidence |
-|---|---|---|---|
-| 0 | DeepDream-era neural net art | Google DeepDream, neural networks, psychedelic/hallucination, style transfer, authorship | 9 |
-| 1 | Industry-backed immersive art tech | projection mapping, Panasonic, immersive experience, artist-engineer collaboration | 8 |
-| 2 | Eco-humanist immersive AI data art | Refik Anadol, Large Nature Model, immersive AI installations, data sculpture | 8 |
-| 3 | Harold Cohen's AARON legacy | Harold Cohen, AARON, computational art lineage, machine creativity, NFTs/crypto art | 7 |
-| 4 | Panels on digital/immersive art economies | digital art economy, responsibility/ownership, metaverse/NFTs, institutional partnerships | 7 |
-| 5 | Computational creativity philosophy | philosophy of art, human meaning, AI novelty, inter-concept space, cellular automata | 8 |
-| 6 | Empirical creativity measurement | creativity ratings, semantic distance, divergent thinking, DALL-E 3, co-creation | 9 |
-| 7 | Engineering/system theory of AI art | digital art systems, AI implementation, intelligent calligraphy, IP/piracy | 8 |
-| 8 | GenAI "reality check" | 3D artists/workflows, anti-hype critique, hallucinations, labor displacement/rights | 8 |
-| 9 | DALL-E 2 "democratization" debate | DALL-E 2, democratization narrative, creativity amplifier, attribution/credit | 8 |
-| 10 | Pop-culture existential AI art debate | Detroit: Become Human, "soul"/mortality, authorship, replacement vs tool | 8 |
-| 11 | Luxury art/culture journalism | Cartier, Sotheby's/auctions, Frida Kahlo, public domain, copyright expiration | 6 |
-| 12 | Generative art legitimacy and history | generative art history, definitions/legitimacy, code + control, feminist pioneers | 8 |
-| 13 | AI in the art world: market legitimacy | art market/auctions, galleries & collectors, legitimacy/value, AI vs human artist | 7 |
-| 14 | GAN-era AI art explainer/history | GANs, Obvious/Belamy (Christie's), Robbie Barrat, latent space | 8 |
-| 15 | GenAI tools in education/workflows | ChatGPT/GPT-4, creative workflows/prompting, education/classroom use | 8 |
-| 16 | AI as artistic collaborator | Sougwen Chung, machine hallucination, collective memory, embodied robotics | 7 |
-| 17 | Artist backlash and ethical gatekeeping | AI resistance/backlash, "tool not agent", authorship, consent/licensing | 8 |
-| 18 | Legal analysis of AI art copyright | human authorship requirement, copyrightability, court decisions/precedent | 9 |
-| 19 | Museum/institutional Web3/NFT takes | museums/institutions, NFTs/Web3, blockchain/metaverse, business models | 7 |
-| 20 | Political-economy critique of AI | attention economy, data ownership/surveillance, data colonialism, digital commons | 8 |
-| 21 | Practical AI adoption in creative education | art/design education, tool adoption, prompt engineering, Adobe Firefly | 8 |
+| Topic | Label | Top Keywords | Macro-theme | Confidence |
+|---|---|---|---|---|
+| 0 | Decentralized Infrastructure for Art Ecosystems | decentralized, technologies, cultural, statements | Institutions and Markets | 0.4 |
+| 1 | AI as Creative Collaborator | ai, art, human, data | Philosophy of Creativity | 0.4 |
+| 2 | Machine Learning Art Theory and Practice | MIT, machine learning, Microsoft | Technical Genealogy | 0.4 |
+| 3 | Personal Reflections on AI and Art | know, ai, art, really, yeah | Practice and Pedagogy | 0.4 |
+| 4 | Mental Models and Abstract Thought | sort, kind, mental images, language | Philosophy of Creativity | 0.6 |
+| 5 | Harold Cohen and AARON Legacy | Cohen, AARON, computer, creativity, 2010 | Technical Genealogy | 0.5 |
+| 6 | Future of Arts Journalism and Museums | museums, publishing, writing, journalism | Institutions and Markets | 0.4 |
+| 7 | Conversational Reflections on Art Practice | know, art, really, kind, lot | Practice and Pedagogy | 0.4 |
+| 8 | AI Copyright and Legal Protection | copyright, coders, software, law, protection | Governance and Rights | 0.6 |
+| 9 | Digital Art Exhibition and Display | internet, MoMA, exhibition | Institutions and Markets | 0.5 |
+| 10 | Artist Defense Tools Against AI | Nightshade, Glaze, tools, Rachel | Governance and Rights | 0.5 |
+| 11 | AI Authorship and Creative Agency | Chung, authorship, agency | Philosophy of Creativity | 0.6 |
+| 12 | Media Coverage and AI Panic | ai, effective altruism, media, humanity | Institutions and Markets | 0.4 |
+| 13 | AI Art Authenticity and Human Creativity | ai, art, artists, image, human | Philosophy of Creativity | 0.6 |
+| 14 | Informal AI Creative Tool Discourse | gonna, students, Adobe, Firefly | Practice and Pedagogy | 0.4 |
+| 15 | Deep Dream and Neural Network Visualization | Mordvintsev, neural, deep, Deep Dream | Technical Genealogy | 0.6 |
+| 16 | Artist Reflections on Technology | know, art, really, artists | Practice and Pedagogy | 0.3 |
+| 17 | Artist-Centered AI Design and Ethics | fi, prompts, design, ethics | Philosophy of Creativity | 0.6 |
+| 18 | AI Art Authorship and Copyright Debates | Midjourney, Allen, copyright | Governance and Rights | 0.6 |
+| 19 | Generative Art History and Pioneers | ai art, generative art, Barrat, computer art | Technical Genealogy | 0.4 |
+
+## Configuration
+
+- Corpus: 1,736 chunks from 125 articles (2013-2025)
+- Embedding: e5-large-v2 with "query: " prefix, L2-normalized
+- UMAP: consensus from 30 seeds, n_neighbors=53, min_dist=0.01, n_components=5
+- Clustering: KMeans with k=20
+- Minimum cluster size: 10 chunks
+- Labeling: 4 LLMs independently + 2 human coders, consensus voting

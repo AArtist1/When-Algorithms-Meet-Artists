@@ -23,4 +23,4 @@ Public discourse documents were identified via Google Search using 17 targeted q
 | AI and the creative job market | 11 |
 | **Total** | **134** |
 
-After deduplication across queries, the final corpus comprised 131 unique documents spanning 2013-2025.
+After deduplication across queries and removal of 3 duplicate articles (same content ingested as both text and audio transcript), the final corpus comprised 125 unique documents spanning 2013-2025.

@@ -191,6 +191,6 @@ class TestE2EPipelineConfig:
         config = PipelineConfig()
         assert config.embedding.model_name == "intfloat/e5-large-v2"
         assert config.embedding.embedding_dim == 1024
-        assert len(config.umap.seeds) == 31
+        assert len(config.umap.seeds) == 30
         assert config.umap.n_components == 8
-        assert config.cluster.method == "hdbscan"
+        assert config.cluster.method == "kmeans"

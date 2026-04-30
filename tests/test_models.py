@@ -5,7 +5,6 @@ from pydantic import ValidationError
 
 from src.models import (
     ArtistProbe,
-    ClusterConfig,
     EmbeddingConfig,
     LikertPhrase,
     PipelineConfig,
@@ -156,8 +155,8 @@ class TestConfigs:
     def test_pipeline_config_defaults(self):
         config = PipelineConfig()
         assert config.embedding.model_name == "intfloat/e5-large-v2"
-        assert len(config.umap.seeds) == 31, (
-            f"FAILED: Expected 31 default seeds, got {len(config.umap.seeds)}"
+        assert len(config.umap.seeds) == 30, (
+            f"FAILED: Expected 30 default seeds, got {len(config.umap.seeds)}"
         )
 
     def test_salience_ratio_rejects_negative_mass(self):

@@ -164,6 +164,11 @@ class EmbeddingConfig(BaseModel):
     batch_size: int = Field(default=32, ge=1)
     normalize_l2: bool = True
     text_column: str = "chunk_text_clean"
+    prefix: str | None = Field(
+        default="query: ",
+        description="Prefix prepended to texts before encoding. "
+        "For e5-large-v2, 'query: ' is recommended for clustering tasks.",
+    )
 
     @model_validator(mode="after")
     def check_dim_matches_model(self) -> EmbeddingConfig:
@@ -186,8 +191,8 @@ class UMAPConfig(BaseModel):
     seeds: list[int] = Field(
         default_factory=lambda: [
             137, 85, 127, 59, 195, 243, 170, 77, 186, 79,
-            69, 42, 240, 105, 199, 91, 151, 195, 77, 82,
-            177, 234, 46, 101, 34, 175, 108, 81, 176, 241, 20,
+            69, 42, 240, 105, 199, 91, 151, 82, 177, 234,
+            46, 101, 34, 175, 108, 81, 176, 241, 20, 53,
         ]
     )
     consensus_method: Literal["distance_average", "procrustes_average"] = "distance_average"
@@ -204,8 +209,8 @@ class UMAPConfig(BaseModel):
 class ClusterConfig(BaseModel):
     """Configuration for clustering."""
 
-    method: Literal["hdbscan", "kmeans"] = "hdbscan"
-    n_clusters: int | None = Field(default=22, description="For kmeans; ignored for HDBSCAN")
+    method: Literal["hdbscan", "kmeans"] = "kmeans"
+    n_clusters: int | None = Field(default=20, description="For kmeans; ignored for HDBSCAN")
     min_cluster_size: int = Field(default=10, ge=2)
     min_samples: int = Field(default=5, ge=1)
     random_state: int = 42
@@ -214,11 +219,11 @@ class ClusterConfig(BaseModel):
 class ProjectionConfig(BaseModel):
     """Configuration for the MLP projection head."""
 
-    hidden_layer_sizes: tuple[int, ...] = (512, 128)
+    hidden_layer_sizes: tuple[int, ...] = (1024, 512, 256, 128, 64)
     activation: str = "relu"
-    alpha: float = Field(default=0.001, ge=0.0)
+    alpha: float = Field(default=0.0001, ge=0.0)
     learning_rate_init: float = Field(default=0.001, gt=0.0)
-    max_iter: int = Field(default=500, ge=1)
+    max_iter: int = Field(default=1000, ge=1)
     early_stopping: bool = True
     validation_fraction: float = Field(default=0.1, ge=0.0, lt=1.0)
     test_size: float = Field(default=0.15, ge=0.0, lt=1.0)

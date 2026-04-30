@@ -1,4 +1,4 @@
-"""Clustering (HDBSCAN + KMeans) for the analysis pipeline."""
+"""Clustering (KMeans, with HDBSCAN available for comparison) for the analysis pipeline."""
 
 from __future__ import annotations
 

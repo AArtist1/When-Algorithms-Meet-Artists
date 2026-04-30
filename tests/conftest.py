@@ -32,9 +32,16 @@ def pytest_configure(config):
 
 @pytest.fixture(scope="session")
 def df_public():
-    """Load the full public discourse corpus (real data, 891 rows)."""
+    """Load the old public discourse corpus (real data, 891 rows)."""
     from src.data_loading import load_public_discourse
     return load_public_discourse(DATA_DIR)
+
+
+@pytest.fixture(scope="session")
+def df_public_clean():
+    """Load the clean public discourse corpus (real data, 1,736 rows)."""
+    from src.data_loading import load_clean_public_discourse
+    return load_clean_public_discourse(DATA_DIR)
 
 
 @pytest.fixture(scope="session")

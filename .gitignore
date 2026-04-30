@@ -26,9 +26,8 @@ Thumbs.db
 .vscode/
 .idea/
 
-# === Claude Code / MCP local config ===
+# === Claude Code local config ===
 .claude/
-.mcp.json
 CLAUDE.md
 
 # === Old project files (superseded by new structure) ===
@@ -39,7 +38,7 @@ methods_paper_template/
 TRACE_data_for_talk.md
 
 # === Manuscript working directories (private during review) ===
-jan_2026_manuscript/
+manuscripts_and_presentations/
 nov_2025_revisions/
 submissions/
 

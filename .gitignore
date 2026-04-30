@@ -56,6 +56,35 @@ trace_provenance/_archive_pre_v03/
 #     pre-v0.3 sessions; not part of this project's analytical pipeline) ===
 scripts/trace_normalize_*
 
+# === Exploration / hyperparameter-tuning / figure-design-variant scripts ===
+# (kept locally but not part of the canonical pipeline)
+scripts/check_grid_progress.py
+scripts/cluster_deep_analysis.py
+scripts/compare_seed_runs.py
+scripts/compute_h3_metrics.py
+scripts/config_comparison.py
+scripts/generate_d4_opacity_variants.py
+scripts/generate_e_extras.py
+scripts/generate_poster_figures.py
+scripts/generate_semantic_map_v*.py
+scripts/generate_semantic_map_variants.py
+scripts/optimize_projection_*.py
+scripts/prefix_comparison.py
+scripts/prefix_umap_grid_search.py
+scripts/projection_head_optimization.py
+scripts/validate_hyperparams.py
+
+# === Exploration / validation / comparison figure outputs ===
+# (regeneratable from scripts; not part of the manuscript)
+figures/config_comparison/
+figures/free_text_validation/
+figures/hyperparameter_validation/
+figures/k_justification/
+figures/mlp_sensitivity/
+figures/pipeline_comparison/
+figures/projection_optimization/
+figures/seed_comparison/
+
 # === Internal session-handoff and historical change logs (working notes) ===
 HANDOFF_NEXT_SESSION.md
 SESSION_CHANGES_*.md

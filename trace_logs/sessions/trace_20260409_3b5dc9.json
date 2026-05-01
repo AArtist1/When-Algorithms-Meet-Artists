@@ -1,0 +1,221 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260409_3b5dc9",
+  "created": "2026-04-09T02:35:26.701487Z",
+  "ended": "2026-04-09T20:36:31.864786Z",
+  "status": "completed",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "Creating AIX 2026 poster presentation preparation materials for Ariya \u2014 practice questions and answer pointers for her solo poster presentation at AIX Summit East in NYC, April 2026",
+    "participants": [
+      {
+        "type": "human",
+        "id": "oliver",
+        "role": "PI"
+      },
+      {
+        "type": "human",
+        "id": "ariya",
+        "role": "co-author / presenter"
+      }
+    ],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.12.10",
+      "trace_version": "0.3.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "AIX-2026",
+      "poster-prep",
+      "ariya",
+      "presentation"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": "Session accomplished: Complete Phase 1-3 of the manuscript update plan. (1) Fixed public probe pipeline: keyword extraction on new 1,736-chunk corpus yielding 906 probes, built new embedding-based extraction yielding 750 probes, compared both methods (14% overlap), re-ran free-text validation with Config A (84% cluster overlap), re-ran final pipeline confirming H2 style control works (Cram\u00e9r's V drops 0.740\u21920.648). (2) Updated MANUSCRIPT_NMS2026.md with 33 edits: all old numbers replaced (891\u21921736, 131\u2192125, k=28\u219220, 574\u2192906), H3 rewritten with entropy metrics, HDBSCAN\u2192KMeans, final judge\u2192human-approved. (3) Updated Table S2 for k=20, consensus_umap_implementation.md with new params, Table S1 doc count, README.md full rewrite, code defaults fixed, stale planning docs archived. 191 tests passing.\n\nWhat is next: Phase 4 (Nature Collection submission prep, deadline April 30). Copy updated NMS manuscript, add required Nature Portfolio statements (data availability, author contributions, competing interests, ethics), adjust framing for AI social science collection. Also need to create AIX poster practice materials (done separately).",
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-04-09T02:39:55.457524Z",
+      "session_id": "trace_20260409_3b5dc9",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Created AIX 2026 poster presentation preparation materials for Ariya: 64 practice questions (categorized by likelihood/difficulty) and a companion answer-pointers file with key phrases, strategies, numbers to memorize, and emergency phrases",
+        "artifact": "jan_2026_manuscript/AIX_2026_poster_presentation/AIX2026_practice_questions.md",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [],
+        "tags": [
+          "AIX-2026",
+          "poster-prep",
+          "ariya"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "i need help coming up with a series of likely questions and prompts that Ariya will need to be able to answer at this summit / conference... questions that range from standard to complicated, likely to not as likely",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_002",
+      "timestamp": "2026-04-09T02:40:00.772493Z",
+      "session_id": "trace_20260409_3b5dc9",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Created companion answer-pointers file with key talking points, analogies, numbers to memorize, emergency redirect phrases, and an elevator pitch for Ariya's solo AIX poster presentation",
+        "artifact": "jan_2026_manuscript/AIX_2026_poster_presentation/AIX2026_answer_pointers.md",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [],
+        "tags": [
+          "AIX-2026",
+          "poster-prep",
+          "ariya"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "i do not need all of the exact answers word-for-word, but more like important points and hints and tips",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_003",
+      "timestamp": "2026-04-09T02:44:26.890171Z",
+      "session_id": "trace_20260409_3b5dc9",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Created condensed core practice set (8 core + 2 challenge questions with pointers) and exported all 4 preparation files to .docx via pandoc",
+        "artifact": "jan_2026_manuscript/AIX_2026_poster_presentation/AIX2026_core_questions.docx",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [],
+        "tags": [
+          "AIX-2026",
+          "poster-prep",
+          "ariya"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "make another set of files that would be less questions, probably a core 8 or so and then 2 questions that are a bit more difficult... then export those new .md files to .docx",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_004",
+      "timestamp": "2026-04-09T20:02:07.685924Z",
+      "session_id": "trace_20260409_3b5dc9",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "oliver",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Run BOTH keyword-based and embedding-based public probe extraction on the new 1,736-chunk corpus, compare results, and use the comparison as a robustness check. Keep 4-layer projection head as-is. Target Nature Collection (PALCOMMS) with April 30 deadline as primary venue.",
+        "rationale": "User confirmed: (1) Nature Collection April 30 is primary target, (2) keep 4-layer projection head to avoid full re-run, (3) run both probe extraction methods on new data for comparison rather than picking one. AI proposed embedding-based retrieval as upgrade; user counter-proposed running both and comparing. This is the approved plan for the manuscript update sprint.",
+        "proposed_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "disposition": "proposed",
+        "resolved_by": null,
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "collaborative",
+        "tags": [
+          "methodology",
+          "public-probes",
+          "manuscript-update",
+          "nature-collection"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: 'can we actually do both approaches and compare them? i want to redo the keyword matching with the new 1736 chunks but then also compare those results to doing embedding retrieval'",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_005",
+      "timestamp": "2026-04-09T20:26:49.619857Z",
+      "session_id": "trace_20260409_3b5dc9",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Phase 1 complete: Fixed public probe pipeline. Updated keyword extraction for 1,736-chunk corpus (906 probes), built new embedding-based extraction (750 probes), compared both methods (14% overlap), re-ran free-text validation with Config A (84% cluster overlap), re-ran final pipeline verifying H2 style control now works (Cram\u00e9r's V drops from 0.740 to 0.648). All 66 tests pass.",
+        "artifact": "scripts/extract_public_probes.py, scripts/extract_public_probes_embedding.py, scripts/compare_probe_methods.py, tests/test_public_probes.py",
+        "direction": "collaborative",
+        "execution": "ai",
+        "related_decision_ids": [],
+        "tags": [
+          "phase-1",
+          "public-probes",
+          "pipeline-fix",
+          "H2-style-control"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: 'go ahead and work on all of this. be sure to implement extensive E2E testing + pyright for each and every step. create before vs after comparison diagrams and tables'",
+        "related_event_ids": []
+      }
+    }
+  ]
+}

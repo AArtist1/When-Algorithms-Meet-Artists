@@ -1,0 +1,173 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260326_04ea82",
+  "created": "2026-03-26T19:55:54.055606Z",
+  "ended": "2026-03-26T19:57:08.505545Z",
+  "status": "completed",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "Retrospective logging: citation style change from author-prominent to information-prominent across manuscript, plus precision fixes (95% to 95.5%, 4.6% to 4.5%)",
+    "participants": [
+      {
+        "type": "human",
+        "id": "oliver-muellerklein",
+        "role": "PI"
+      },
+      {
+        "type": "ai",
+        "id": "claude-opus-4-6",
+        "role": "assistant"
+      }
+    ],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.13.11",
+      "trace_version": "0.3.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "retrospective",
+      "citation-style",
+      "writing",
+      "precision"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": "Retrospective logging of two decisions: (1) Citation style change from author-prominent to information-prominent for 15 citations, eliminating all 3 literature-chain paragraphs, reducing AP ratio from 47% to 28%. (2) Precision standardization: 95% to 95.5% in 5 instances, 4.6% to 4.5% in 2 instances. Both changes applied to NMS2026 and NatureCollection2026 manuscripts (all 4 versions + docx files).",
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-03-26T19:56:11.843232Z",
+      "session_id": "trace_20260326_04ea82",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "oliver-muellerklein",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Convert 15 author-prominent citations to information-prominent style across the manuscript. Author-prominent ('Zai et al. (2025) found...') places the author name as grammatical subject. Information-prominent ('Public AI discourse gives disproportionate standing to institutional actors (Zai et al., 2025)') places the idea first and cites parenthetically. This eliminates literature-chain paragraphs where 4+ consecutive sentences each begin with 'Author (Year) verb...' Retain author-prominent only where the author's identity is integral to the argument (Entman's framework, Baeyaert's theoretical contribution, papers engaged with in depth like Bishop, Malecki, Campos Valverde).",
+        "rationale": "Literature-chain paragraphs (Author found X. Author found Y. Author found Z.) are a visible AI-generated writing pattern and read like a mechanical literature review rather than an argument-driven empirical paper. Information-prominent citation lets ideas lead and evidence follow, which is more natural for social science writing and better serves readers who care about the claims, not who made them. Author-prominent remains appropriate when introducing a named theoretical framework or engaging deeply with a single paper's findings.",
+        "proposed_by": {
+          "type": "human",
+          "id": "oliver-muellerklein",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver-muellerklein",
+          "role": null
+        },
+        "revision_note": "Accepted and implemented. User directed the change after reviewing the analysis of author-prominent vs information-prominent citation patterns. 15 citations converted. Literature chains eliminated (from 3 chains to 0). Author-prominent ratio reduced from 47% to 28%.",
+        "revises_event_id": null,
+        "suggestion_type": "collaborative",
+        "tags": [
+          "writing-style",
+          "citations",
+          "author-prominent",
+          "information-prominent",
+          "lit-chain"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: 'it seems like it would read much cleaner, flow better, and feel more natural or human if we went the latter way [information-prominent]. can you investigate this and give me your suggestions?'",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_002",
+      "timestamp": "2026-03-26T19:56:33.582977Z",
+      "session_id": "trace_20260326_04ea82",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Converted 15 author-prominent citations to information-prominent across Introduction (lines 37, 39) and Discussion (lines 234, 244, 264, 274). Eliminated all 3 literature-chain paragraphs. Retained 19 author-prominent citations where author identity is integral (Entman, Baeyaert, Bishop, Malecki, Campos Valverde, Ferrari, DiMaggio). Applied to both NMS2026 and NatureCollection2026 manuscripts (both anonymous and non-anonymous versions). Regenerated all docx files.",
+        "artifact": "jan_2026_manuscript/NMS2026/MANUSCRIPT_NMS2026.md",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_001"
+        ],
+        "tags": [
+          "writing-style",
+          "citations",
+          "manuscript"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: 'Yes, implement these changes that you described and then rescore the naturalness score'",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_003",
+      "timestamp": "2026-03-26T19:56:49.266406Z",
+      "session_id": "trace_20260326_04ea82",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "oliver-muellerklein",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Standardize all finding-related compression percentages to precise values: use 95.5% consistently (not 95%), and change 4.6% to 4.5% to match arithmetic (100 - 95.5 = 4.5). Retain standalone 95% only in the Methods section where it refers to a coverage threshold parameter, not the compression finding.",
+        "rationale": "Precision and internal consistency. The individual cluster percentages (40.6 + 21.3 + 18.7 + 14.9) sum to exactly 95.5%, so the remaining must be 4.5%. Using rounded 95% in some places and precise 95.5% in others, and stating 4.6% when the arithmetic yields 4.5%, creates unnecessary inconsistency that a careful reviewer would notice.",
+        "proposed_by": {
+          "type": "human",
+          "id": "oliver-muellerklein",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver-muellerklein",
+          "role": null
+        },
+        "revision_note": "Accepted and implemented. Changed 5 instances of rounded '95%' to precise '95.5%' and 2 instances of '4.6%' to '4.5%' across all manuscript versions. The one remaining '95%' is in the Methods section referring to a coverage threshold parameter, which is correct as-is.",
+        "revises_event_id": null,
+        "suggestion_type": "collaborative",
+        "tags": [
+          "precision",
+          "arithmetic",
+          "consistency"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: 'instead of saying 95% sometimes and 95.5% other times, make sure we always use 95.5% everywhere. also, will it change anything to change the 4.6% to 4.5%?'",
+        "related_event_ids": []
+      }
+    }
+  ]
+}

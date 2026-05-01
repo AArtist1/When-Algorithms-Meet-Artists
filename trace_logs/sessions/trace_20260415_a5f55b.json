@@ -1,0 +1,218 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260415_a5f55b",
+  "created": "2026-04-15T13:16:10.185356Z",
+  "ended": null,
+  "status": "active",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "C&C 2026 poster submission \u2014 deadline 2026-04-16 (tomorrow AoE). Pick up where the prior session left off: confirm CFP requirements, refresh abstract with canonical numbers, build art-tech-tuned figures, compile submission package.",
+    "participants": [],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.13.11",
+      "trace_version": "0.3.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "poster",
+      "cc2026",
+      "acm",
+      "submission"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": null,
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-04-15T14:03:40.693531Z",
+      "session_id": "trace_20260415_a5f55b",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude-ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Target ~2000 words for the C&C 2026 poster-track extended abstract, use placeholder title \"Two Topics, 252 Artists: Measuring Compression in Public AI-Art Discourse (2013\u20132025)\" (swappable), and position Ariya + user as co-first authors.",
+        "rationale": "Word count: 2000 fits one figure + methods paragraph + four compression phenomena + implications without padding (3000 allowed but poster-track reviewers expect compressed prose). Title: #2 is the sober-but-hooky safe pick; user flagged it may swap later. Authorship: consistent with Ariya as lead per user-memory.",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude-ai-assistant",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "user",
+          "role": null
+        },
+        "revision_note": "User accepted the 2000-word target and authorship setup (\"i agree with your recommendation on the word target\"). Title held as placeholder (\"lets go with one and then we might switch it\").",
+        "revises_event_id": null,
+        "suggestion_type": "collaborative",
+        "tags": [
+          "poster",
+          "cc2026",
+          "scope-decision"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: \"i agree with your recommendation on the word target and i am not yet sure about the title so lets go with one and then we might switch it.. start drafing\"",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_002",
+      "timestamp": "2026-04-15T14:14:07.999804Z",
+      "session_id": "trace_20260415_a5f55b",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "C&C 2026 poster-track extended abstract: wrote main.tex (~1,850 words) in ACM manuscript-review format with anonymous authorship, four-phenomenon compression findings (concentration, frame redirection, binary simplification, voice collapse), style-matched controls, and implications for creative practice. US English, no em-dashes, no H1/H2/H3 markers, no map/territory metaphor, no keyword-based probe references.",
+        "artifact": "jan_2026_manuscript/ACM2026/poster/main.tex",
+        "direction": "collaborative",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_001"
+        ],
+        "tags": [
+          "poster",
+          "cc2026",
+          "extended-abstract",
+          "latex"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: \"pick up where we left off with the poster template for C7C 2026 and tell me whatever other steps are needed\" \u2192 \"start drafing\"",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_003",
+      "timestamp": "2026-04-15T14:14:14.229364Z",
+      "session_id": "trace_20260415_a5f55b",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Poster-grade figures: fig1_concentration (horizontal bar chart showing 94.9% in 2 topics and 15 empty topics) and fig2_geometry (2D projection with absorbing-topic centroids and T13 \"authenticity absorber\" callout). Single script reads precomputed cache from figures/final_pipeline/figure_cache/, renders art-tech-tuned palette (coral #E85A4F for artists, slate #4A6FA5 for public).",
+        "artifact": "scripts/generate_poster_figures.py",
+        "direction": "ai",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_001"
+        ],
+        "tags": [
+          "poster",
+          "cc2026",
+          "figures",
+          "matplotlib"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User explicitly asked for \"new versions of the figures that are more visually captivating and pleasing\" (from POSTER_BRIEF).",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_004",
+      "timestamp": "2026-04-15T14:14:17.553529Z",
+      "session_id": "trace_20260415_a5f55b",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Submission metadata document: captures portal path (PCS \u2192 SIGCHI \u2192 C&C2024 \u2192 Posters), form fields (title, abstract, keywords), anonymity checklist, word count confirmation (~1,850 < 3,000 limit), post-submission timeline (notification 2026-05-07, camera-ready 2026-05-21, conference 13\u201316 July 2026), and known-good state of files with warning about stale POSTER_PLAN.md and poster_abstract.tex.",
+        "artifact": "jan_2026_manuscript/ACM2026/poster/SUBMISSION_METADATA.md",
+        "direction": "ai",
+        "execution": "ai",
+        "related_decision_ids": [],
+        "tags": [
+          "poster",
+          "cc2026",
+          "submission"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_005",
+      "timestamp": "2026-04-15T15:23:22.397323Z",
+      "session_id": "trace_20260415_a5f55b",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Repo restructure and path-reference updates: moved jan_2026_manuscript/ACM2026/poster/ to manuscripts_and_presentations/poster/C_and_C_2026/, renamed jan_2026_manuscript/ to manuscripts_and_presentations/manuscript/. Updated .gitignore, CLAUDE.md (text + directory-tree diagram), HANDOFF_NEXT_SESSION.md (added restructure note at top), SESSION_CHANGES_20260403.md, POSTER_BRIEF_2026-04-15.md, and three memory files (MEMORY.md, project_cc_poster_task.md, project_submission_history.md). Updated scripts/generate_poster_figures.py OUT_DIR. Left 11 scripts/regenerate_*.py files and historical TRACE session logs untouched.",
+        "artifact": "manuscripts_and_presentations/ (and documentation path updates)",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [],
+        "tags": [
+          "restructure",
+          "paths",
+          "documentation"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: \"i need you to actually move all of this work into its own 'poster/' dir that will be in 'manuscript_and_presentations' dir... update the .gitignore and update claude.md and handoff doc and any other documentations or logs that are necessary now based on changing paths\"",
+        "related_event_ids": []
+      }
+    }
+  ]
+}

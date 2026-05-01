@@ -48,9 +48,10 @@ manuscripts_and_presentations/
 nov_2025_revisions/
 submissions/
 
-# === TRACE working files (live store at ~/.trace/, not tracked here) ===
-trace_provenance/sessions/
-trace_provenance/_archive_pre_v03/
+# === TRACE published artifact ===
+# trace_logs/ IS tracked and shipped with the manuscript. The live working
+# store lives at ~/.trace/ and is not tracked here. The previous
+# trace_provenance/ directory was retired on 2026-05-01 in favor of trace_logs/.
 
 # === TRACE one-off normalisation scripts (used 2026-04-30 to clean up
 #     pre-v0.3 sessions; not part of this project's analytical pipeline) ===

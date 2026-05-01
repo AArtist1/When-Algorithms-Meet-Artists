@@ -1,0 +1,228 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260402_a9e36c",
+  "created": "2026-04-02T16:45:37.489514Z",
+  "ended": null,
+  "status": "active",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "Phase 1: UMAP hyperparameter grid search for prefix embeddings. Extending src/hyperparameter_selection.py and building grid search script for the prefix embedding space. Also parallelizing any independent work (projection head, embeddings module prefix support).",
+    "participants": [],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.13.11",
+      "trace_version": "0.3.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "prefix-embeddings",
+      "umap-grid-search",
+      "hyperparameter-optimization",
+      "phase-1"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": null,
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-04-02T16:46:49.270442Z",
+      "session_id": "trace_20260402_a9e36c",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Use a 2-stage UMAP grid search for prefix embeddings: Stage 1 (coarse) runs 125 configs (5 n_neighbors x 5 min_dist x 5 n_components) with 10 seeds each to narrow to top ~10 configs. Stage 2 (fine) runs top configs with all 30 seeds. Then fine k search on the best config. Uses distance-matrix consensus (not Procrustes) to match the current pipeline methodology.",
+        "rationale": "Running all 125 configs x 30 seeds = 3750 UMAP fits is expensive. A 2-stage approach (1250 fits coarse + ~300 fine) reduces compute by ~60% while maintaining rigor \u2014 the coarse pass identifies the viable region, the fine pass confirms with full seed count. Distance-matrix consensus is used because the handoff doc and codebase confirm it outperforms Procrustes (ARI 0.71 vs 0.56).",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude",
+          "role": null
+        },
+        "disposition": "proposed",
+        "resolved_by": null,
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "proactive",
+        "tags": [
+          "methodology",
+          "hyperparameter-optimization",
+          "computational-efficiency"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: proceed with the phase 1 and anything you can feasibly, reliably, and confidently do in parallel",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_002",
+      "timestamp": "2026-04-02T17:27:08.853539Z",
+      "session_id": "trace_20260402_a9e36c",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "gotcha",
+        "content": "Prefix embeddings with e5-large-v2 produce much higher optimal k than expected. Initial coarse grid search (k range 15-50) showed ALL configs hitting the k=50 ceiling \u2014 silhouette still climbing at k=50. Extended coarse k range to [15, 20, ..., 70] and fine k range to [10-80]. First results with expanded range show best_k=55-60 with silhouette >0.96 and ARI >0.90. This is substantially higher than the no-prefix optimal k=28 and even the preliminary prefix estimate of k=37-40 from the handoff doc.",
+        "corrects_event_ids": [],
+        "related_event_ids": [],
+        "tags": [
+          "prefix-embeddings",
+          "k-selection",
+          "hyperparameter-optimization"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_003",
+      "timestamp": "2026-04-02T23:58:13.481697Z",
+      "session_id": "trace_20260402_a9e36c",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Proceed with Phases A-C in parallel: re-extract public probes with prefix embeddings, update full pipeline for final config (nn=36, md=0.01, nc=8, k=35), and update cluster labeling script for k=35. Projection head architecture changed to (1024, 256) per handoff doc recommendation for prefix embeddings.",
+        "rationale": "Grid search complete with verified results. Final config: nn=36, md=0.01, nc=8, k=35 (min_cluster_size=11). All three phases are independent code updates that can proceed simultaneously, with Phase A (probe extraction) being the only one requiring compute.",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude",
+          "role": null
+        },
+        "disposition": "proposed",
+        "resolved_by": null,
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "collaborative",
+        "tags": [
+          "pipeline",
+          "prefix-embeddings",
+          "phase-A",
+          "phase-B",
+          "phase-C"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: yes - proceed with all of this",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_004",
+      "timestamp": "2026-04-03T14:56:54.387542Z",
+      "session_id": "trace_20260402_a9e36c",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Re-chunk public discourse from raw text_og using 250-word chunks with 25-word overlap, with minimal cleaning (URLs, HTML, whitespace only \u2014 NO lemmatization, NO stopword removal). Embed the natural-language chunks with e5-large-v2 + \"query: \" prefix. This fixes the critical bug where prefix embeddings were generated from full article text (text_phrase_norm) instead of individual chunks, AND the quality issue where over-processed lemmatized text was being fed to a transformer model designed for natural language.",
+        "rationale": "Two bugs discovered: (1) prefix_comparison.py used text_phrase_norm (full article, 129 unique) instead of chunk-level text (891 unique), causing all chunks from same article to get identical embeddings and artificially inflating all metrics. (2) All existing chunk columns (chunk_text_norm, chunk_text_clean, chunk_text_lexical) are heavily preprocessed (lemmatization turned 'data science' into 'datum science', stopword removal, punctuation stripping created artifacts like 'choirjpg'). Transformer embedding models like e5-large-v2 are trained on natural text and perform best with minimal preprocessing.",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude",
+          "role": null
+        },
+        "disposition": "proposed",
+        "resolved_by": null,
+        "revision_note": null,
+        "revises_event_id": "evt_003",
+        "suggestion_type": "collaborative",
+        "tags": [
+          "critical-bug-fix",
+          "preprocessing",
+          "embeddings",
+          "data-quality"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: i need help figuring out which one of these we should use... this is definitly our chance to make this top tier since we are about to rerun everything once again",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_005",
+      "timestamp": "2026-04-03T14:56:59.892191Z",
+      "session_id": "trace_20260402_a9e36c",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "correction",
+        "content": "CRITICAL BUG: prefix_comparison.py line 206 used text_col_pub = 'text_phrase_norm' which is the FULL ARTICLE TEXT (129 unique values across 891 rows), not the chunk text. This caused all chunks from the same article to receive identical embeddings (cosine similarity = 1.000000). All prefix pipeline results (grid search, k selection, metrics) were invalid \u2014 silhouette 0.97 and ARI 0.88 were artifacts of duplicate embeddings. The old no-prefix pipeline was NOT affected (those embeddings were pre-computed correctly from chunk-level text).",
+        "corrects_event_ids": [
+          "evt_001",
+          "evt_002"
+        ],
+        "related_event_ids": [],
+        "tags": [
+          "critical-bug",
+          "prefix-embeddings",
+          "data-integrity"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User found identical exemplar texts across different chunks in the same cluster. Investigation confirmed cosine similarity = 1.0 between chunks from same article in prefix embeddings.",
+        "related_event_ids": []
+      }
+    }
+  ]
+}

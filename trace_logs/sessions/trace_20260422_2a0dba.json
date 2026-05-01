@@ -1,0 +1,31 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260422_2a0dba",
+  "created": "2026-04-22T00:15:55.918484Z",
+  "ended": null,
+  "status": "active",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "Auto-created session (no explicit trace_start_session call)",
+    "participants": [],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.13.11",
+      "trace_version": "0.3.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "auto-session"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": null,
+  "events": []
+}

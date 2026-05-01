@@ -1,0 +1,195 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260414_45f20c",
+  "created": "2026-04-14T12:30:41.371718Z",
+  "ended": "2026-04-14T13:22:17.377698Z",
+  "status": "completed",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "Manuscript reference cleanup + surgical edits for Nature Collection (PALCOMMS) submission. Execute audit decisions from 2026-04-14 handoff: drop Mohr 2020, drop T\u00f6rnberg & Uitermark 2024, rework Crawford 2021 to engage classification argument. Then drop H1/H2/H3 Results numbering, convert bullets to prose, tighten policy bullets, regenerate .docx files, verify 191 tests. Deadline April 30, 2026.",
+    "participants": [
+      {
+        "type": "human",
+        "id": "human",
+        "role": "researcher"
+      },
+      {
+        "type": "ai",
+        "id": "claude",
+        "role": "assistant"
+      }
+    ],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.13.11",
+      "trace_version": "0.3.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "manuscript",
+      "nature-collection",
+      "palcomms",
+      "reference-cleanup",
+      "submission-polish"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": "Completed NatCol manuscript submission-polish pass: dropped Mohr 2020 + T\u00f6rnberg & Uitermark 2024, reworked Crawford 2021 into a specific classification-politics insertion, removed H1/H2/H3 Results markers, converted Results bullet list to prose, renamed 3 Territory/Map subheadings to plain alternatives, tightened Implications for Policy bullets to one prose sentence, dropped old Figure 3 and promoted the 6-panel compression-metrics figure to new Figure 3. Regenerated main/anonymous/SI .docx files. 191/191 tests pass. Reference count: 57 \u2192 54.\n\nWHAT IS NEXT for the next session:\n1. Decide whether to port these same edits to NMS2026 parallel version (currently un-synced). If yes, the edits are mechanical text replacements identical to what was applied to NatCol \u2014 body text between named and anonymous is character-identical except author metadata.\n2. Decide on the two residual inline map/territory metaphors that were left in place per user scoping: one in Discussion \u00a7Agenda Misalignment (\"The public discourse 'map' does not allocate proportional representational space to this stakeholder 'territory.'\"), one in Conclusion penultimate paragraph (\"risks legislating for a 'map' that does not match the 'territory.'\"). If \"one metaphor per paper\" full consistency is wanted, rewrite both.\n3. Final pre-submission checklist items from HANDOFF (EPS/TIFF conversion, UK English sweep, anonymized URL verification) still pending.\n4. Figure 1 variant selection still pending user pick (5 variants exist in figures/manuscript/).\n5. Deadline: **April 30, 2026** (16 days out).",
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-04-14T13:12:07.435069Z",
+      "session_id": "trace_20260414_45f20c",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "human",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Execute all 8 substantive edits (drop Mohr 2020, drop T\u00f6rnberg & Uitermark 2024, rework Crawford 2021, strip H1/H2/H3 markers, bullets\u2192prose, drop Territory/Map subheadings, tighten policy bullets, drop current Figure 3 and promote current Figure 4 to new Figure 3) on the Nature Collection manuscript (named + anonymous), its SUPPLEMENTARY_INFORMATION, and GitHub repo documentation. Defer NMS2026 parallel edits unless user instructs otherwise. Regenerate .docx files and verify tests at the end.",
+        "rationale": "User confirmed all style choices (Territory/Map subheadings drop, policy bullet tightening) and added figure renumber (drop current Fig 3, promote Fig 4 \u2192 Fig 3). User explicitly scoped target to \"Nature Collection\" manuscript + corresponding SI + GitHub repo documentation.",
+        "proposed_by": {
+          "type": "human",
+          "id": "human",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "human",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "requested",
+        "tags": [
+          "manuscript",
+          "scope",
+          "figure-renumber",
+          "nature-collection"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "\"i also agree with the 2 style choices and want you to implement them now aliong with the other 1-6 steps so we can do all changes at once. and be sure that you are changing the Nature Collection manuscript + corresponding supp info + github repo documentation etc\"",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_002",
+      "timestamp": "2026-04-14T13:21:51.572688Z",
+      "session_id": "trace_20260414_45f20c",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Executed full submission-polish pass on NatCol manuscript: dropped Mohr 2020 (inline + bib), dropped T\u00f6rnberg & Uitermark 2024 (inline + bib), reworked Crawford 2021 to a specific classification-politics sentence that foreshadows Bowker & Star, stripped three H1/H2/H3 bold confirmation markers from Results, converted T13/T1/T7/T3 bullet list to prose, renamed 3 map/territory subheadings to plain alternatives, rewrote the opening sentence of \u00a7Public Discourse to remove the map/territory echo, tightened the 4-bullet Implications for Policy list into one prose sentence, dropped old Figure 3 (macro-theme comparison), promoted old Figure 4 (6-panel compression metrics) to new Figure 3, redirected the inline \"(Figure 3)\" ref in Results \u00a7H1 to \"(Figure 1)\". Applied identically to named + anonymous markdown. Regenerated all 3 .docx files. 191/191 tests pass.",
+        "artifact": "jan_2026_manuscript/NatureCollection2026/{MANUSCRIPT_NatureCollection2026,MANUSCRIPT_NatureCollection2026_ANONYMOUS,SUPPLEMENTARY_INFORMATION}.{md,docx}",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_001"
+        ],
+        "tags": [
+          "manuscript",
+          "reference-audit",
+          "figure-renumber",
+          "nature-collection",
+          "palcomms"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "\"i also agree with the 2 style choices and want you to implement them now aliong with the other 1-6 steps so we can do all changes at once. and be sure that you are changing the Nature Collection manuscript + corresponding supp info + github repo documentation etc\"",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_003",
+      "timestamp": "2026-04-14T13:21:56.129652Z",
+      "session_id": "trace_20260414_45f20c",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Updated HANDOFF_NEXT_SESSION.md top-of-file with the 8 completed actions from this session (reference drops, H1/H2/H3 cleanup, subheading renames, policy bullet tightening, figure renumber), flagged two remaining inline map/territory metaphors (Discussion \u00a7Agenda Misalignment and Conclusion) as out-of-scope for this pass, noted NMS2026 parallel port is deferred, and adjusted the reference count from 57 to 54.",
+        "artifact": "HANDOFF_NEXT_SESSION.md",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_001"
+        ],
+        "tags": [
+          "handoff",
+          "repo-documentation"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_004",
+      "timestamp": "2026-04-14T13:21:59.532364Z",
+      "session_id": "trace_20260414_45f20c",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "learning",
+        "content": "The body text of MANUSCRIPT_NatureCollection2026.md and MANUSCRIPT_NatureCollection2026_ANONYMOUS.md is character-identical except for authorship metadata (author names, institution, corresponding email, repository URL). Substantive edits can therefore be applied identically to both files in parallel with the same old_string/new_string pairs. Verified at lines 1-15 (differs \u2014 metadata) and lines 125-135, 410-418 (identical \u2014 body text).",
+        "corrects_event_ids": [],
+        "related_event_ids": [],
+        "tags": [
+          "manuscript-workflow",
+          "efficiency"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    }
+  ]
+}

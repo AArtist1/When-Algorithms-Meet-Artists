@@ -1,0 +1,840 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260430_1b6bc2",
+  "created": "2026-04-30T20:23:06.028398Z",
+  "ended": "2026-04-30T20:26:16.812957Z",
+  "status": "completed",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "Manuscript revision tooling + repo cleanup before Nature Collection (PALCOMMS) submission. Critical evaluation, AI-likeness analysis, citation mapping, editor-relevance map, repo URL fixes, 6-commit cleanup to main.",
+    "participants": [],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.12.10",
+      "trace_version": "0.4.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "manuscript-revision",
+      "palcomms",
+      "nature-collection",
+      "repo-cleanup",
+      "editorial-strategy",
+      "ai-likeness-analysis"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": "ACCOMPLISHED:\n- Critical manuscript evaluation completed (composite 7.8/10 readiness; Discussion identified as weakest section)\n- AI-likeness analysis (25 ranked passages with A/B/C/D/E/F breakdowns)\n- Citation taxonomy (53 citations grouped into 9 thematic clusters; 14 Tier-A editor-relevant + 9 Tier-B venue-cousin)\n- 5 priority moves identified for Discussion revision, with full proposed text\n- REVISION_DASHBOARD.html (6 tabs) produced as single-source-of-truth strategic file\n- Repo cleaned up: 6 commits to main (was 1, now 7 commits ahead). 200 files tracked (was ~75). +47 MB canonical figures, -57 MB raw splits removed\n- TRACE pre-v0.3 sessions archived locally at trace_provenance/_archive_pre_v03/ (gitignored)\n- README + manuscript URL fixes (AriyaMG1 \u2192 AArtist1; trace-protocol.org broken link removed)\n- Branch policy exception saved to memory: direct push to main allowed for this repo only\n\nNEXT SESSION:\n1. PRIORITY ACTION (~3 hours): Apply the 5 priority moves to manuscripts_and_presentations/manuscript/NatureCollection2026/MANUSCRIPT_NatureCollection2026.md (and _ANONYMOUS twin). Full proposed text in REVISION_DASHBOARD.html \u2192 Priority Moves tab. Order: KKM synthesis paragraph (highest yield) \u2192 Joyce & Cruz Discussion \u00a7Overview opening \u2192 Voice Collapse Crawford reframe \u2192 Free-text validation Results subsection \u2192 Abstract editorial anchor.\n2. THEN (~3-4 hours): Work through Problem Areas tab tier order (HIGHEST \u2192 HIGH \u2192 MED-HIGH \u2192 MED) and the 68-item EDIT_CHECKLIST.html for atomic terminology/duplicate/structural fixes.\n3. SUBMISSION: Nature Collection (PALCOMMS) 'Reframing AI: Critical Perspectives from AI Social Science' deadline 2026-04-30 (TODAY at session end).\n\nKEY REFERENCE FILES:\n- manuscripts_and_presentations/manuscript/NatureCollection2026/REVISION_DASHBOARD.html \u2190 strategic dashboard, 6 tabs\n- manuscripts_and_presentations/manuscript/NatureCollection2026/EDIT_CHECKLIST.html \u2190 68 atomic edits, persistent checkbox tracking\n- manuscripts_and_presentations/manuscript/NatureCollection2026/EDITOR_RELEVANCE.md \u2190 markdown twin of dashboard's Editor Map tab\n- ~/.claude/projects/-Users-echoes-Documents-Berkeley-Research-When-Algorithms-Meet-Artists/memory/MEMORY.md \u2190 project memory index\n\nCRITICAL CONTEXT:\n- Discussion is the weakest section (12 flagged passages vs ~5-9 elsewhere)\n- The KKM synthesis paragraph (Priority Move #1) is the single biggest editorial unlock \u2014 converts the four-mechanism finding from 'novel observation' to 'empirical instantiation of Kay/Kasirzadeh/Mohamed (2024) framework'\n- 'register' should not appear unedited in submission \u2014 author cannot define it; replace with 'phrasing'/'first-person voice'/'writing style'\n- 'probe text' phrase should not appear at all \u2014 use 'frame' for unique viewpoints (N=70), 'probe' for sentences (N=1,259)\n- Two bolded prose statements in Discussion (lines 341, 373) should be stripped \u2014 op-ed register\n\nREPO STATE (clean):\n- main is 7 commits ahead of pre-session state, all pushed\n- git status is empty\n- Manuscript files (gitignored) updated with URL fixes \u2014 ready for submission tooling",
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-04-30T20:23:24.997417Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude-opus-4-7",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Critical evaluation methodology \u2014 multidimensional scoring framework (15 dimensions including empirical novelty, methodological rigor, theoretical sophistication, venue fit, audience calibration, writing naturalness, argument coherence, abstract quality, critical reflexivity, citations, length discipline, polish, reviewer-pushback resilience). Composite score reported as 7.8/10 readiness for PALCOMMS submission.",
+        "rationale": "User requested 'as critical and thorough as possible' evaluation across 'many relevant metrics'. Single-score evaluation would not capture the heterogeneity of weaknesses (empirically strong, theoretically grounded, but writing-register issues + methodological vulnerabilities around templated probes).",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude-opus-4-7",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "requested",
+        "tags": [
+          "evaluation-method",
+          "submission-readiness"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_002",
+      "timestamp": "2026-04-30T20:23:30.797135Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude-opus-4-7",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "AI-likeness detection framework \u2014 25-tell taxonomy across structural (S1-S5), lexical (L1-L5), rhetorical (R1-R5), argumentative (A1-A5), and section-specific (M1-M4, RES1-RES5, D1-D6) categories. Applied via 4 parallel subagents to Abstract+Intro / Methods / Results / Discussion. Produced ranked list of 25 most-AI-like passages with (A) why AI-like (B) conceptual translation (C) citation key points (D) purpose.",
+        "rationale": "User asked to 'critically review each section with an understanding of how text is often written by generative AI to detect highly AI-like text.' Required a systematic framework rather than ad-hoc impressions. The four-category structure makes the analysis reproducible and gives the user a vocabulary for discussing the issues.",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude-opus-4-7",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "proactive",
+        "tags": [
+          "ai-likeness",
+          "writing-analysis",
+          "framework"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_003",
+      "timestamp": "2026-04-30T20:23:36.254681Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "oliver",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Discussion section is the weakest \u2014 confirmed by AI-likeness density (12 flagged passages vs ~5-9 in other sections) and by analytical-citation underuse (Bowker & Star, MacKenzie, Akrich, Suchman, Widder, Bishop, D'Ignazio & Klein, Crawford all present but mostly name-dropped rather than analytically engaged).",
+        "rationale": "User intuition that 'the current weakest section of the manuscript is the discussion' was empirically validated by section-by-section AI-likeness scoring + qualitative read on how citations are used.",
+        "proposed_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "collaborative",
+        "tags": [
+          "section-assessment",
+          "discussion-revision"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_004",
+      "timestamp": "2026-04-30T20:23:43.737837Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude-opus-4-7",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "5 priority moves for substantive Discussion revision: (1) KKM synthesis paragraph mapping our 4 mechanisms to Kay/Kasirzadeh/Mohamed (2024) 4 dimensions of generative algorithmic epistemic injustice, (2) Joyce & Cruz (2024) opening for Discussion \u00a7Overview, (3) Voice Collapse reframe as Crawford-style classification-infrastructure claim, (4) Free-text validation as new Results subsection (defends templated-probe critique), (5) Abstract editorial anchor with 'epistemic marginalisation' + 'AI social science'.",
+        "rationale": "User asked for 'concise but extremely detailed' list of highest-yield major changes. These five concentrate on the weakest section, address the most-likely reviewer critique, and align with the editorial canon of the Reframing AI collection. Each was given full proposed text in copy-paste form.",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude-opus-4-7",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "proactive",
+        "tags": [
+          "priority-moves",
+          "discussion-revision",
+          "editorial-strategy"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_005",
+      "timestamp": "2026-04-30T20:23:51.611844Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude-opus-4-7",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "KKM synthesis paragraph identified as the single highest-yield editorial move. ~270-word paragraph at end of Discussion \u00a7Mechanisms of Compression mapping topical exclusion \u2192 access injustice; frame redirection \u2192 manipulative testimonial injustice; binary simplification \u2192 amplified testimonial injustice; voice collapse \u2192 hermeneutical ignorance. Converts the four-mechanism finding from 'novel observation' to 'empirical instantiation of an existing framework' \u2014 the framing reviewers in this venue prefer.",
+        "rationale": "Kay, Kasirzadeh & Mohamed (2024) is on-canon for the Reframing AI editorial team (extends Fricker to generative AI specifically). Their four dimensions map cleanly onto our four mechanisms. The current manuscript cites KKM briefly in Intro \u00a7Epistemic Injustice but does not connect their framework to the Results. One paragraph; biggest single editorial unlock.",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude-opus-4-7",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "proactive",
+        "tags": [
+          "kkm",
+          "epistemic-injustice",
+          "highest-yield"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_006",
+      "timestamp": "2026-04-30T20:23:57.064880Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude-opus-4-7",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "REVISION_DASHBOARD.html \u2014 single-source-of-truth file with 6 tabs: Problem Areas (25 ranked passages with conceptual + technical fixes) / Citation Clusters (9 thematic groups) / Results Inventory / Discussion Rebuild (paragraph-by-paragraph plan) / Editor Map (Tier A/B/C citations) / Priority Moves (5 changes with full proposed text). Standalone HTML, dark theme, filterable, searchable.",
+        "rationale": "User indicated preference for HTML format ('I like that a lot. I would just take that idea and expand it'). Consolidating into one dashboard means the user only needs to reference one file when revising the manuscript.",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude-opus-4-7",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "collaborative",
+        "tags": [
+          "dashboard",
+          "revision-tooling",
+          "html"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_007",
+      "timestamp": "2026-04-30T20:24:02.576885Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "oliver",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "For When-Algorithms-Meet-Artists repo only, direct pushes to main are allowed. Skip the feature-branch + PR ceremony from the global CLAUDE.md. Oliver is sole code contributor; AArtist1 (Ariya) is on the repo for authorship convention but does not push.",
+        "rationale": "User explicitly stated: 'for this repo, and only for this repo, we can actually just push directly to main. i am the only one contributing code.' Saved to memory as feedback_direct_push_main.md so future sessions inherit the policy.",
+        "proposed_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "requested",
+        "tags": [
+          "git-workflow",
+          "repo-policy",
+          "memory-saved"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_008",
+      "timestamp": "2026-04-30T20:24:08.405803Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "oliver",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "TRACE pre-v0.3 sessions: archive locally rather than discard. The 26 deleted session JSONs (4,947 lines) recovered from git history into trace_provenance/_archive_pre_v03/ (gitignored). Active TRACE store remains at ~/.trace/sessions/ (v0.3+ only). The deletions committed to main, with .gitignore updated to exclude trace_provenance/sessions/ going forward.",
+        "rationale": "User wanted active TRACE logs to be the usable v0.3+ ones, but explicitly asked to retain pre-v0.3 information: 'i dont want to lose info.' Two-track solution: live TRACE store stays clean, historical archive preserves the substantive content for future reference (e.g., trace_learn extraction).",
+        "proposed_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "requested",
+        "tags": [
+          "trace-cleanup",
+          "archive-strategy"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_009",
+      "timestamp": "2026-04-30T20:24:14.499295Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "oliver",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Data files cleanup: push only canonical inputs. Added: public_discourse_clean_chunks.csv, public_probes.csv, public_probes_keyword.csv. Untracked + gitignored: public_discourse_part1.csv (28MB) + part2.csv (29MB) raw splits. Deleted from disk: public_probes_embedding.csv (byte-identical duplicate of public_probes.csv), public_probes_keyword_backup.csv (duplicate), public_probes_old_557.csv (superseded 557-probe version).",
+        "rationale": "User: 'we only need to push the cleaned csv or the bare minimum to make the repo work for someone cloning it.' Raw splits remain locally for any future re-cleaning but are not needed by the canonical pipeline (which loads clean_chunks.csv directly).",
+        "proposed_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "requested",
+        "tags": [
+          "data-cleanup",
+          "repo-slim"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_010",
+      "timestamp": "2026-04-30T20:24:20.688080Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "decision",
+      "actor": {
+        "type": "ai",
+        "id": "claude-opus-4-7",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Repo cleanup staged into 6 commits to main: (1) URL fixes via PR #1 [merged], (2) trace_provenance pre-v0.3 deletions, (3) data/ slim to canonical, (4) canonical pipeline modules + tests + configs, (5) canonical scripts (24 of 53), (6) canonical figure dirs (4 of 20), (7) cleanup stale + gitignore exploration outputs. Net result: 200 tracked files (up from ~75), ~47 MB of canonical figure data added, ~57 MB of raw splits removed.",
+        "rationale": "132 pending git changes were too large for a single commit. Six staged commits separate by concern (data / code / scripts / figures / cleanup) so each can be reviewed independently. After user lifted the feature-branch requirement, all six landed directly on main.",
+        "proposed_by": {
+          "type": "ai",
+          "id": "claude-opus-4-7",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "oliver",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "proactive",
+        "tags": [
+          "repo-cleanup",
+          "commit-strategy"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_011",
+      "timestamp": "2026-04-30T20:25:02.450976Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "REVISION_DASHBOARD.html \u2014 single-source-of-truth dashboard with 6 tabs (Problem Areas / Citation Clusters / Results Inventory / Discussion Rebuild / Editor Map / Priority Moves). Includes (A) why AI-like, (B) conceptual translation, (C) citation key points, (D) purpose, (E) conceptual fix, (F) technical fix for each of 25 ranked passages. Plus full proposed text for the 5 priority moves.",
+        "artifact": "manuscripts_and_presentations/manuscript/NatureCollection2026/REVISION_DASHBOARD.html",
+        "direction": "collaborative",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_002",
+          "evt_004",
+          "evt_005",
+          "evt_006"
+        ],
+        "tags": [
+          "dashboard",
+          "primary-deliverable"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: 'oh i wrote the above before i saw what you did with the AI-likeness analysis HTML page. i like that a lot. i would just take that idea and expand it'",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_012",
+      "timestamp": "2026-04-30T20:25:05.963166Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "EDIT_CHECKLIST.md + EDIT_CHECKLIST.html \u2014 68-item atomic action list across 7 categories (terminology fixes, duplicate removal, structural polish, substantive additions, intro restructure, AI-tell wording polish, final verification). Interactive HTML version has persistent checkboxes via localStorage.",
+        "artifact": "manuscripts_and_presentations/manuscript/NatureCollection2026/EDIT_CHECKLIST.md",
+        "direction": "collaborative",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_002"
+        ],
+        "tags": [
+          "edit-checklist",
+          "atomic-actions"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_013",
+      "timestamp": "2026-04-30T20:25:12.044426Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "EDITOR_RELEVANCE.md \u2014 Tier A (14 citations editors most likely to cite themselves: Joyce & Cruz, Crawford, Bowker & Star, Akrich, KKM, Widder, Birhane, D'Ignazio & Klein, Suchman, Brause, Ferrari, Suresh, MacKenzie, Fricker), Tier B (9 cousin-venue papers), Tier C (6 methodological). Each annotated with current usage in manuscript and specific deepening recommendation.",
+        "artifact": "manuscripts_and_presentations/manuscript/NatureCollection2026/EDITOR_RELEVANCE.md",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [],
+        "tags": [
+          "editor-relevance",
+          "citation-strategy"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "User: 'i also want you to mention which citations would be directly relevant to the editors of this nature collection we are going to submit this to'",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_014",
+      "timestamp": "2026-04-30T20:25:18.549679Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Repo cleanup \u2014 6 commits pushed to main: PR #1 (URL fixes, merged 3677deb) \u2192 08b243d (TRACE pre-v0.3 deletions) \u2192 881ef38 (data/ slim) \u2192 30493b1 (canonical pipeline modules + tests + configs, 25 files) \u2192 499592b (canonical scripts, 24 files) \u2192 d421efc (canonical figure outputs, 106 files / ~47 MB) \u2192 2f27483 (cleanup stale + gitignore exploration). Net: 200 tracked files (was ~75), -57 MB raw splits removed, +47 MB canonical figures added.",
+        "artifact": "github.com/AArtist1/When-Algorithms-Meet-Artists",
+        "direction": "collaborative",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_007",
+          "evt_008",
+          "evt_009",
+          "evt_010"
+        ],
+        "tags": [
+          "git",
+          "repo-cleanup",
+          "submission-prep"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_015",
+      "timestamp": "2026-04-30T20:25:23.908402Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "learning",
+        "content": "Single highest-yield editorial move for the manuscript: a one-paragraph synthesis at the end of Discussion \u00a7Mechanisms of Compression mapping our four mechanisms onto Kay/Kasirzadeh/Mohamed (2024) four dimensions of generative algorithmic epistemic injustice. (Topical exclusion \u2192 access injustice; frame redirection \u2192 manipulative testimonial injustice; binary simplification \u2192 amplified testimonial injustice; voice collapse \u2192 hermeneutical ignorance.) Full proposed text in REVISION_DASHBOARD.html Priority Moves tab #1.",
+        "corrects_event_ids": [],
+        "related_event_ids": [
+          "evt_005"
+        ],
+        "tags": [
+          "editorial-strategy",
+          "kkm",
+          "next-session-priority"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_016",
+      "timestamp": "2026-04-30T20:25:28.501489Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "gotcha",
+        "content": "'register' was used 21 times in the manuscript but the user could not define it under questioning \u2014 strong AI authorship signal. Replaced with 'phrasing,' 'first-person voice,' 'writing style,' or 'format' depending on context. The manuscript also conflated 'probe' (a sentence projected into semantic space, N=1,259) with 'frame' (a unique viewpoint, N=70). Use 'probe' only for sentence-as-unit-of-projection; use 'frame' for unique positions; never write 'probe text'.",
+        "corrects_event_ids": [],
+        "related_event_ids": [],
+        "tags": [
+          "terminology",
+          "ai-tell",
+          "manuscript-revision"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_017",
+      "timestamp": "2026-04-30T20:25:31.925495Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "gotcha",
+        "content": "README and 4 manuscript files referenced https://github.com/AriyaMG1/... \u2014 the username was renamed to AArtist1. Old URL still 301-redirects but the canonical owner should be cited. Also https://trace-protocol.org returns connection-failed (domain not live). Both fixed in tracked repo (PR #1) and active manuscripts. The local git remote was also updated from AriyaMG1 \u2192 AArtist1.",
+        "corrects_event_ids": [],
+        "related_event_ids": [],
+        "tags": [
+          "url-fix",
+          "github",
+          "trace-protocol"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_018",
+      "timestamp": "2026-04-30T20:25:36.103822Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "learning",
+        "content": "Pre-v0.3 TRACE sessions (26 files, 4,947 lines) were deleted from the live ~/.trace/sessions/ store on 2026-04-30 by scripts/trace_normalize_project.py with delete_pre_version: '0.3'. The corresponding tracked copies were recovered from git history into trace_provenance/_archive_pre_v03/ (gitignored). The v1 monolith backup is also still at mcp_server/trace.json.v1.bak. If a future session needs to mine pre-v0.3 decisions, look in either of those locations.",
+        "corrects_event_ids": [],
+        "related_event_ids": [],
+        "tags": [
+          "trace-archive",
+          "data-recovery"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_019",
+      "timestamp": "2026-04-30T20:25:39.948589Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "todo",
+        "content": "NEXT SESSION PRIORITY: Apply the 5 priority moves to the active manuscript at manuscripts_and_presentations/manuscript/NatureCollection2026/MANUSCRIPT_NatureCollection2026.md (and the _ANONYMOUS twin). Priority Moves tab in REVISION_DASHBOARD.html has full proposed text + locations + word-count deltas. After the 5 priority moves: work through Problem Areas tab in tier order (HIGHEST \u2192 HIGH \u2192 MED-HIGH \u2192 MED) and the 68-item EDIT_CHECKLIST. Submission deadline: 2026-04-30 (today).",
+        "corrects_event_ids": [],
+        "related_event_ids": [],
+        "tags": [
+          "next-session",
+          "priority-moves",
+          "submission-deadline"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_020",
+      "timestamp": "2026-04-30T20:25:43.881473Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "state_change",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": {
+        "description": "Branch policy for When-Algorithms-Meet-Artists repo: feature-branch + PR ceremony lifted; direct push to main now allowed.",
+        "field": "git_workflow",
+        "old_value": "feature-branch + PR (per global CLAUDE.md)",
+        "new_value": "direct push to main (this repo only)",
+        "reason": "Oliver is sole code contributor; AArtist1 (Ariya) is on the repo for authorship convention but does not push code. Saved to memory file feedback_direct_push_main.md."
+      },
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_021",
+      "timestamp": "2026-04-30T20:25:46.206693Z",
+      "session_id": "trace_20260430_1b6bc2",
+      "type": "state_change",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": {
+        "description": "Local git remote URL updated to canonical owner",
+        "field": "git_remote_origin",
+        "old_value": "git@github.com:AriyaMG1/When-Algorithms-Meet-Artists.git",
+        "new_value": "git@github.com:AArtist1/When-Algorithms-Meet-Artists.git",
+        "reason": "GitHub username AriyaMG1 was renamed to AArtist1; old URL still 301-redirects but gh CLI was getting confused on PR creation. Direct origin update fixes future pushes."
+      },
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    }
+  ]
+}

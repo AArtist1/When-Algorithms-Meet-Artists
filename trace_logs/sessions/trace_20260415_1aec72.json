@@ -1,0 +1,257 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260415_1aec72",
+  "created": "2026-04-15T13:11:04.133634Z",
+  "ended": "2026-04-15T13:12:10.500494Z",
+  "status": "completed",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "Handoff preparation for the next session: write focused brief for C&C 2026 poster task, update HANDOFF_NEXT_SESSION.md, save memory pointer so the /clear operation preserves continuity.",
+    "participants": [
+      {
+        "type": "human",
+        "id": "human",
+        "role": "researcher"
+      },
+      {
+        "type": "ai",
+        "id": "claude",
+        "role": "assistant"
+      }
+    ],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.13.11",
+      "trace_version": "0.3.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "handoff",
+      "cc-poster",
+      "session-closure",
+      "micro-session"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": "Handoff preparation complete. Three artefacts written to preserve continuity across /clear: (1) POSTER_BRIEF_2026-04-15.md with canonical numbers and audience calibration for the C&C 2026 poster task, (2) HANDOFF_NEXT_SESSION.md top block updated to point at the brief and summarise submission-ready manuscript state, (3) project_cc_poster_task.md + MEMORY.md index update so auto-memory carries the active task forward. Logged as a micro-session after the user pointed out that the handoff prep work had not been TRACE-logged even though the earlier citation cleanup work (trace_20260415_395c0b) had been.\n\nWHAT IS NEXT (for the session after /clear):\n1. Open POSTER_BRIEF_2026-04-15.md as the starting document for the C&C 2026 poster task.\n2. C&C 2026 poster-track deadline is 2026-04-16, AoE (tomorrow).\n3. Do not copy from POSTER_PLAN.md or poster_abstract.tex in the same directory (stale pre-rebuild numbers).\n4. NatCol manuscript submission package is ready and should not be touched during poster work.\n5. PALCOMMS deadline is 2026-04-30 (15 days out after the C&C poster is submitted).",
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-04-15T13:11:16.682791Z",
+      "session_id": "trace_20260415_1aec72",
+      "type": "decision",
+      "actor": {
+        "type": "human",
+        "id": "human",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": {
+        "description": "Structure the handoff for the C&C 2026 poster task as three artefacts: (1) a dated, focused brief at jan_2026_manuscript/ACM2026/poster/POSTER_BRIEF_2026-04-15.md containing canonical numbers, stale-file warning, user design preferences, style carry-forward rules, and art-tech audience calibration; (2) an updated HANDOFF_NEXT_SESSION.md top block pointing to the brief and summarising current submission-ready state of the NatCol manuscript; (3) a memory pointer at ~/.claude/projects/.../memory/project_cc_poster_task.md plus MEMORY.md index update, so auto-memory carries the active task across /clear.",
+        "rationale": "User explicitly asked \"what is needed from this session before clearing it out and / or starting a fresh claude code session that will pick up on this C&C poster work?\" \u2014 they wanted a concrete set of handoff artefacts that would let them /clear safely and have a fresh session pick up the poster task without losing context about canonical numbers, style decisions, or stale-file warnings.",
+        "proposed_by": {
+          "type": "human",
+          "id": "human",
+          "role": null
+        },
+        "disposition": "accepted",
+        "resolved_by": {
+          "type": "human",
+          "id": "human",
+          "role": null
+        },
+        "revision_note": null,
+        "revises_event_id": null,
+        "suggestion_type": "requested",
+        "tags": [
+          "handoff-architecture",
+          "session-continuity"
+        ],
+        "warnings": []
+      },
+      "annotation": null,
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "\"what is needed from this session before clearing it out and / or starting a fresh claude code session that will pick up on this C&C poster work?\"",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_002",
+      "timestamp": "2026-04-15T13:11:38.801734Z",
+      "session_id": "trace_20260415_1aec72",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Wrote POSTER_BRIEF_2026-04-15.md as the authoritative starting document for the C&C 2026 poster task. Includes: (a) deadline (tomorrow AoE), (b) user's verbatim three deliverables (poster submission, new visual figures, art-tech audience calibration), (c) canonical-numbers table (94.9%/2 and 99.9%/4 concentration, 58.2% empty-topic volume, 532 chunks in six artist-themed empty topics, 24 ownership frames, 251 threat probes with 196/55 split, Cram\u00e9r's V 0.740\u21920.734, JSD 0.364\u21920.308, centroid distance 3.754, full pipeline hyperparameters, Cohen's \u03ba = 0.795), (d) compression-phenomena description (topical exclusion, frame redirection, binary simplification, voice collapse) with instruction not to drum as \"four mechanisms\", (e) style carry-forward rules (UK\u2192US English switch for ACM venue, no em-dashes, minimise colons/semicolons, no numbered hypotheses, no Baeyaert/Latour/keyword-probes/low-pass-filter/map-territory), (f) audience-calibration split listing what lands well vs under-delivers at C&C, (g) pointers to manuscript + figure directory + variants + pipeline CSVs + regeneration scripts, (h) user's stated design preference for \"visually captivating and pleasing\" figures with candidate starting points, (i) explicit warning that POSTER_PLAN.md and poster_abstract.tex in the same directory are significantly stale.",
+        "artifact": "jan_2026_manuscript/ACM2026/poster/POSTER_BRIEF_2026-04-15.md",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_001"
+        ],
+        "tags": [
+          "cc-poster",
+          "brief",
+          "canonical-numbers",
+          "audience-calibration"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "\"create the poster submission to apply to present at the C7C 2026 (creativity and cognition 2026) conference that is happening in London in July 2026. That poster presentation is due tomorrow. ... I would like to make some new versions of the figures that are more visually captivating and pleasing in some way. i would also like to determine what is really important to say and what not to say for an art-tech conference like C&C 2026.\"",
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_003",
+      "timestamp": "2026-04-15T13:11:43.167499Z",
+      "session_id": "trace_20260415_1aec72",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Updated HANDOFF_NEXT_SESSION.md: replaced the stale 2026-04-14 top block with a 2026-04-15 top block that points at POSTER_BRIEF_2026-04-15.md as the START HERE artefact, summarises the current submission-ready state of the NatureCollection2026 manuscript package (all four .docx files regenerated, 191/191 tests, abstract 249 words, 10 consistency checks clean, 8.85/10 composite), and records the 7-pass session log from 2026-04-14 and 2026-04-15. Preserved the earlier fix-list content below the new block for historical traceability.",
+        "artifact": "HANDOFF_NEXT_SESSION.md",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_001"
+        ],
+        "tags": [
+          "handoff",
+          "session-log"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_004",
+      "timestamp": "2026-04-15T13:11:48.287940Z",
+      "session_id": "trace_20260415_1aec72",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Created new memory file project_cc_poster_task.md at ~/.claude/projects/-Users-echoes-Documents-Berkeley-Research-When-Algorithms-Meet-Artists/memory/ marking the C&C 2026 poster as the active task with pointers to POSTER_BRIEF_2026-04-15.md and guardrails listing what NOT to reintroduce. Updated MEMORY.md index to promote the new file to the first entry under Project, demoting the handoff pointer to second. This ensures the auto-memory system surfaces the active C&C task on the very next session load.",
+        "artifact": "~/.claude/projects/-Users-echoes-Documents-Berkeley-Research-When-Algorithms-Meet-Artists/memory/{project_cc_poster_task.md,MEMORY.md}",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [
+          "evt_001"
+        ],
+        "tags": [
+          "auto-memory",
+          "cross-session-continuity"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_005",
+      "timestamp": "2026-04-15T13:11:53.287565Z",
+      "session_id": "trace_20260415_1aec72",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "gotcha",
+        "content": "The existing poster materials in jan_2026_manuscript/ACM2026/poster/ (POSTER_PLAN.md, poster_abstract.tex) reference pre-rebuild canonical numbers: 22 topics, 95% concentration in 4, 14 empty topics with 62% corpus volume, 7\u00d7 salience-ratio framing, 18 distinct ownership frames. All of these are superseded: k=20 (not 22), 94.9% in 2 topics (primary) or 99.9% in 4 (secondary), 15 empty topics carrying 58.2% of corpus, the salience-ratio framing was replaced by entropy + FCR + topic-coverage metrics, 24 ownership frames. The next session must NOT copy from these files.",
+        "corrects_event_ids": [],
+        "related_event_ids": [],
+        "tags": [
+          "stale-materials",
+          "poster-rebuild",
+          "version-hygiene"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    },
+    {
+      "id": "evt_006",
+      "timestamp": "2026-04-15T13:11:57.455332Z",
+      "session_id": "trace_20260415_1aec72",
+      "type": "annotation",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": {
+        "category": "learning",
+        "content": "For future sessions that end with /clear, writing a dated brief (POSTER_BRIEF_YYYY-MM-DD.md) rather than editing the existing stale plan preserves both histories: the new session reads the current brief, while the stale plan remains on disk as reference for how the work evolved. Pairing the dated brief with (i) a HANDOFF top-block pointer and (ii) a memory file ensures continuity across three independent mechanisms: filesystem convention (HANDOFF in root), auto-memory (MEMORY.md index), and the brief itself (authoritative single-file state).",
+        "corrects_event_ids": [],
+        "related_event_ids": [],
+        "tags": [
+          "session-handoff-pattern",
+          "cross-session-continuity"
+        ]
+      },
+      "state_change": null,
+      "contribution": null,
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": null,
+        "related_event_ids": []
+      }
+    }
+  ]
+}

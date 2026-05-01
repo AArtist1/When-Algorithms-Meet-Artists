@@ -1,0 +1,341 @@
+{
+  "_definitions": {
+    "schema_note": "This file aggregates TRACE v0.3 protocol events across all sessions whose metadata.project field exactly equals 'when-algorithms-meet-artists'.",
+    "acceptance_rate": "accepted / (accepted + revised + rejected); pending decisions excluded from the denominator.",
+    "intervention_rate_per_event": "(corrections + revised_decisions + rejected_decisions) / total_events. Mirrors the upstream trace_project_summary tool's intervention_rate.",
+    "intervention_rate_per_decision": "(revised_decisions + rejected_decisions) / total_decisions. Independent measure useful when the event mix is annotation-heavy.",
+    "pending": "Decisions whose disposition is still 'proposed' (no human resolution recorded). The TRACE protocol forbids the AI from resolving its own proposals; pending decisions accumulate when work continued without an explicit human accept/reject.",
+    "contributions_matrix_key": "<direction>_directed_<execution>_executed where direction = whose idea, execution = who did the work; both \u2208 {human, ai, collaborative}.",
+    "participant_aliases": "ids 'oliver', 'oliver-muellerklein', and 'human' (when actor.type='human') were collapsed to a single canonical id 'oliver'. Other ids unchanged.",
+    "tool_caveats": [
+      "Upstream trace_project_summary uses a case-insensitive substring filter on metadata.project; this artifact uses an exact-match filter for unambiguous attribution.",
+      "Decisions by proposer break out only 'ai' and 'human' actor types; any 'system' actor would be counted in decisions.total but not in either breakdown (none present in this project)."
+    ]
+  },
+  "project": "when-algorithms-meet-artists",
+  "protocol_version": [
+    "0.3.0"
+  ],
+  "session_count": 25,
+  "total_events": 143,
+  "date_range": {
+    "earliest_session_created": "2026-03-21T17:27:32.810908Z",
+    "latest_session_created": "2026-04-30T20:23:06.028398Z"
+  },
+  "sessions_by_month": {
+    "2026-03": 4,
+    "2026-04": 21
+  },
+  "events_by_type": {
+    "contribution": 75,
+    "decision": 38,
+    "annotation": 26,
+    "state_change": 4
+  },
+  "decisions": {
+    "total": 38,
+    "proposed_by_human": 20,
+    "proposed_by_ai": 18,
+    "accepted": 28,
+    "pending": 9,
+    "revised": 1,
+    "acceptance_rate": 0.966,
+    "suggestion_types": {
+      "collaborative": 17,
+      "requested": 13,
+      "proactive": 8
+    }
+  },
+  "contributions": {
+    "human_directed_ai_executed": 54,
+    "collaborative_directed_ai_executed": 16,
+    "ai_directed_ai_executed": 5
+  },
+  "annotations_by_category": {
+    "learning": 11,
+    "gotcha": 8,
+    "correction": 5,
+    "observation": 1,
+    "todo": 1
+  },
+  "human_interventions": {
+    "total": 6,
+    "corrections": 5,
+    "corrections_with_links": 2,
+    "decision_rejections": 0,
+    "decision_revisions": 1,
+    "retry_chains": 0,
+    "intervention_rate_per_event": 0.042,
+    "intervention_rate_per_decision": 0.0263
+  },
+  "open_items": {
+    "pending_decisions": 9,
+    "pending_decisions_by_session": {
+      "trace_20260329_451231": 2,
+      "trace_20260402_a9e36c": 3,
+      "trace_20260409_3b5dc9": 1,
+      "trace_20260413_799f12": 3
+    },
+    "still_active_sessions": [
+      "trace_20260329_451231",
+      "trace_20260402_a9e36c",
+      "trace_20260410_466336",
+      "trace_20260415_a5f55b",
+      "trace_20260422_2a0dba"
+    ]
+  },
+  "participants": [
+    {
+      "id": "claude",
+      "type": "ai",
+      "event_count": 111
+    },
+    {
+      "id": "oliver",
+      "type": "human",
+      "event_count": 23
+    },
+    {
+      "id": "claude-opus-4-7",
+      "type": "ai",
+      "event_count": 7
+    },
+    {
+      "id": "claude-opus-4-6",
+      "type": "ai",
+      "event_count": 2
+    },
+    {
+      "id": "ariya",
+      "type": "human",
+      "event_count": 0
+    }
+  ],
+  "session_manifest": [
+    {
+      "id": "trace_20260321_9dfe5e",
+      "created": "2026-03-21T17:27:32.810908Z",
+      "ended": "2026-03-21T17:36:05.591598Z",
+      "status": "completed",
+      "n_events": 7,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260326_04ea82",
+      "created": "2026-03-26T19:55:54.055606Z",
+      "ended": "2026-03-26T19:57:08.505545Z",
+      "status": "completed",
+      "n_events": 3,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260326_a82e23",
+      "created": "2026-03-26T20:02:00.567439Z",
+      "ended": "2026-03-26T20:03:54.598734Z",
+      "status": "completed",
+      "n_events": 7,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260329_451231",
+      "created": "2026-03-29T21:06:17.793143Z",
+      "ended": null,
+      "status": "active",
+      "n_events": 13,
+      "n_pending_decisions": 2,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260402_a9e36c",
+      "created": "2026-04-02T16:45:37.489514Z",
+      "ended": null,
+      "status": "active",
+      "n_events": 5,
+      "n_pending_decisions": 3,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260404_d63713",
+      "created": "2026-04-04T01:22:41.144588Z",
+      "ended": "2026-04-04T01:28:06.052410Z",
+      "status": "completed",
+      "n_events": 15,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260409_3b5dc9",
+      "created": "2026-04-09T02:35:26.701487Z",
+      "ended": "2026-04-09T20:36:31.864786Z",
+      "status": "completed",
+      "n_events": 5,
+      "n_pending_decisions": 1,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260410_466336",
+      "created": "2026-04-10T18:49:35.582403Z",
+      "ended": null,
+      "status": "active",
+      "n_events": 1,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260410_a9863b",
+      "created": "2026-04-10T18:49:45.749558Z",
+      "ended": "2026-04-10T18:50:36.600442Z",
+      "status": "completed",
+      "n_events": 3,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260410_74b4f8",
+      "created": "2026-04-10T19:34:07.056698Z",
+      "ended": "2026-04-10T20:19:26.703185Z",
+      "status": "completed",
+      "n_events": 6,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260411_8d8327",
+      "created": "2026-04-11T19:53:26.038304Z",
+      "ended": "2026-04-11T20:10:04.996341Z",
+      "status": "completed",
+      "n_events": 5,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260413_2fbf5d",
+      "created": "2026-04-13T00:28:16.241006Z",
+      "ended": "2026-04-13T00:29:16.390637Z",
+      "status": "completed",
+      "n_events": 4,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260413_799f12",
+      "created": "2026-04-13T19:43:21.686944Z",
+      "ended": "2026-04-14T12:30:35.903918Z",
+      "status": "completed",
+      "n_events": 17,
+      "n_pending_decisions": 3,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260414_45f20c",
+      "created": "2026-04-14T12:30:41.371718Z",
+      "ended": "2026-04-14T13:22:17.377698Z",
+      "status": "completed",
+      "n_events": 4,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260414_2d5e6c",
+      "created": "2026-04-14T13:41:41.866626Z",
+      "ended": "2026-04-14T13:58:42.645237Z",
+      "status": "completed",
+      "n_events": 2,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260414_960b5a",
+      "created": "2026-04-14T14:31:56.604164Z",
+      "ended": "2026-04-14T14:48:12.471267Z",
+      "status": "completed",
+      "n_events": 2,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260414_b1984a",
+      "created": "2026-04-14T22:17:15.505553Z",
+      "ended": "2026-04-14T22:22:34.309726Z",
+      "status": "completed",
+      "n_events": 1,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260414_591db6",
+      "created": "2026-04-14T23:06:54.234697Z",
+      "ended": "2026-04-14T23:25:18.453457Z",
+      "status": "completed",
+      "n_events": 1,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260414_01c91d",
+      "created": "2026-04-14T23:51:44.462275Z",
+      "ended": "2026-04-14T23:57:17.730285Z",
+      "status": "completed",
+      "n_events": 1,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260415_395c0b",
+      "created": "2026-04-15T03:51:32.334881Z",
+      "ended": "2026-04-15T03:57:20.826833Z",
+      "status": "completed",
+      "n_events": 1,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260415_1aec72",
+      "created": "2026-04-15T13:11:04.133634Z",
+      "ended": "2026-04-15T13:12:10.500494Z",
+      "status": "completed",
+      "n_events": 6,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260415_a5f55b",
+      "created": "2026-04-15T13:16:10.185356Z",
+      "ended": null,
+      "status": "active",
+      "n_events": 5,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260417_ad865a",
+      "created": "2026-04-17T02:15:22.067908Z",
+      "ended": "2026-04-17T02:17:53.207165Z",
+      "status": "completed",
+      "n_events": 8,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260422_2a0dba",
+      "created": "2026-04-22T00:15:55.918484Z",
+      "ended": null,
+      "status": "active",
+      "n_events": 0,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    },
+    {
+      "id": "trace_20260430_1b6bc2",
+      "created": "2026-04-30T20:23:06.028398Z",
+      "ended": "2026-04-30T20:26:16.812957Z",
+      "status": "completed",
+      "n_events": 21,
+      "n_pending_decisions": 0,
+      "trace_version": "0.3.0"
+    }
+  ]
+}

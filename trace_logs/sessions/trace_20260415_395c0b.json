@@ -1,0 +1,80 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260415_395c0b",
+  "created": "2026-04-15T03:51:32.334881Z",
+  "ended": "2026-04-15T03:57:20.826833Z",
+  "status": "completed",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "Close remaining submission gaps: verify Baeyaert 2025 DOI and resolve citation-fit concerns (Sichach+Pane, Jiang+Kawakami-Venkatagiri, Entman for 2nd-level agenda-setting, Matsui & Ferrara), then polish cover letter. Skip NMS2026.",
+    "participants": [
+      {
+        "type": "human",
+        "id": "human",
+        "role": "researcher"
+      },
+      {
+        "type": "ai",
+        "id": "claude",
+        "role": "assistant"
+      }
+    ],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.13.11",
+      "trace_version": "0.3.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "citation-audit",
+      "cover-letter",
+      "final-polish",
+      "pre-submission"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": "Closed the five remaining citation-fit concerns plus cover letter. Baeyaert 2025 verified via RePEc abstract as AI pipeline-focused, not public-discourse-focused; removed from all 4 manuscript locations and from bibliography. Sichach+Pane methodological citation removed from the specific spot where it was performative. Jiang+Kawakami-Venkatagiri reframed from foil to accurate \"stakeholder studies\" positioning. Matsui & Ferrara reattributed to word-embedding precedents (accurate to the paper's scope). Cover letter fully rewritten to match manuscript voice (UK English, no em-dashes, softened four-mechanisms framing, dual 94.9%/2 + 99.9%/4 headline, no keyword probes, exact MLP specs). 191/191 tests pass. All 10 consistency checks clean across 4 submission files.\n\nWHAT IS NEXT:\n1. Submission package ready. Main + anonymous manuscript .docx, SI .docx, cover letter .docx all regenerated and current.\n2. NMS2026 parallel version still un-synced \u2014 user deferred this.\n3. Figure 1 variant selection (if still needed) \u2014 5 variants remain in figures/manuscript/; canonical figure_1_semantic_density.png is the submission default per prior handoff.\n4. Re-evaluation against the 9-metric framework is due next turn to confirm the final score.\n5. Deadline April 30, 2026.",
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-04-15T03:57:12.525356Z",
+      "session_id": "trace_20260415_395c0b",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Closed remaining pre-submission gaps. (1) Verified Baeyaert 2025 via web search of DOI + IDEAS/RePEc abstract and confirmed it is strictly about AI system pipeline stages (data collection, model training, inference, dissemination), NOT public discourse analysis. The manuscript was misattributing \"marginalisation without explicit exclusion\" to this paper across 4 locations. Removed all 4 attributions, reframed the concept as our own characterisation, and removed Baeyaert from the bibliography. (2) Fixed Sichach+Pane citation at Methods L94 (social-media exclusion methodological support) by simply removing from that spot; both remain cited elsewhere where load-bearing. (3) Reframed Jiang+Kawakami-Venkatagiri+Mazzone-Elgammal paragraph from foil (\"existing research focuses on technological capabilities...\") to accurate positioning (\"existing research has mapped public debates... and documented stakeholder perspectives separately... but seldom connects the two sides empirically\"). (4) Entman (1993) citation at second-level agenda-setting line already removed in prior session. (5) Reframed Matsui & Ferrara attribution from \"stakeholder-group comparison\" (inaccurate) to \"applying word-embedding methods to social-scientific discourse analysis\" (accurate, matches the paper's actual survey scope). (6) Rewrote cover letter to match manuscript's current voice: UK English, no em-dashes, softened four-mechanisms framing, dual 94.9%/2 + 99.9%/4 headline, dropped keyword-probe mention, explicit MLP + UMAP hyperparameters, corrected typo (\"artist concerns topic in\" \u2192 rewrite). Regenerated all 4 .docx files. 191/191 tests pass. 10 verification checks all clean across all 4 submission files.",
+        "artifact": "jan_2026_manuscript/NatureCollection2026/{MANUSCRIPT_NatureCollection2026,MANUSCRIPT_NatureCollection2026_ANONYMOUS,SUPPLEMENTARY_INFORMATION,cover_letter}.{md,docx}",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [],
+        "tags": [
+          "citation-verification",
+          "baeyaert-misattribution-fixed",
+          "cover-letter-rewrite",
+          "final-polish"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "\"go ahead and thoroughly complete the work to close the remaining gaps + remaining items. however, do not worry about the NMS2026 version for right now\"",
+        "related_event_ids": []
+      }
+    }
+  ]
+}

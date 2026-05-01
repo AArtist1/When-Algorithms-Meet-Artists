@@ -1,0 +1,80 @@
+{
+  "context": "https://trace-protocol.org/v0.3",
+  "trace_version": "0.3.0",
+  "id": "trace_20260414_01c91d",
+  "created": "2026-04-14T23:51:44.462275Z",
+  "ended": "2026-04-14T23:57:17.730285Z",
+  "status": "completed",
+  "metadata": {
+    "project": "when-algorithms-meet-artists",
+    "experiment_id": null,
+    "description": "Retrieve exact MLP projection head training details from the codebase and update the manuscript Methods. Apply any other available reproducibility details. Re-evaluate manuscript against same 9-metric framework as prior verification.",
+    "participants": [
+      {
+        "type": "human",
+        "id": "human",
+        "role": "researcher"
+      },
+      {
+        "type": "ai",
+        "id": "claude",
+        "role": "assistant"
+      }
+    ],
+    "environment": {
+      "mcp_servers": [],
+      "client": "Claude Code",
+      "os": "Darwin 25.3.0",
+      "python_version": "3.13.11",
+      "trace_version": "0.3.0",
+      "custom": {
+        "arch": "arm64"
+      }
+    },
+    "tags": [
+      "reproducibility",
+      "methods-expansion",
+      "mlp-exact-details",
+      "requalification"
+    ],
+    "doi": null,
+    "custom": {}
+  },
+  "summary": "Retrieved exact MLP training details from src/projection.py and scripts/final_pipeline.py (scikit-learn MLPRegressor, hidden layers (1024, 512, 256, 128), ReLU, L2 \u03b1=0.0001, Adam lr=0.002, 1000 iters max, early stopping on 10% inner val, StandardScaler, 85/15 split, random_state=42, R\u00b2=0.904 held-out) and updated Methods + SI accordingly. Added explicit UMAP hyperparameters (n_neighbors=53, min_dist=0.01, n_components=5, cosine) and \"query: \" embedding prefix to Methods. 191/191 tests pass. Re-evaluation: composite score rose from 7.8/10 to 8.6/10, with biggest gains in Methodological reproducibility (6.5\u21929.0) and Pre-submission readiness (6.5\u21929.0).\n\nWHAT IS NEXT:\n1. Baeyaert 2025 DOI verification remains \u2014 anchors 4 uses in Discussion and was 403-blocked previously.\n2. Remaining 4 citation-fit concerns from earlier audit (Sichach+Pane, Jiang+Kawakami-Venkatagiri as foil, Entman-for-second-level-agenda-setting, Matsui & Ferrara) are judgment calls.\n3. NMS2026 parallel version still un-synced.\n4. Cover letter not reviewed this sequence.\n5. Submission deadline April 30, 2026.",
+  "events": [
+    {
+      "id": "evt_001",
+      "timestamp": "2026-04-14T23:57:09.698276Z",
+      "session_id": "trace_20260414_01c91d",
+      "type": "contribution",
+      "actor": {
+        "type": "ai",
+        "id": "ai-assistant",
+        "role": null
+      },
+      "tool_call": null,
+      "decision": null,
+      "annotation": null,
+      "state_change": null,
+      "contribution": {
+        "description": "Upgraded Methods with exact projection-head training details pulled from src/projection.py and scripts/final_pipeline.py: scikit-learn MLPRegressor, 4 hidden layers (1024, 512, 256, 128), ReLU activation, L2 \u03b1=0.0001, Adam optimiser at lr=0.002, max 1000 iters, early stopping on 10% inner validation split, StandardScaler on X and Y, 85/15 train/test split (random_state=42), R\u00b2=0.904 on held-out test set. Also upgraded the consensus-UMAP paragraph with explicit hyperparameters (n_neighbors=53, min_dist=0.01, n_components=5, cosine metric) and documented the distance-matrix consensus step. Added \"query: \" embedding prefix to Methods. Updated SI projection-head table row with the same exact details. 191/191 tests pass. All em-dashes, H-labels, keyword-probe references, and four-mechanism drumbeat still absent from the manuscript per prior cleanup.",
+        "artifact": "jan_2026_manuscript/NatureCollection2026/{MANUSCRIPT_NatureCollection2026,MANUSCRIPT_NatureCollection2026_ANONYMOUS,SUPPLEMENTARY_INFORMATION}.{md,docx}",
+        "direction": "human",
+        "execution": "ai",
+        "related_decision_ids": [],
+        "tags": [
+          "reproducibility-upgrade",
+          "methods-expansion",
+          "exact-mlp-details",
+          "umap-hyperparameters"
+        ]
+      },
+      "context": {
+        "conversation_turn": null,
+        "reasoning_summary": null,
+        "conversation_snippet": "\"go through and use the exact info from our runs with the projection head training to get more info on it and then update, if possible, that and anything else we still can with the manuscript and then re-evaluate to see how it ranks now for nature collection submission (using same metrics as before)\"",
+        "related_event_ids": []
+      }
+    }
+  ]
+}

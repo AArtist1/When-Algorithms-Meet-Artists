@@ -1,6 +1,6 @@
 # Table S3: Likert Anchor Design Matrix
 
-250 synthetic Likert-style anchor statements were generated using GPT-5.1 following a 5 x 5 x 10 factorial design: 5 themes x 5 agreement levels x 10 discourse styles.
+250 synthetic Likert-style anchor statements were generated using GPT-5.4-mini following a 5 x 5 x 10 factorial design: 5 themes x 5 agreement levels x 10 discourse styles.
 
 These anchors were used to extract style-matched *public probes* from the public corpus. See `data/likert_anchor_phrases.csv` for the full 250-statement set.
 

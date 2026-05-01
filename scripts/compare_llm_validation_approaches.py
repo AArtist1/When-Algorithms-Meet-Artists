@@ -1,8 +1,8 @@
 """Compare 5 LLM validation approaches for public probe theme classification.
 
 Runs five publication-grade prompting strategies on a balanced 250-probe sample
-(50 per theme) using two independent LLMs (OpenAI gpt-4o-mini and Anthropic
-claude-sonnet-4.6). Each approach probes a different hypothesis about *why*
+(50 per theme) using two independent LLMs (OpenAI gpt-5.4-mini and Anthropic
+claude-opus-4-6). Each approach probes a different hypothesis about *why*
 zero-shot single-label F1 is low (~0.43-0.46 in the original validation):
 
   A. Zero-shot baseline (current prompt) -- reproduces the published numbers.

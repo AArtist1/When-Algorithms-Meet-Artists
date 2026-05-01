@@ -47,8 +47,8 @@ KJUST_DIR = ROOT / "figures" / "k_justification"
 OUT_DIRS = [
     KJUST_DIR,
     ROOT / "figures" / "manuscript",
-    ROOT / "jan_2026_manuscript" / "NMS2026" / "figures",
-    ROOT / "jan_2026_manuscript" / "NatureCollection2026" / "figures",
+    ROOT / "manuscripts_and_presentations" / "manuscript" / "NMS2026" / "figures",
+    ROOT / "manuscripts_and_presentations" / "manuscript" / "NatureCollection2026" / "figures",
 ]
 
 K_SELECTED = 20

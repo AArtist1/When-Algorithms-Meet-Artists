@@ -69,12 +69,14 @@ The 250 Likert anchors served only as retrieval queries and were discarded after
 
 ## H2 Style Control Results
 
-| Comparison | JSD | Cramer's V | Centroid Distance (5D) |
+| Comparison | JSD | Cramér's V | Centroid Distance (5-D) |
 |---|---|---|---|
 | Public vs Artist (raw) | 0.364 | 0.740 | 2.003 |
-| Public Probes vs Artist (style-controlled) | 0.245 | 0.648 | 2.699 |
+| Public Probes vs Artist (style-matched) | 0.308 | 0.734 | 3.754 |
 
-The style control reduces Cramer's V by 12.4% (0.740 to 0.648) and JSD by 33% (0.364 to 0.245), confirming that format differences contribute to but do not account for the observed divergence.
+Source: `figures/final_pipeline/all_metrics.csv` (`h2_jsd_raw`, `h2_jsd_style`, `h2_cramers_v_raw`, `h2_cramers_v_style`, `h2_centroid_raw`, `h2_centroid_style`). Distances are Euclidean on the 5-dimensional consensus UMAP coordinates produced by Config A (n_neighbors=53, min_dist=0.01, n_components=5, 30 seeds).
+
+The style-matching control reduces JSD by 15.4% (0.364 → 0.308) but leaves Cramér's V essentially unchanged (0.8% reduction, 0.740 → 0.734) and *increases* the artist-to-public-probe centroid distance from 2.003 to 3.754. Approximately 84.6% of the raw JSD divergence persists after style control. The geometric separation is therefore preserved and indeed widens once the public-probe set is narrowed to short declarative sentences in the same syntactic register as the artist probes — confirming that format differences contribute only marginally to the divergence and do not account for it.
 
 ## H3 Differential Compression
 

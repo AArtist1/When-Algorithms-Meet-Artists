@@ -1,8 +1,9 @@
 """Validate public probe theme assignments using dual-LLM classification.
 
-Sends each public probe to both GPT-5-mini (OpenAI) and Claude Haiku (Anthropic)
-with an identical classification prompt. Compares LLM-assigned themes to the
-extraction-assigned themes to measure precision and inter-rater agreement.
+Sends each public probe to both gpt-5.4-mini (OpenAI) and Claude Sonnet 4.6
+(Anthropic, model id `claude-sonnet-4-6`) with an identical classification
+prompt. Compares LLM-assigned themes to the extraction-assigned themes to
+measure precision and inter-rater agreement.
 
 Requirements:
     OPENAI_API_KEY environment variable
@@ -268,7 +269,7 @@ th {{ background: #2d3436; color: white; }}
 .good {{ color: #00b894; }} .ok {{ color: #fdcb6e; }} .bad {{ color: #e17055; }}
 </style></head><body>
 <h1>Public Probe Theme Validation: Dual-LLM Classification</h1>
-<p>Each of {overall['n_probes']} probes classified by both GPT-5-mini and Claude Sonnet 4.6</p>
+<p>Each of {overall['n_probes']} probes classified by both gpt-5.4-mini and Claude Sonnet 4.6</p>
 
 <div class="cards">
 <div class="card"><div class="big {'good' if overall['openai_accuracy'] > 0.8 else 'ok'}">{overall['openai_accuracy']:.1%}</div><div class="label">GPT Accuracy</div></div>
@@ -289,7 +290,7 @@ th {{ background: #2d3436; color: white; }}
 </table>
 
 <h2>Per-Theme Results</h2>
-{metrics_table(openai_metrics, "GPT-5-mini")}
+{metrics_table(openai_metrics, "gpt-5.4-mini")}
 {metrics_table(anthropic_metrics, "Claude Sonnet 4.6")}
 
 <h2>Interpretation</h2>
@@ -335,12 +336,12 @@ def main() -> None:
     print(f"Theme distribution: {dict(df['theme'].value_counts())}")
 
     # Classify with both LLMs
-    print("\nClassifying with OpenAI GPT-5-mini...")
+    print("\nClassifying with OpenAI gpt-5.4-mini...")
     t0 = time.time()
     openai_labels = classify_with_openai(texts)
     print(f"  Done in {time.time()-t0:.0f}s")
 
-    print("\nClassifying with Anthropic Claude Haiku...")
+    print("\nClassifying with Anthropic Claude Sonnet 4.6...")
     t0 = time.time()
     anthropic_labels = classify_with_anthropic(texts)
     print(f"  Done in {time.time()-t0:.0f}s")
@@ -396,8 +397,8 @@ def main() -> None:
     print(f"\nSaved: {OUTPUT_DIR / 'probe_theme_validation.csv'}")
 
     summary = pd.concat([
-        openai_metrics.assign(model="gpt-4o-mini"),
-        anthropic_metrics.assign(model="claude-sonnet-4.6"),
+        openai_metrics.assign(model="gpt-5.4-mini"),
+        anthropic_metrics.assign(model="claude-sonnet-4-6"),
     ])
     summary.to_csv(OUTPUT_DIR / "probe_theme_validation_summary.csv", index=False)
     print(f"Saved: {OUTPUT_DIR / 'probe_theme_validation_summary.csv'}")
